@@ -1,7 +1,8 @@
 import React from 'react';
+import { Box } from '@chakra-ui/react';
 
 const SupportPage = () => (
-  <div></div>
+  <Box>Support</Box>
 );
 
 export default SupportPage;
