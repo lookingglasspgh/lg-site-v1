@@ -3,10 +3,10 @@ export const Divider = {
     borderColor: 'black.500',
   },
   variants: {
-    'secondary': {
+    secondary: {
       borderColor: 'ivory.500',
       borderStyle: 'solid',
-    }
+    },
   },
 };
 
@@ -15,9 +15,9 @@ export const Heading = {
     color: 'black.500',
   },
   variants: {
-    'secondary': {
-      color: 'ivory.500'
-    }
+    secondary: {
+      color: 'ivory.500',
+    },
   },
 };
 
@@ -26,8 +26,8 @@ export const Text = {
     color: 'black.500',
   },
   variants: {
-    'secondary': {
-      color: 'ivory.500'
-    }
+    secondary: {
+      color: 'ivory.500',
+    },
   },
 };

@@ -2,8 +2,8 @@ import React from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-import PageHead from './PageHead';
-import NavBar from './NavBar';
+import PageHead from '../PageHead';
+import NavBar from '../NavBar';
 
 const Layout = ({ children, pageDescription, title }) => (
   <>
@@ -26,7 +26,7 @@ const Layout = ({ children, pageDescription, title }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.func.isRequired,
+  children: PropTypes.shape({}).isRequired,
   pageDescription: PropTypes.string,
   title: PropTypes.string,
 };
@@ -34,6 +34,6 @@ Layout.propTypes = {
 Layout.defaultProps = {
   pageDescription: 'Remembering & commemorating Black life in Pittsburgh',
   title: 'Looking Glass',
-}
+};
 
 export default Layout;

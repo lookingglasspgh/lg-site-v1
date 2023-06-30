@@ -14,7 +14,6 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource-variable/outfit": "^5.0.3",
     "@fontsource-variable/spline-sans": "^5.0.3",
-    "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
     "framer-motion": "^10.12.8",
     "next": "13.4.1",
@@ -22,5 +21,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-feather": "^2.0.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
