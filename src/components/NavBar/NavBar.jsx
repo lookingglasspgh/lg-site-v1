@@ -9,15 +9,15 @@ import NextLink from 'next/link';
 import LinkMenu from './components/LinkMenu';
 
 import {
-  MobileMenuRoutes,
+  // MobileMenuRoutes,
   NavBarRoutes,
   RouteList,
 } from '@/constants/RouteList';
 
-const NavDisplays = {
-  base: 'none',
-  lg: 'flex',
-};
+// const NavDisplays = {
+//   base: 'none',
+//   lg: 'flex',
+// };
 
 const NavBar = () => (
   <Flex
@@ -30,7 +30,7 @@ const NavBar = () => (
     backgroundColor="ivory.500"
   >
     <Link as={NextLink} href={RouteList.HOME}>
-      <Image 
+      <Image
         src="/resources/logo-lg-black.svg"
         width={250}
         height={100}
