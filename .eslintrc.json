@@ -6,7 +6,7 @@
     "extends": [
         "plugin:react/recommended",
         "airbnb",
-        "next/core-web-vitals"
+        "plugin:@next/next/recommended"
     ],
     "overrides": [
     ],
@@ -18,10 +18,10 @@
         "react"
     ],
     "rules": {
-      "import/extensions": "off",
-      "import/no-unresolved": "off",
-      "no-restricted-exports": "off",
-      "react/function-component-definition": "off",
-      "react/jsx-props-no-spreading": "off"
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "no-restricted-exports": "off",
+        "react/function-component-definition": "off",
+        "react/jsx-props-no-spreading": "off"
     }
 }

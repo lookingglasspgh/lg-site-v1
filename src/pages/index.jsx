@@ -1,9 +1,10 @@
+import React from 'react';
 import {
   Box,
   Flex,
   Heading,
   Link,
-  Text
+  Text,
 } from '@chakra-ui/react';
 
 import Image from 'next/image';
@@ -43,11 +44,12 @@ const Home = () => (
             />
           </Box>
           <Text mt="1rem" textAlign="center">
-            <b>40.461142, -79.926171</b> - Looking Glass x <Link href={ymcaTeenieLink} textDecoration="underline" isExternal>Teenie Harris</Link>
+            <b>40.461142, -79.926171</b>
+            - Looking Glass x
+            <Link href={ymcaTeenieLink} textDecoration="underline" isExternal>Teenie Harris</Link>
           </Text>
-        </Flex>        
+        </Flex>
       </Flex>
-
     </Flex>
   </Layout>
 );
