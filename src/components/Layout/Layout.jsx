@@ -15,10 +15,12 @@ const Layout = ({ children, pageDescription, title }) => (
       height="100vh"
       width="100%"
       flexDirection="column"
+      overflow="auto"
       backgroundColor="ivory.500"
+      backgroundRepeat="repeat"
     >
       <NavBar />
-      <Box backgroundColor="ivory.500">
+      <Box backgroundImage="resources/concrete-wall.png" pb="5rem">
         {children}
       </Box>
     </Flex>

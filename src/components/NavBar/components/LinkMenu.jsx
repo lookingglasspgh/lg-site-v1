@@ -28,24 +28,39 @@ const LinkMenu = ({ listRoutes, title }) => (
         mr="1.5rem"
         display="flex"
         transition="all 0.2s"
-        _hover={{ color: 'purple.500', cursor: 'pointer' }}
+        _hover={{ color: 'pink.500', cursor: 'pointer' }}
       >
         {title}
         <StyledChevron size={20} />
       </Text>
     </PopoverTrigger>
-    <PopoverContent>
-      <PopoverBody display="flex" flexDirection="column">
+    <PopoverContent
+      width="270px"
+      bg="rgba(27,28,44, .9)"
+      borderColor="black.400"
+      color="ivory.500"
+      padding="1rem"
+      marginRight="3rem"
+      boxShadow="xl"
+      backdropFilter="blur(6px)"
+      _focus={{ boxShadow: 'none' }}
+    >
+      <PopoverBody
+        display="flex"
+        flexDirection="column"
+        justifyContent="flex-end"
+      >
         { listRoutes.map((route) => (
           <Link
             as={NextLink}
             key={route.title}
-            color="black.500"
             href={route.path}
             fontSize="lg"
             mr="1.5rem"
+            mb="1rem"
             transition="all 0.2s"
-            _hover={{ color: 'purple.500' }}
+            _last={{ mb: '0' }}
+            _hover={{ color: 'pink.500' }}
           >
             {route.title}
           </Link>

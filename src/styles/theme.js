@@ -1,6 +1,11 @@
 import { extendTheme } from '@chakra-ui/react';
 
-import { Divider, Heading, Text } from './components';
+import {
+  Button,
+  Divider,
+  Heading,
+  Text,
+} from './components';
 
 const breakpoints = {
   sm: '30em', // 480px
@@ -69,6 +74,10 @@ const fontWeights = {
   black: 900,
 };
 
+export const gradients = {
+  black: 'linear-gradient(137deg, rgba(2,3,20,1) 0%, rgba(27,28,44,1) 50%, rgba(53,53,67,1) 100%)',
+};
+
 export const theme = extendTheme({
   breakpoints,
   colors,
@@ -76,6 +85,7 @@ export const theme = extendTheme({
   fontSizes,
   fontWeights,
   components: {
+    Button,
     Divider,
     Heading,
     Text,

@@ -48,7 +48,7 @@ const NavBar = () => (
             fontSize="lg"
             mr="1.5rem"
             transition="all 0.2s"
-            _hover={{ color: 'purple.500' }}
+            _hover={{ color: 'pink.500' }}
           >
             {route.title}
           </Link>
