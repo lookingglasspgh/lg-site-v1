@@ -2,56 +2,18 @@ export const RouteList = {
   HOME: '/',
   ARTIFACTS: '/artifacts',
   CONTRIBUTORS: '/contributors',
-  LEARNING: '/learning-resources',
-  STATEMENT: '/statement-of-purpose',
+  SOUNDSCAPE: '/soundscape',
   SUPPORT: '/support',
-  WORK: '/work-in-progress',
 };
 
 export const NavBarRoutes = [
   {
-    title: 'Statement of Purpose',
-    path: RouteList.STATEMENT,
-  },
-  {
     title: 'Artifacts',
     path: RouteList.ARTIFACTS,
   },
   {
-    title: 'Work in Progress',
-    path: RouteList.WORK,
-  },
-  {
-    title: 'More',
-    listRoutes: [
-      {
-        title: 'Contributors',
-        path: RouteList.CONTRIBUTORS,
-      },
-      {
-        title: 'Ways to Support',
-        path: RouteList.SUPPORT,
-      },
-      {
-        title: 'Learning Resources',
-        path: RouteList.LEARNING,
-      },
-    ],
-  },
-];
-
-export const MobileMenuRoutes = [
-  {
-    title: 'Statement of Purpose',
-    path: RouteList.STATEMENT,
-  },
-  {
-    title: 'Artifacts',
-    path: RouteList.ARTIFACTS,
-  },
-  {
-    title: 'Work in Progress',
-    path: RouteList.WORK,
+    title: 'Soundscape',
+    path: RouteList.SOUNDSCAPE,
   },
   {
     title: 'Contributors',
@@ -61,8 +23,23 @@ export const MobileMenuRoutes = [
     title: 'Ways to Support',
     path: RouteList.SUPPORT,
   },
+];
+
+export const MobileMenuRoutes = [
   {
-    title: 'Learning Resources',
-    path: RouteList.LEARNING,
+    title: 'Artifacts',
+    path: RouteList.ARTIFACTS,
+  },
+  {
+    title: 'Soundscape',
+    path: RouteList.SOUNDSCAPE,
+  },
+  {
+    title: 'Contributors',
+    path: RouteList.CONTRIBUTORS,
+  },
+  {
+    title: 'Ways to Support',
+    path: RouteList.SUPPORT,
   },
 ];

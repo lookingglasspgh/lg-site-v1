@@ -1,66 +1,58 @@
 import React from 'react';
-import {
-  Flex,
-  Link,
-} from '@chakra-ui/react';
-import Image from 'next/image';
+import { Flex, Link } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
-import LinkMenu from './components/LinkMenu';
+import MobileMenu from './components/MobileMenu';
 
-import {
-  // MobileMenuRoutes,
-  NavBarRoutes,
-  RouteList,
-} from '@/constants/RouteList';
-
-// const NavDisplays = {
-//   base: 'none',
-//   lg: 'flex',
-// };
+import { NavBarRoutes, RouteList } from '@/constants/RouteList';
+import SiteImage from '@/components/SiteImage';
 
 const NavBar = () => (
   <Flex
+    id="navbar-container"
     width="100%"
-    padding="1.5rem"
+    padding={{ base: '1rem', md: '1.5rem' }}
     alignItems="center"
-    justifyContent="space-between"
+    justifyContent={{ base: 'center', lg: 'space-between' }}
     borderBottom="0.5px solid"
     borderBottomColor="black.300"
     backgroundColor="ivory.500"
   >
-    <Link as={NextLink} href={RouteList.HOME}>
-      <Image
+    <Link
+      id="home-link"
+      as={NextLink}
+      href={RouteList.HOME}
+      width={{ base: '200px', md: '250px' }}
+      height={{ base: '80px', md: '100px' }}
+      position="relative"
+      ml={{ base: 'auto', lg: '0' }}
+    >
+      <SiteImage
         src="/resources/logo-lg-black.svg"
-        width={250}
-        height={100}
+        fill
         alt="Looking Glass logo and link to home page"
       />
     </Link>
-    <Flex>
+    <Flex
+      id="nav-list"
+      display={{ base: 'none', lg: 'flex' }}
+    >
       { NavBarRoutes.map((route) => (
-        route.path ? (
-          <Link
-            as={NextLink}
-            key={route.title}
-            color="black.500"
-            href={route.path}
-            fontSize="lg"
-            mr="1.5rem"
-            transition="all 0.2s"
-            _hover={{ color: 'pink.500' }}
-          >
-            {route.title}
-          </Link>
-        ) : (
-          <LinkMenu
-            key={route.title}
-            title={route.title}
-            listRoutes={route.listRoutes}
-          />
-        )
+        <Link
+          as={NextLink}
+          key={route.title}
+          color="black.500"
+          href={route.path}
+          fontSize="lg"
+          mr="1.5rem"
+          transition="all 0.2s"
+          _hover={{ color: 'pink.500' }}
+        >
+          {route.title}
+        </Link>
       ))}
     </Flex>
+    <MobileMenu />
   </Flex>
 );
 

@@ -1,0 +1,79 @@
+import React from 'react';
+import {
+  Box,
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerHeader,
+  DrawerOverlay,
+  Link,
+  useDisclosure,
+} from '@chakra-ui/react';
+import { Menu } from 'react-feather';
+import NextLink from 'next/link';
+
+import { MobileMenuRoutes } from '@/constants/RouteList';
+
+const MobileMenu = () => {
+  const {
+    isOpen: isDrawerOpen,
+    onClose: onDrawerClose,
+    onOpen: onDrawerOpen,
+  } = useDisclosure({ id: 'mobileMenu' });
+
+  return (
+    <>
+      <Box
+        display={{ base: 'block', lg: 'none' }}
+        width={{ base: '24px', md: '32px' }}
+        ml="auto"
+        color="black.500"
+        cursor="pointer"
+        onClick={onDrawerOpen}
+      >
+        <Menu size="100%" />
+      </Box>
+      <Drawer
+        isOpen={isDrawerOpen}
+        placement="right"
+        onClose={onDrawerClose}
+      >
+        <DrawerOverlay />
+        <DrawerContent
+          bg="rgba(27,28,44, .9)"
+          color="ivory.500"
+          padding="1rem"
+          backdropFilter="blur(6px)"
+        >
+          <DrawerHeader>
+            <DrawerCloseButton
+              size="lg"
+              _focus={{ boxShadow: 'none' }}
+              top="1.5rem"
+            />
+          </DrawerHeader>
+          <DrawerBody display="flex" flexDirection="column" mt="3rem">
+            {MobileMenuRoutes.map((route) => (
+              <Link
+                as={NextLink}
+                key={route.title}
+                href={route.path}
+                fontSize="lg"
+                mr="1.5rem"
+                mb="1rem"
+                transition="all 0.2s"
+                _last={{ mb: '0' }}
+                _hover={{ color: 'pink.500' }}
+              >
+                {route.title}
+              </Link>
+            ))}
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
+    </>
+  );
+};
+
+export default MobileMenu;
