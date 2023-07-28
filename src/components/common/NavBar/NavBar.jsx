@@ -5,7 +5,7 @@ import NextLink from 'next/link';
 import MobileMenu from './components/MobileMenu';
 
 import { NavBarRoutes, RouteList } from '@/constants/RouteList';
-import SiteImage from '@/components/SiteImage';
+import SiteImage from '@/components/common/SiteImage';
 
 const NavBar = () => (
   <Flex

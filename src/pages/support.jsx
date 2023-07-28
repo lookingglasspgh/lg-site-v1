@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@chakra-ui/react';
 
-import Layout from '@/components/Layout';
+import Layout from '@/components/common/Layout';
 import RouteMetadata from '@/constants/RouteMetadata';
 
 const { support: SupportMetadata } = RouteMetadata;
