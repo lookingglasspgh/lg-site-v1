@@ -6,6 +6,7 @@ export const Button = {
     },
     ghost: {
       _hover: { background: 'none' },
+      _active: { background: 'none' },
     },
     outline: {
       borderColor: 'black.500',

@@ -1,0 +1,60 @@
+import React from 'react';
+import {
+  Link,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+  ModalOverlay,
+  Text,
+} from '@chakra-ui/react';
+import PropTypes from 'prop-types';
+
+const ymcaTeenieLink = 'https://collection.carnegieart.org/objects/9898efaf-f3ee-40c0-ad78-b4d61093ab2f';
+
+const description = {
+  firstSection:
+  <span>
+    The collage
+    {' '}
+    <b>40.461142, -79.926171</b>
+    {' '}
+    is named after the coordinates where the
+    photographer&nbsp;
+    <Link href={ymcaTeenieLink} textDecoration="underline" isExternal>Teenie Harris captured John Grier and Mrs. John E. Brown in October 1957</Link>
+    {'. '}
+    I (Adrian Jones) took a photo at the same location emulating his perspective in September 2021.
+  </span>,
+  secondSection: 'Part of my work has included finding and traveling to the locations where Teenie Harris captured his photos. I\'ve sought to blend Teenie’s work with my own to demonstrate one way of creating windows into the past.',
+};
+
+const attribution = 'Note: The Carnegie Museum of Art, Charles “Teenie” Harris Archive owns the copyright to the sourced image.';
+
+const TeenieModal = ({ isOpen, onClose }) => (
+  <Modal
+    isOpen={isOpen}
+    onClose={onClose}
+    isCentered
+    size="lg"
+  >
+    <ModalOverlay />
+    <ModalContent>
+      <ModalHeader>
+        <ModalCloseButton />
+      </ModalHeader>
+      <ModalBody pt="2rem" pb="3rem">
+        <Text>{description.firstSection}</Text>
+        <Text mt="1rem">{description.secondSection}</Text>
+        <Text mt="2rem" fontSize="sm" fontStyle="italic">{attribution}</Text>
+      </ModalBody>
+    </ModalContent>
+  </Modal>
+);
+
+TeenieModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
+export default TeenieModal;

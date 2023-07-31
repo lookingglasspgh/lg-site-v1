@@ -4,11 +4,12 @@ import {
   Button,
   Flex,
   Heading,
-  Link,
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import { Mail, PlayCircle } from 'react-feather';
+import { Info, Mail, PlayCircle } from 'react-feather';
+
+import TeenieModal from '../TeenieModal/TeenieModal';
 
 import common from '@/content/common';
 import commonStyles from '@/styles/commonStyles';
@@ -19,14 +20,18 @@ import PreviewVideoModal from '@/components/common/PreviewVideoModal';
 
 const { commonWidths } = commonStyles;
 
-const ymcaTeenieLink = 'https://collection.carnegieart.org/objects/9898efaf-f3ee-40c0-ad78-b4d61093ab2f';
-
 const HeroSection = () => {
   const {
     isOpen: isPreviewModalOpen,
     onOpen: onPreviewModalOpen,
     onClose: onPreviewModalClose,
   } = useDisclosure({ id: 'previewModal' });
+
+  const {
+    isOpen: isTeenieModalOpen,
+    onOpen: onTeenieModalOpen,
+    onClose: onTeenieModalClose,
+  } = useDisclosure({ id: 'teenieModal' });
 
   const openSubscriptionPage = () => window.open('https://lookingglasspgh.substack.com/', '_blank');
 
@@ -51,7 +56,7 @@ const HeroSection = () => {
           </Heading>
           <Text
             maxWidth="470px"
-            fontSize="xl"
+            fontSize="2xl"
             mb="2.5rem"
           >
             {home.ABOUT_CAPTION}
@@ -80,16 +85,27 @@ const HeroSection = () => {
               style={{ borderRadius: '4px' }}
             />
           </Box>
-          <Text id="collage-caption" mt="1rem" textAlign="center">
-            <b>40.461142, -79.926171</b>
-            &nbsp;- Looking Glass x&nbsp;
-            <Link href={ymcaTeenieLink} textDecoration="underline" isExternal>Teenie Harris</Link>
-          </Text>
+          <Button
+            variant="ghost"
+            alignItems="center"
+            m="1rem auto 0 auto"
+            width="fit-content"
+            onClick={onTeenieModalOpen}
+          >
+            <Text id="collage-caption" textAlign="center" mr="0.5rem">
+              { home.COLLAGE_TITLE }
+            </Text>
+            <Info size={16} />
+          </Button>
         </Flex>
       </Flex>
       <PreviewVideoModal
         isOpen={isPreviewModalOpen}
         onClose={onPreviewModalClose}
+      />
+      <TeenieModal
+        isOpen={isTeenieModalOpen}
+        onClose={onTeenieModalClose}
       />
     </>
   );

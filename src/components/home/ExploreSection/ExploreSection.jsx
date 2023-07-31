@@ -13,11 +13,13 @@ const { commonWidths } = commonStyles;
 const ExploreSection = () => (
   <Flex
     id="explore-section"
-    padding="3rem 0"
+    padding="4rem 0"
     margin="0 auto"
+    alignItems="center"
+    justifyContent="space-between"
     maxWidth={commonWidths.maxSectionWidth}
   >
-    <Flex direction="column">
+    <Flex direction="column" mr="4rem">
       <Heading
         as="h2"
         mb="1.5rem"
@@ -27,9 +29,14 @@ const ExploreSection = () => (
       >
         { home.explore.HEADLINE }
       </Heading>
-      <Text fontSize="xl" maxWidth="470px">
+      <Text fontSize="2xl" maxWidth="470px">
         { home.explore.CAPTION }
       </Text>
+    </Flex>
+    <Flex maxWidth="22rem" boxShadow="2xl" borderRadius="40px">
+      <video autoPlay muted loop style={{ 'border-radius': '40px' }}>
+        <source src="work/prototype-demo-loop.mp4" type="video/mp4" />
+      </video>
     </Flex>
   </Flex>
 );
