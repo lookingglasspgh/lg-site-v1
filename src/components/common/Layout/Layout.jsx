@@ -15,8 +15,6 @@ const Layout = ({ children, pageDescription, title }) => (
       height="100vh"
       width="100%"
       flexDirection="column"
-      overflow="auto"
-      backgroundColor="ivory.500"
       backgroundRepeat="repeat"
     >
       <NavBar />

@@ -16,7 +16,7 @@ const ymcaTeenieLink = 'https://collection.carnegieart.org/objects/9898efaf-f3ee
 const description = {
   firstSection:
   <span>
-    The collage
+    This collage,
     {' '}
     <b>40.461142, -79.926171</b>
     {' '}
@@ -24,7 +24,7 @@ const description = {
     photographer&nbsp;
     <Link href={ymcaTeenieLink} textDecoration="underline" isExternal>Teenie Harris captured John Grier and Mrs. John E. Brown in October 1957</Link>
     {'. '}
-    I (Adrian Jones) took a photo at the same location emulating his perspective in September 2021.
+    In September 2021, I (Adrian Jones) took a photo at the same location emulating his perspective.
   </span>,
   secondSection: 'Part of my work has included finding and traveling to the locations where Teenie Harris captured his photos. I\'ve sought to blend Teenie’s work with my own to demonstrate one way of creating windows into the past.',
 };

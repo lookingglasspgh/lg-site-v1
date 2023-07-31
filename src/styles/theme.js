@@ -74,6 +74,14 @@ const fontWeights = {
   black: 900,
 };
 
+const styles = {
+  global: {
+    body: {
+      bg: 'ivory.500',
+    },
+  },
+};
+
 export const theme = extendTheme({
   breakpoints,
   colors,
@@ -86,4 +94,5 @@ export const theme = extendTheme({
     Heading,
     Text,
   },
+  styles,
 });
