@@ -7,7 +7,7 @@ const home = {
   explore: {
     HEADLINE: 'Travel the City & Explore the Archive',
     CAPTION: 'Looking Glass\'s primary feature is its explore view. Use the map to discover markers where people, events, and institutions are remembered.',
-    CAPTION_TWO: 'At these locations, you can examine artifacts like photos and videos and activate site-specific AR sculptures.',
+    CAPTION_TWO: 'At each location, you can examine artifacts like photos and videos and activate site-specific AR sculptures.',
   },
 };
 

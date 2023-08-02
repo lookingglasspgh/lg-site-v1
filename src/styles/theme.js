@@ -27,7 +27,9 @@ export const colors = {
     500: '#E4B416',
   },
   ivory: {
+    600: '#D7D4CB',
     500: '#EFECE2',
+    400: '#F1EEE5',
   },
   pink: {
     600: '#C80064',

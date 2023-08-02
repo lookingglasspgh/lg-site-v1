@@ -2,6 +2,7 @@ export const Button = {
   variants: {
     solid: {
       background: 'pink.500',
+      boxShadow: '2xl',
       _hover: { background: 'pink.600' },
     },
     ghost: {
@@ -11,6 +12,8 @@ export const Button = {
     outline: {
       borderColor: 'black.500',
       borderStyle: 'solid',
+      boxShadow: '2xl',
+      _hover: { background: 'ivory.600' },
     },
   },
 };

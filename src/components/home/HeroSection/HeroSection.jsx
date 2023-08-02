@@ -6,8 +6,9 @@ import {
   Heading,
   Text,
   useDisclosure,
+  useMediaQuery,
 } from '@chakra-ui/react';
-import { Info, Mail, PlayCircle } from 'react-feather';
+import { Mail, MapPin, PlayCircle } from 'react-feather';
 
 import TeenieModal from '../TeenieModal/TeenieModal';
 
@@ -35,33 +36,65 @@ const HeroSection = () => {
 
   const openSubscriptionPage = () => window.open('https://lookingglasspgh.substack.com/', '_blank');
 
+  const [isLargeLaptop] = useMediaQuery('(min-width: 1200px)');
+  const [isSmallLaptop] = useMediaQuery('(min-width: 992px)');
+  const [isTablet] = useMediaQuery('(min-width: 600px)');
+
+  const getCollageSize = () => {
+    if (isLargeLaptop) return '600';
+    if (isSmallLaptop) return '450';
+    if (!isLargeLaptop && !isSmallLaptop && isTablet) return '550';
+    return '325';
+  };
+
   return (
     <>
       <Flex
         id="hero-section"
+        direction={{ base: 'column', lg: 'row' }}
         alignItems="center"
         m="0 auto"
-        p="3rem 0"
+        p="3rem 1rem"
         maxWidth={commonWidths.maxSectionWidth}
       >
-        <Flex id="headline-container" direction="column" mr="4rem">
+        <Flex
+          id="headline-container"
+          direction="column"
+          mr={{ base: '0', lg: '4rem' }}
+          mb={{ base: '3rem', lg: '0' }}
+        >
           <Heading
-            maxWidth="430px"
+            maxWidth={
+              {
+                base: '350px', md: '430px', lg: '350px', xl: '430px !important',
+              }
+            }
             as="h1"
-            size="3xl"
+            size={{ base: '2xl', xl: '3xl' }}
             mb="1.5rem"
             sx={{ 'line-height': '1.2' }}
           >
             {home.HEADLINE}
           </Heading>
           <Text
-            maxWidth="470px"
-            fontSize="2xl"
+            maxWidth={
+              {
+                base: '350px', md: '470px', lg: '400px', xl: '470px',
+              }
+            }
+            fontSize={{ base: 'lg', md: '2xl' }}
             mb="2.5rem"
           >
             {home.ABOUT_CAPTION}
           </Text>
-          <Flex maxWidth="470px">
+          <Flex
+            maxWidth={
+              {
+                base: '430px', md: '470px', lg: '400px', xl: '470px',
+              }
+            }
+            direction={{ base: 'column', xl: 'row' }}
+          >
             <Button color="ivory.500" onClick={openSubscriptionPage}>
               <Mail size={20} />
               <Text ml="0.5rem" variant="secondary">
@@ -78,24 +111,25 @@ const HeroSection = () => {
           <Box id="collage-wrapper" boxShadow="2xl">
             <SiteImage
               src={eastLibertyYmca}
-              width="600"
-              height="600"
+              width={getCollageSize()}
+              height={getCollageSize()}
               priority
               alt="40.461142, -79.926171 - Looking Glass x Teenie Harris"
               style={{ borderRadius: '4px' }}
             />
           </Box>
           <Button
-            variant="ghost"
+            variant="outline"
             alignItems="center"
             m="1rem auto 0 auto"
+            size="sm"
             width="fit-content"
             onClick={onTeenieModalOpen}
           >
-            <Text id="collage-caption" textAlign="center" mr="0.5rem">
+            <MapPin size={18} />
+            <Text id="collage-caption" textAlign="center" ml="0.5rem">
               { home.COLLAGE_TITLE }
             </Text>
-            <Info size={16} />
           </Button>
         </Flex>
       </Flex>

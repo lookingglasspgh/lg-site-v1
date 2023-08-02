@@ -7,12 +7,14 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
+  Flex,
   Link,
   useDisclosure,
 } from '@chakra-ui/react';
 import { Menu } from 'react-feather';
 import NextLink from 'next/link';
 
+import ContactButton from '@/components/common/ContactButton';
 import { MobileMenuRoutes } from '@/constants/RouteList';
 
 const MobileMenu = () => {
@@ -53,22 +55,29 @@ const MobileMenu = () => {
               top="1.5rem"
             />
           </DrawerHeader>
-          <DrawerBody display="flex" flexDirection="column" mt="3rem">
-            {MobileMenuRoutes.map((route) => (
-              <Link
-                as={NextLink}
-                key={route.title}
-                href={route.path}
-                fontSize="lg"
-                mr="1.5rem"
-                mb="1rem"
-                transition="all 0.2s"
-                _last={{ mb: '0' }}
-                _hover={{ color: 'pink.500' }}
-              >
-                {route.title}
-              </Link>
-            ))}
+          <DrawerBody
+            display="flex"
+            flexDirection="column"
+            mt="3rem"
+          >
+            <Flex direction="column">
+              {MobileMenuRoutes.map((route) => (
+                <Link
+                  as={NextLink}
+                  key={route.title}
+                  href={route.path}
+                  fontSize="2xl"
+                  mr="1.5rem"
+                  mb="1rem"
+                  transition="all 0.2s"
+                  _last={{ mb: '0' }}
+                  _hover={{ color: 'pink.500' }}
+                >
+                  {route.title}
+                </Link>
+              ))}
+            </Flex>
+            <ContactButton mt="auto" width="100%" />
           </DrawerBody>
         </DrawerContent>
       </Drawer>

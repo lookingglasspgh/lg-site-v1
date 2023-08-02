@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
   Flex,
   Heading,
@@ -18,7 +18,7 @@ const ExploreSection = () => {
   const pauseVideo = () => videoRef?.current.pause();
   const playVideo = () => videoRef?.current.play();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (isVideoInView) playVideo();
     else pauseVideo();
   }, [isVideoInView]);
@@ -26,30 +26,45 @@ const ExploreSection = () => {
   return (
     <Flex
       id="explore-section"
+      direction={{ base: 'column', lg: 'row' }}
       padding="4rem 0"
       margin="0 auto"
       alignItems="center"
       justifyContent="space-between"
       maxWidth={commonWidths.maxSectionWidth}
     >
-      <Flex direction="column" mr="4rem">
+      <Flex
+        direction="column"
+        m={{ base: '0 0 4rem 0', lg: '0 4rem 0 0' }}
+      >
         <Heading
           as="h2"
           mb="1.5rem"
           display="flex"
           flexDirection="column"
-          maxWidth="375px"
+          maxWidth="325px"
         >
           { home.explore.HEADLINE }
         </Heading>
-        <Text fontSize="2xl" maxWidth="450px">
+        <Text
+          fontSize={{ base: 'lg', md: '2xl' }}
+          maxWidth={{ base: '350px', md: '450px' }}
+          mb="1rem"
+        >
           { home.explore.CAPTION }
         </Text>
-        <Text fontSize="2xl" maxWidth="450px" mt="1rem">
+        <Text
+          fontSize={{ base: 'lg', md: '2xl' }}
+          maxWidth={{ base: '350px', md: '450px' }}
+        >
           { home.explore.CAPTION_TWO }
         </Text>
       </Flex>
-      <Flex maxWidth="22rem" boxShadow="2xl" borderRadius="40px">
+      <Flex
+        maxWidth={{ base: '20rem', md: '22rem' }}
+        boxShadow="2xl"
+        borderRadius="40px"
+      >
         <video
           autoPlay
           muted
@@ -57,7 +72,7 @@ const ExploreSection = () => {
           style={{ 'border-radius': '40px', border: '8px solid #020314' }}
           ref={videoRef}
         >
-          <source src="work/prototype-demo-loop.mp4" type="video/mp4" />
+          <source src="work/demo-loop.mp4" type="video/mp4" />
         </video>
       </Flex>
     </Flex>

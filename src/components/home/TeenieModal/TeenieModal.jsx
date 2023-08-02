@@ -21,9 +21,9 @@ const description = {
     <b>40.461142, -79.926171</b>
     {' '}
     is named after the coordinates where the
-    photographer&nbsp;
-    <Link href={ymcaTeenieLink} textDecoration="underline" isExternal>Teenie Harris captured John Grier and Mrs. John E. Brown in October 1957</Link>
-    {'. '}
+    photographer Teenie Harris captured&nbsp;
+    <Link href={ymcaTeenieLink} textDecoration="underline" isExternal>John Grier and Mrs. John E. Brown</Link>
+    {' in October 1957. '}
     In September 2021, I (Adrian Jones) took a photo at the same location emulating his perspective.
   </span>,
   secondSection: 'Part of my work has included finding and traveling to the locations where Teenie Harris captured his photos. I\'ve sought to blend Teenie’s work with my own to demonstrate one way of creating windows into the past.',
