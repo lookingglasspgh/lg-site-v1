@@ -62,6 +62,7 @@ const OriginsSection = () => {
               style={{ borderRadius: '4px' }}
               width="100%"
               mb="0.5rem"
+              alt={origins.IMAGE_SOURCE}
             />
             <Link
               fontSize="sm"

@@ -2,8 +2,9 @@ import React from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-import PageHead from '../PageHead';
-import NavBar from '../NavBar';
+import Footer from '@/components/common/Footer';
+import NavBar from '@/components/common/NavBar';
+import PageHead from '@/components/common/PageHead';
 
 const Layout = ({ children, pageDescription, title }) => (
   <>
@@ -18,9 +19,10 @@ const Layout = ({ children, pageDescription, title }) => (
       backgroundRepeat="repeat"
     >
       <NavBar />
-      <Box backgroundImage="resources/concrete-wall.png" pb="5rem">
+      <Box backgroundImage="resources/concrete-wall.png">
         {children}
       </Box>
+      <Footer />
     </Flex>
   </>
 );

@@ -12,12 +12,20 @@ import common from '@/content/common';
 const email = 'adrian@looking-glass.space';
 const copiedEmailNotice = 'Copied Contact Email';
 
-const ContactButton = (styleProps) => {
+const ContactButton = ({ isFooterButton, ...restProps }) => {
   const [isTooltipOpen, setIsTooltipOpen] = useState(false);
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
   };
+
+  const getButtonStyles = () => (
+    {
+      borderColor: isFooterButton ? 'black.500' : 'ivory.500',
+      color: isFooterButton ? 'black.500' : 'ivory.500',
+      hoverBackground: isFooterButton ? 'ivory.600' : 'black.400',
+    }
+  );
 
   const onButtonClick = () => {
     if (isTooltipOpen) setIsTooltipOpen(false);
@@ -39,25 +47,30 @@ const ContactButton = (styleProps) => {
     >
       <Button
         variant="outline"
-        color="ivory.500"
-        borderColor="ivory.500"
+        color={getButtonStyles().color}
+        borderColor={getButtonStyles().borderColor}
         onClick={onButtonClick}
-        _hover={{ background: 'black.400' }}
-        {...styleProps}
+        _hover={{ background: getButtonStyles().hoverBackground }}
+        {...restProps}
       >
         <Mail size={20} />
-        <Text color="ivory.500" ml="0.5rem">{common.CONTACT}</Text>
+        <Text
+          color={getButtonStyles().color}
+          ml="0.5rem"
+        >
+          {common.CONTACT}
+        </Text>
       </Button>
     </Tooltip>
   );
 };
 
 ContactButton.propTypes = {
-  styleProps: PropTypes.shape(),
+  isFooterButton: PropTypes.bool,
 };
 
 ContactButton.defaultProps = {
-  styleProps: {},
+  isFooterButton: false,
 };
 
 export default ContactButton;
