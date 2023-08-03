@@ -1,7 +1,6 @@
 import React from 'react';
-import Iframe from 'react-iframe';
 import {
-  Box,
+  AspectRatio,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -9,6 +8,7 @@ import {
   ModalHeader,
   ModalOverlay,
 } from '@chakra-ui/react';
+import Iframe from 'react-iframe';
 import PropTypes from 'prop-types';
 
 const PreviewVideoModal = ({ isOpen, onClose }) => (
@@ -16,7 +16,7 @@ const PreviewVideoModal = ({ isOpen, onClose }) => (
     isOpen={isOpen}
     onClose={onClose}
     isCentered
-    size="4xl"
+    size={{ base: '2xl', lg: '4xl' }}
   >
     <ModalOverlay />
     <ModalContent>
@@ -24,7 +24,7 @@ const PreviewVideoModal = ({ isOpen, onClose }) => (
         <ModalCloseButton />
       </ModalHeader>
       <ModalBody pt="2rem" pb="3rem">
-        <Box width="800px" height="450px" m="0 auto">
+        <AspectRatio maxWidth="800px" ratio={16 / 9} m="0 auto">
           <Iframe
             title="YouTube video player"
             url="https://www.youtube-nocookie.com/embed/DAoGc6FXNLY"
@@ -40,7 +40,7 @@ const PreviewVideoModal = ({ isOpen, onClose }) => (
             web-share"
             allowfullscreen
           />
-        </Box>
+        </AspectRatio>
       </ModalBody>
     </ModalContent>
   </Modal>

@@ -38,9 +38,7 @@ const QuoteSection = () => {
     >
       <Flex
         id="concept-art-container"
-        direction="column"
-        mr="4rem"
-        m={{ base: '2rem 0 0 0', lg: '0 4rem 0 0' }}
+        m={{ base: '0', lg: '0 4rem 0 0' }}
       >
         <SiteImage
           width={getCollageSize().width}

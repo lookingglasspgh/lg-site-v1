@@ -9,6 +9,11 @@ const home = {
     CAPTION: 'Looking Glass\'s primary feature is its explore view. Use the map to discover markers where people, events, and institutions are remembered.',
     CAPTION_TWO: 'At each location, you can examine artifacts like photos and videos and activate site-specific AR sculptures.',
   },
+  origins: {
+    HEADLINE: 'The Origins of Looking Glass',
+    AUTHOR: 'By Adrian Jones',
+    IMAGE_SOURCE: 'Redlining Maps from the HOLC, 1937',
+  },
 };
 
 export default home;

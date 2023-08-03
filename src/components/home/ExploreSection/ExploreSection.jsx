@@ -40,8 +40,6 @@ const ExploreSection = () => {
         <Heading
           as="h2"
           mb="1.5rem"
-          display="flex"
-          flexDirection="column"
           maxWidth="325px"
         >
           { home.explore.HEADLINE }

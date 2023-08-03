@@ -21,6 +21,14 @@ import PreviewVideoModal from '@/components/common/PreviewVideoModal';
 
 const { commonWidths } = commonStyles;
 
+const headingMaxWidths = {
+  base: '350px', md: '430px', lg: '350px', xl: '430px !important',
+};
+
+const textAndButtonMaxWidths = {
+  base: '350px', md: '470px', lg: '400px', xl: '470px',
+};
+
 const HeroSection = () => {
   const {
     isOpen: isPreviewModalOpen,
@@ -34,8 +42,6 @@ const HeroSection = () => {
     onClose: onTeenieModalClose,
   } = useDisclosure({ id: 'teenieModal' });
 
-  const openSubscriptionPage = () => window.open('https://lookingglasspgh.substack.com/', '_blank');
-
   const [isLargeLaptop] = useMediaQuery('(min-width: 1200px)');
   const [isSmallLaptop] = useMediaQuery('(min-width: 992px)');
   const [isTablet] = useMediaQuery('(min-width: 600px)');
@@ -46,6 +52,8 @@ const HeroSection = () => {
     if (!isLargeLaptop && !isSmallLaptop && isTablet) return '550';
     return '325';
   };
+
+  const openSubscriptionPage = () => window.open('https://lookingglasspgh.substack.com/', '_blank');
 
   return (
     <>
@@ -60,15 +68,10 @@ const HeroSection = () => {
         <Flex
           id="headline-container"
           direction="column"
-          mr={{ base: '0', lg: '4rem' }}
-          mb={{ base: '3rem', lg: '0' }}
+          m={{ base: '0 0 3rem 0', lg: '0 4rem 0 0' }}
         >
           <Heading
-            maxWidth={
-              {
-                base: '350px', md: '430px', lg: '350px', xl: '430px !important',
-              }
-            }
+            maxWidth={headingMaxWidths}
             as="h1"
             size={{ base: '2xl', xl: '3xl' }}
             mb="1.5rem"
@@ -77,31 +80,32 @@ const HeroSection = () => {
             {home.HEADLINE}
           </Heading>
           <Text
-            maxWidth={
-              {
-                base: '350px', md: '470px', lg: '400px', xl: '470px',
-              }
-            }
+            maxWidth={textAndButtonMaxWidths}
             fontSize={{ base: 'lg', md: '2xl' }}
             mb="2.5rem"
           >
             {home.ABOUT_CAPTION}
           </Text>
           <Flex
-            maxWidth={
-              {
-                base: '430px', md: '470px', lg: '400px', xl: '470px',
-              }
-            }
-            direction={{ base: 'column', xl: 'row' }}
+            maxWidth={textAndButtonMaxWidths}
+            direction={{ base: 'column', lg: 'row' }}
           >
-            <Button color="ivory.500" onClick={openSubscriptionPage}>
+            <Button
+              color="ivory.500"
+              size={{ base: 'md', lg: 'sm', xl: 'md' }}
+              onClick={openSubscriptionPage}
+            >
               <Mail size={20} />
               <Text ml="0.5rem" variant="secondary">
                 {common.SUBSCRIBE}
               </Text>
             </Button>
-            <Button variant="ghost" ml="0.5rem" onClick={onPreviewModalOpen}>
+            <Button
+              variant="ghost"
+              size={{ base: 'md', lg: 'sm', xl: 'md' }}
+              ml={{ base: '0', lg: '0.5rem' }}
+              onClick={onPreviewModalOpen}
+            >
               <PlayCircle size={20} />
               <Text ml="0.5rem">{common.PLAY_PREVIEW}</Text>
             </Button>
