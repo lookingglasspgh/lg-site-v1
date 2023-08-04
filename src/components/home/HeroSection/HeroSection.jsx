@@ -117,7 +117,7 @@ const HeroSection = () => {
               src={eastLibertyYmca}
               width={getCollageSize()}
               height={getCollageSize()}
-              priority
+              loading="eager"
               alt="40.461142, -79.926171 - Looking Glass x Teenie Harris"
               style={{ borderRadius: '4px' }}
             />
