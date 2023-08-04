@@ -7,14 +7,14 @@ export const RouteList = {
 };
 
 export const NavBarRoutes = [
-  {
-    title: 'Artifacts',
-    path: RouteList.ARTIFACTS,
-  },
-  {
-    title: 'Soundscape',
-    path: RouteList.SOUNDSCAPE,
-  },
+  // {
+  //   title: 'Artifacts',
+  //   path: RouteList.ARTIFACTS,
+  // },
+  // {
+  //   title: 'Soundscape',
+  //   path: RouteList.SOUNDSCAPE,
+  // },
   {
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,
@@ -26,14 +26,14 @@ export const NavBarRoutes = [
 ];
 
 export const MobileMenuRoutes = [
-  {
-    title: 'Artifacts',
-    path: RouteList.ARTIFACTS,
-  },
-  {
-    title: 'Soundscape',
-    path: RouteList.SOUNDSCAPE,
-  },
+  // {
+  //   title: 'Artifacts',
+  //   path: RouteList.ARTIFACTS,
+  // },
+  // {
+  //   title: 'Soundscape',
+  //   path: RouteList.SOUNDSCAPE,
+  // },
   {
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,

@@ -1,10 +1,17 @@
 import React from 'react';
-import { Box } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
+
+import Layout from '@/components/common/Layout';
 
 const ContributorsPage = () => (
-  <Box>
-    Contributors
-  </Box>
+  <Layout>
+    <Flex
+      id="page-container"
+      direction="column"
+    >
+      Contributors
+    </Flex>
+  </Layout>
 );
 
 export default ContributorsPage;

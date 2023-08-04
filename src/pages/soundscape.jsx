@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 import { RouteList } from '@/constants/RouteList';
 
-const ArtifactsPage = () => {
+const SoundscapePage = () => {
   const router = useRouter();
   useEffect(() => {
     router.push(RouteList.HOME);
@@ -12,9 +12,9 @@ const ArtifactsPage = () => {
 
   return (
     <Box>
-      Artifacts
+      Soundscape
     </Box>
   );
 };
 
-export default ArtifactsPage;
+export default SoundscapePage;

@@ -44,8 +44,8 @@ export const colors = {
 };
 
 const fonts = {
-  heading: '\'Outfit\', sans-serif',
-  body: '\'Splice Sans\', sans-serif',
+  heading: "'Outfit', sans-serif",
+  body: "'Splice Sans', sans-serif",
 };
 
 const fontSizes = {
