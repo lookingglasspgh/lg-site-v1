@@ -14,7 +14,7 @@ import TeenieModal from '../TeenieModal/TeenieModal';
 
 import common from '@/content/common';
 import commonStyles from '@/styles/commonStyles';
-import eastLibertyYmca from '@/public/work/east-liberty-ymca.png';
+import eastLibertyYmca from '@/public/work/east-liberty-ymca.webp';
 import home from '@/content/home';
 import SiteImage from '@/components/common/SiteImage';
 import PreviewVideoModal from '@/components/common/PreviewVideoModal';

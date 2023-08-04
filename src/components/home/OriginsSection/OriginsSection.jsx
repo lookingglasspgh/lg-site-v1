@@ -11,7 +11,7 @@ import {
 import commonStyles from '@/styles/commonStyles';
 import common from '@/content/common';
 import home from '@/content/home';
-import holcMap from '@/public/artifacts/holc.png';
+import holcMap from '@/public/artifacts/holc.webp';
 import SiteImage from '@/components/common/SiteImage';
 
 const { commonWidths, gradients } = commonStyles;

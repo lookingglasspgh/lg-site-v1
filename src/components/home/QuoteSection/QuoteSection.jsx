@@ -7,7 +7,7 @@ import {
   useMediaQuery,
 } from '@chakra-ui/react';
 
-import conceptArt from '@/public/work/concept-art.png';
+import conceptArt from '@/public/work/concept-art.webp';
 import commonStyles from '@/styles/commonStyles';
 import home from '@/content/home';
 import SiteImage from '@/components/common/SiteImage';
