@@ -44,7 +44,7 @@ const MobileMenu = () => {
         <DrawerOverlay />
         <DrawerContent
           bg="rgba(27,28,44, .9)"
-          color="ivory.500"
+          color="ivory.400"
           padding="1rem"
           backdropFilter="blur(6px)"
         >

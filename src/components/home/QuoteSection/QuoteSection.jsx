@@ -72,7 +72,7 @@ const QuoteSection = () => {
             position="relative"
             top={{ base: '24px', lg: '48px' }}
             fontSize={{ base: 'xs', lg: 'sm' }}
-            color="black.100"
+            color="ivory.600"
           >
             Concept Art by&nbsp;
             <Link href={victoriaLink} textDecoration="underline" isExternal>Victoria Elliott</Link>

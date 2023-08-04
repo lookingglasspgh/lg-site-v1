@@ -42,8 +42,8 @@ const ContactButton = ({ isFooterButton, ...restProps }) => {
       placement="top"
       isOpen={isTooltipOpen}
       hasArrow
-      bg="pink.500"
-      color="ivory.500"
+      bg="pink.600"
+      color="ivory.400"
     >
       <Button
         variant="outline"

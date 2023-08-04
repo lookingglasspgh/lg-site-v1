@@ -12,6 +12,7 @@ const SiteImage = chakra(Image, {
     'style',
     'fill',
     'sizes',
+    'onLoad',
   ].includes(prop),
 });
 

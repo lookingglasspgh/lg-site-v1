@@ -66,7 +66,7 @@ const OriginsSection = () => {
             />
             <Link
               fontSize="sm"
-              color="ivory.500"
+              color="ivory.400"
               isExternal
               href={holcLink}
               textAlign="center"
