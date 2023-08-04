@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Box,
   Button,
@@ -6,7 +6,6 @@ import {
   Heading,
   Text,
   useDisclosure,
-  useMediaQuery,
 } from '@chakra-ui/react';
 import { Mail, MapPin, PlayCircle } from 'react-feather';
 
@@ -41,23 +40,6 @@ const HeroSection = () => {
     onOpen: onTeenieModalOpen,
     onClose: onTeenieModalClose,
   } = useDisclosure({ id: 'teenieModal' });
-
-  const [showHeroPlaceholder, setShowHeroPlaceholder] = useState(true);
-  const hidePlaceholder = () => {
-    console.log('complete');
-    setShowHeroPlaceholder(false);
-  };
-
-  const [isLargeLaptop] = useMediaQuery('(min-width: 1200px)');
-  const [isSmallLaptop] = useMediaQuery('(min-width: 992px)');
-  const [isTablet] = useMediaQuery('(min-width: 600px)');
-
-  const getCollageSize = () => {
-    if (isLargeLaptop) return { width: '600', height: '588' };
-    if (isSmallLaptop) return { width: '450', height: '441' };
-    if (!isLargeLaptop && !isSmallLaptop && isTablet) return { width: '550', height: '539' };
-    return { width: '325', height: '319' };
-  };
 
   const openSubscriptionPage = () => window.open('https://lookingglasspgh.substack.com/', '_blank');
 
@@ -117,21 +99,24 @@ const HeroSection = () => {
           </Flex>
         </Flex>
         <Flex id="collage-container-1" direction="column">
-          <Box id="collage-wrapper">
-            { showHeroPlaceholder && (
-              <Box width={getCollageSize().width} height={getCollageSize().height} />
-            )}
-            { !showHeroPlaceholder && (
-              <SiteImage
-                src={eastLibertyYmca}
-                width={getCollageSize().width}
-                height={getCollageSize().height}
-                onLoad={() => hidePlaceholder()}
-                loading="eager"
-                alt="40.461142, -79.926171 - Looking Glass x Teenie Harris"
-                style={{ borderRadius: '4px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}
-              />
-            )}
+          <Box
+            id="collage-wrapper"
+            width={{
+              base: '325px', md: '550px', lg: '450px', xl: '600px',
+            }}
+            height={{
+              base: '319px', md: '539px', lg: '441px', xl: '588px',
+            }}
+          >
+            <SiteImage
+              src={eastLibertyYmca}
+              loading="eager"
+              alt="40.461142, -79.926171 - Looking Glass x Teenie Harris"
+              style={{
+                borderRadius: '4px',
+                boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+              }}
+            />
           </Box>
           <Button
             variant="outline"
