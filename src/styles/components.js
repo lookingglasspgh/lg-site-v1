@@ -1,8 +1,9 @@
 export const Button = {
   variants: {
     solid: {
-      background: 'pink.500',
+      background: 'pink.600',
       boxShadow: '2xl',
+      color: 'ivory.400',
       _hover: { background: 'pink.600' },
     },
     ghost: {
@@ -39,7 +40,7 @@ export const Heading = {
   },
   variants: {
     secondary: {
-      color: 'ivory.500',
+      color: 'ivory.400',
     },
   },
 };
@@ -50,7 +51,7 @@ export const Text = {
   },
   variants: {
     secondary: {
-      color: 'ivory.500',
+      color: 'ivory.400',
     },
   },
 };

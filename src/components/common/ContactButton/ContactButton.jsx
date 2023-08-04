@@ -21,8 +21,8 @@ const ContactButton = ({ isFooterButton, ...restProps }) => {
 
   const getButtonStyles = () => (
     {
-      borderColor: isFooterButton ? 'black.500' : 'ivory.500',
-      color: isFooterButton ? 'black.500' : 'ivory.500',
+      borderColor: isFooterButton ? 'black.500' : 'ivory.400',
+      color: isFooterButton ? 'black.500' : 'ivory.400',
       hoverBackground: isFooterButton ? 'ivory.600' : 'black.400',
     }
   );

@@ -91,7 +91,6 @@ const HeroSection = () => {
             direction={{ base: 'column', lg: 'row' }}
           >
             <Button
-              color="ivory.500"
               size={{ base: 'md', lg: 'sm', xl: 'md' }}
               onClick={openSubscriptionPage}
             >

@@ -96,7 +96,7 @@ const OriginsSection = () => {
             <br />
           </Text>
           { showReadMore && (
-            <Button onClick={toggleReadMore} color="ivory.500" width="100%">
+            <Button onClick={toggleReadMore} width="100%">
               {common.READ_MORE}
             </Button>
           )}
