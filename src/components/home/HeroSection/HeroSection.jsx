@@ -20,12 +20,8 @@ import PreviewVideoModal from '@/components/common/PreviewVideoModal';
 
 const { commonWidths } = commonStyles;
 
-const headingMaxWidths = {
-  base: '350px', md: '430px', lg: '350px', xl: '430px !important',
-};
-
 const textAndButtonMaxWidths = {
-  base: '350px', md: '470px', lg: '400px', xl: '470px',
+  base: '350px', md: '470px', lg: '450px', xl: '470px',
 };
 
 const HeroSection = () => {
@@ -56,12 +52,12 @@ const HeroSection = () => {
         <Flex
           id="headline-container"
           direction="column"
-          m={{ base: '0 0 3rem 0', lg: '0 4rem 0 0' }}
+          m={{ base: '0 0 3rem 0', lg: '0 3rem 0 0', xl: '0 4rem 0 0' }}
         >
           <Heading
-            maxWidth={headingMaxWidths}
             as="h1"
             size={{ base: '2xl', xl: '3xl' }}
+            textAlign={{ base: 'center', lg: 'left' }}
             mb="1.5rem"
             sx={{ 'line-height': '1.2' }}
           >
@@ -79,7 +75,7 @@ const HeroSection = () => {
             direction={{ base: 'column', lg: 'row' }}
           >
             <Button
-              size={{ base: 'md', lg: 'sm', xl: 'md' }}
+              size={{ base: 'md', lg: 'md' }}
               onClick={openSubscriptionPage}
             >
               <Mail size={20} />
@@ -89,7 +85,7 @@ const HeroSection = () => {
             </Button>
             <Button
               variant="ghost"
-              size={{ base: 'md', lg: 'sm', xl: 'md' }}
+              size={{ base: 'md', lg: 'md' }}
               ml={{ base: '0', lg: '0.5rem' }}
               onClick={onPreviewModalOpen}
             >

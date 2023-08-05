@@ -57,7 +57,7 @@ const ExploreSection = () => {
       <Flex
         id="explore-text-area"
         direction="column"
-        m={{ base: '0 0 4rem 0', lg: '0' }}
+        m={{ base: '0 0 2rem 0', lg: '0' }}
         p={{ base: '0 1rem', lg: '0' }}
       >
         <Container>
@@ -82,7 +82,7 @@ const ExploreSection = () => {
         </Container>
       </Flex>
       <Flex
-        maxWidth={{ base: '20rem', md: '22rem' }}
+        maxWidth={{ base: '19.5rem', md: '22rem' }}
         ml={{ base: '0', lg: '2rem', xl: '4rem' }}
         boxShadow="2xl"
         borderRadius="40px"

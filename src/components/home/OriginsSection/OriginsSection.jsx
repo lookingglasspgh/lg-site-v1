@@ -83,8 +83,11 @@ const OriginsSection = () => {
           >
             When I moved to Pittsburgh from Harrisburg, PA in 2017, my new neighbors made
             it a point to inform me of the shifting landscape between the city’s three rivers.
-            Time and again, revitalization projects and sites of “innovation” had consistently
-            treated Black residents with little regard. Neighborhoods that residents had known
+            Time and again, revitalization projects and sites of “innovation” had
+            treated Black residents with little regard.
+            <br />
+            <br />
+            Neighborhoods that residents had known
             for decades were being forcefully transformed in the interest of maximizing profits
             for land owners. As I spoke with more people, read more accounts and walked through
             more spaces, I learned that the marks of gentrification are especially vicious and
@@ -115,10 +118,10 @@ const OriginsSection = () => {
               <br />
               My awareness of this multilayered struggle inspired a vision, I imagined a camera
               that was able to reveal the history buried within a gentrified neighborhood. From
-              that image grew plans for an app-based archive of Black life in Pittsburgh with an
-              augmented reality lens. It was important to me that Looking Glass begin with a focus
-              on East Liberty, because the intense efforts to displace and disrupt long-time
-              residents have yet to cease.
+              that image grew plans for an app-based archive of Black life in Pittsburgh equipped
+              with an augmented reality lens. It was important to me that Looking Glass begin
+              with a focus on East Liberty, because the intense efforts to displace and disrupt
+              long-time residents have yet to cease.
               <br />
               <br />
               The enduring risk to homes and sites of memory calls for engaging in the work of
