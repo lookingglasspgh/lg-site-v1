@@ -44,9 +44,19 @@ const TeenieModal = ({ isOpen, onClose }) => (
         <ModalCloseButton />
       </ModalHeader>
       <ModalBody pt="2rem" pb="3rem">
-        <Text>{description.firstSection}</Text>
-        <Text mt="1rem">{description.secondSection}</Text>
-        <Text mt="2rem" fontSize="sm" fontStyle="italic">{attribution}</Text>
+        <Text fontSize={{ base: 'md', md: 'lg' }}>
+          {description.firstSection}
+        </Text>
+        <Text mt="1rem" fontSize={{ base: 'md', md: 'lg' }}>
+          {description.secondSection}
+        </Text>
+        <Text
+          mt="2rem"
+          fontSize={{ base: 'sm', md: 'md' }}
+          fontStyle="italic"
+        >
+          {attribution}
+        </Text>
       </ModalBody>
     </ModalContent>
   </Modal>

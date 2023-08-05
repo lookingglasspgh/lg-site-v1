@@ -1,8 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { ChakraProvider } from '@chakra-ui/react';
-import '@fontsource-variable/outfit/wght.css';
-import '@fontsource-variable/spline-sans/wght.css';
 
 import { theme } from '@/styles/theme';
 

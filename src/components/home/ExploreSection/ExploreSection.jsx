@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import {
+  Container,
   Flex,
   Heading,
   Text,
 } from '@chakra-ui/react';
+import { isSafari } from 'react-device-detect';
 import { useInView } from 'framer-motion';
 
 import commonStyles from '@/styles/commonStyles';
@@ -18,7 +20,13 @@ const ExploreSection = () => {
   const isVideoInView = useInView(videoRef, { amount: 0.5 });
 
   const pauseVideo = () => videoRef?.current.pause();
-  const playVideo = () => videoRef?.current.play();
+  // Safari doesn't allow programmatic video play
+  const playVideo = () => (isSafari ? null : videoRef?.current.play());
+
+  // Since Safari can't autoplay our way, we need to add video controls
+  useEffect(() => {
+    if (isSafari) videoRef.current.controls = true;
+  }, []);
 
   // Effect allows video to be lazy-loaded, while preserving play specifications
   useEffect(() => {
@@ -47,32 +55,35 @@ const ExploreSection = () => {
       ref={sectionRef}
     >
       <Flex
+        id="explore-text-area"
         direction="column"
-        m={{ base: '0 0 4rem 0', lg: '0 4rem 0 0' }}
+        m={{ base: '0 0 4rem 0', lg: '0' }}
+        p={{ base: '0 1rem', lg: '0' }}
       >
-        <Heading
-          as="h2"
-          mb="1.5rem"
-          maxWidth="325px"
-        >
-          { home.explore.HEADLINE }
-        </Heading>
-        <Text
-          fontSize={{ base: 'lg', md: '2xl' }}
-          maxWidth={{ base: '350px', md: '450px' }}
-          mb="1rem"
-        >
-          { home.explore.CAPTION }
-        </Text>
-        <Text
-          fontSize={{ base: 'lg', md: '2xl' }}
-          maxWidth={{ base: '350px', md: '450px' }}
-        >
-          { home.explore.CAPTION_TWO }
-        </Text>
+        <Container>
+          <Heading
+            as="h2"
+            mb="1.5rem"
+            maxWidth="325px"
+          >
+            { home.explore.HEADLINE }
+          </Heading>
+          <Text
+            fontSize={{ base: 'lg', md: '2xl' }}
+            mb="1rem"
+          >
+            { home.explore.CAPTION }
+          </Text>
+          <Text
+            fontSize={{ base: 'lg', md: '2xl' }}
+          >
+            { home.explore.CAPTION_TWO }
+          </Text>
+        </Container>
       </Flex>
       <Flex
         maxWidth={{ base: '20rem', md: '22rem' }}
+        ml={{ base: '0', lg: '2rem', xl: '4rem' }}
         boxShadow="2xl"
         borderRadius="40px"
       >
@@ -80,7 +91,6 @@ const ExploreSection = () => {
           autoPlay
           muted
           loop
-          // eslint-disable-next-line react/no-unknown-property
           playsInline
           poster="work/demo-placeholder.webp"
           style={{ 'border-radius': '40px', border: '8px solid #020314' }}

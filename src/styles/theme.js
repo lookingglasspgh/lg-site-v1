@@ -1,4 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
+// eslint-disable-next-line camelcase
+import { Outfit, Spline_Sans } from 'next/font/google';
 
 import {
   Button,
@@ -6,6 +8,16 @@ import {
   Heading,
   Text,
 } from './components';
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+const splineSans = Spline_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 const breakpoints = {
   sm: '30em', // 480px
@@ -44,8 +56,8 @@ export const colors = {
 };
 
 const fonts = {
-  heading: "'Outfit', sans-serif",
-  body: "'Splice Sans', sans-serif",
+  heading: outfit.style.fontFamily,
+  body: splineSans.style.fontFamily,
 };
 
 const fontSizes = {
