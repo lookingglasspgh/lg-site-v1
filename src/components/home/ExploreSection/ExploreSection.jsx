@@ -81,7 +81,7 @@ const ExploreSection = () => {
           muted
           loop
           // eslint-disable-next-line react/no-unknown-property
-          playsinline
+          playsInline
           poster="work/demo-placeholder.webp"
           style={{ 'border-radius': '40px', border: '8px solid #020314' }}
           ref={videoRef}
