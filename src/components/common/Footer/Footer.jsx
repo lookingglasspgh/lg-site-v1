@@ -21,7 +21,7 @@ const Footer = () => (
       height={{ base: '80px', md: '100px' }}
       position="relative"
       direction="column"
-      mb={{ base: '1rem', md: '0' }}
+      mb={{ base: '2rem', md: '0' }}
     >
       <SiteImage
         src="/resources/logo-lg-black.svg"

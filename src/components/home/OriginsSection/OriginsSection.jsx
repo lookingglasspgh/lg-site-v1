@@ -119,14 +119,20 @@ const OriginsSection = () => {
               My awareness of this multilayered struggle inspired a vision, I imagined a camera
               that was able to reveal the history buried within a gentrified neighborhood. From
               that image grew plans for an app-based archive of Black life in Pittsburgh equipped
-              with an augmented reality lens. It was important to me that Looking Glass begin
+              with an augmented reality lens.
+              <br />
+              <br />
+              It was important to me that Looking Glass begin
               with a focus on East Liberty, because the intense efforts to displace and disrupt
               long-time residents have yet to cease.
               <br />
               <br />
               The enduring risk to homes and sites of memory calls for engaging in the work of
               recording and gathering stories. I believe there is power, healing and guidance to
-              be found when we connect to the past. I hope Looking Glass as an archive that also
+              be found when we connect to the past.
+              <br />
+              <br />
+              I hope Looking Glass as an archive that also
               maps stories to their points of origin will be a resource that facilitates this
               connection and reaffirms that the story of Black Pittsburgh cannot be rewritten.
             </Text>
