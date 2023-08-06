@@ -62,6 +62,7 @@ const QuoteSection = () => (
         </Text>
         <Text
           id="concept-art-caption"
+          display={{ base: 'none', lg: 'block' }}
           position="relative"
           top={{ base: '24px', xl: '48px' }}
           fontSize="sm"
