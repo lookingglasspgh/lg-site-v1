@@ -29,7 +29,7 @@ const OriginsSection = () => {
       background={gradients.black}
       width="100%"
       boxShadow="2xl"
-      padding={{ base: '4rem 1rem', md: '4rem 1rem' }}
+      padding="4rem 1rem"
     >
       <Flex
         id="content-container"

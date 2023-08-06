@@ -27,7 +27,9 @@ const QuoteSection = () => (
   >
     <Flex
       id="concept-art-container"
-      mr={{ base: '0', lg: '2rem', xl: '4rem' }}
+      m={{
+        base: '-1rem 0 0 0', md: '-3rem 0 0 0', lg: '0 2rem 0 0', xl: '0 4rem 0 0',
+      }}
       width={{
         base: '300px', md: '400px', lg: '425px', xl: '500px',
       }}
@@ -44,17 +46,17 @@ const QuoteSection = () => (
       id="quote-container"
       direction="column"
       alignItems="center"
-      p={{ base: '3rem 1rem 0 1rem', lg: '0 0 2rem 0', xl: '0 0 3rem 0' }}
+      p={{ base: '3rem 1rem 0 1rem', lg: '0' }}
     >
       <Container>
         <Text
-          fontSize={{ base: 'md', md: 'xl' }}
+          fontSize={{ base: 'lg', md: 'xl' }}
           variant="secondary"
         >
           {home.HOOKS_QUOTE}
         </Text>
         <Text
-          fontSize={{ base: 'md', md: 'xl' }}
+          fontSize={{ base: 'lg', md: 'xl' }}
           variant="secondary"
           mt="0.5rem"
         >
@@ -66,7 +68,7 @@ const QuoteSection = () => (
           position="relative"
           top={{ base: '24px', xl: '48px' }}
           fontSize="sm"
-          color="ivory.600"
+          color="black.100"
         >
           Concept Art by&nbsp;
           <Link href={victoriaLink} textDecoration="underline" isExternal>Victoria Elliott</Link>

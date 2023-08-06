@@ -1,7 +1,9 @@
 import React from 'react';
 import { Flex } from '@chakra-ui/react';
 
+import CollaboratorsSection from '@/components/contributors/CollaboratorsSection';
 import Layout from '@/components/common/Layout';
+import SupportersSection from '@/components/contributors/SupportersSection';
 
 const ContributorsPage = () => (
   <Layout>
@@ -9,7 +11,8 @@ const ContributorsPage = () => (
       id="page-container"
       direction="column"
     >
-      Contributors
+      <CollaboratorsSection />
+      <SupportersSection />
     </Flex>
   </Layout>
 );

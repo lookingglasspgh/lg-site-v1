@@ -1,0 +1,253 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/jsx-filename-extension */
+import adrian from '@/public/collaborators/adrian.webp';
+import drsantos from '@/public/collaborators/drsantos.webp';
+import xiaowei from '@/public/collaborators/xiaowei.webp';
+import drummond from '@/public/collaborators/drummond.webp';
+import ebj from '@/public/collaborators/ebj.webp';
+import inez from '@/public/collaborators/inez.webp';
+import jason from '@/public/collaborators/jason.webp';
+import jeremiah from '@/public/collaborators/jeremiah.webp';
+import matt from '@/public/collaborators/matt.webp';
+import pvkvsv from '@/public/collaborators/pvkvsv.webp';
+import waverly from '@/public/collaborators/waverly.webp';
+import whiteLeaf from '@/public/collaborators/white-leaf.webp';
+
+const contributors = {
+  CONTRIBUTORS: 'Contributors',
+  SUPPORTERS: 'Supporters',
+  collabDirectory: [
+    {
+      name: 'Adrian Jones',
+      role: 'Founder',
+      headshotPath: adrian,
+      headshotAlt: 'Image of Adrian Jones, Looking Glass Founder',
+      website: null,
+      bio: (
+        <span>
+          Adrian Jones is a Pittsburgh-based artist, historian and creative
+          technologist whose practice is shaped by a commitment to those living
+          in society’s margins. After earning a Bachelor's degree in Electrical
+          Engineering from Harvard University, his work in software development
+          led him towards exploring the power of speculative imagination and
+          intergenerational storytelling within digital spaces. In January 2023,
+          he was named Collective Action School’s inaugural Community Technologist.
+        </span>
+      ),
+    },
+    {
+      name: 'Dorothy R. Santos, Ph.D.',
+      role: 'Advisor',
+      headshotPath: drsantos,
+      headshotAlt: 'Image of Dorothy R. Santos, Ph.D., Looking Glass Advisor',
+      website: 'https://dorothysantos.com/',
+      bio: (
+        <span>
+          Dorothy R. Santos, Ph.D. (she/they) is a Filipino American storyteller, poet, artist, and
+          scholar whose academic and research interests include feminist media histories, critical
+          medical anthropology, computational media, technology, race, and ethics. She earned her
+          Ph.D. in Film and Digital Media with a designated emphasis in Computational Media from
+          the University of California, Santa Cruz and was a Eugene V. Cota-Robles fellow.
+          She received her Master’s degree in Visual and Critical Studies at the California
+          College of the Arts and holds Bachelor’s degrees in Philosophy and Psychology from
+          the University of San Francisco. Her work has been exhibited at Ars Electronica,
+          Rewire Festival, Fort Mason Center for Arts & Culture, Yerba Buena Center for the Arts,
+          and the GLBT Historical Society.
+        </span>
+      ),
+    },
+    {
+      name: 'Xiaowei Wang, Ph.D.',
+      role: 'Advisor',
+      headshotPath: xiaowei,
+      headshotAlt: 'Image of Xiaowei Wang, Ph.D., Looking Glass Advisor',
+      website: 'https://www.xiaoweiwang.com/',
+      bio: (
+        <span>
+          Xiaowei R. Wang, Ph.D. is an artist, writer, organizer and coder. They are the author of
+          the book Blockchain Chicken Farm: And Other Stories of Tech In China's Countryside, a
+          2023 National Book Foundation Science and Literature Award winner. Their writing and art
+          work has appeared in TANK, transmediale, The Nation, Haus der Kulturen der Welt, Yerba
+          Buena Center for the Arts and more. Currently, they are one of the stewards of Collective
+          Action School (formerly known as Logic School), an organizing community for tech workers,
+          a Postdoctoral Scholar at the Center on Race and Digital Justice / UCLA Gender Studies and
+          a Senior Civic Media Fellow at University of Southern California Annenberg. Their
+          multidisciplinary work over the past 15 years sits at the intersection of tech, social and
+          environmental justice. Xiaowei’s work is shaped by their Buddhist spiritual practice,
+          guided by the experiences of their ancestors and the care of the communities they are
+          part of.
+        </span>
+      ),
+    },
+    {
+      name: 'Drummond Projects',
+      role: 'Architectural Modeler & Renderer',
+      headshotPath: drummond,
+      website: 'https://www.drummondprojects.com/',
+      bio: (
+        <span>
+          Dynamic and future-forward, Drummond Projects comprises a team of visionary designers,
+          artists, architects, and builders who propose elegant, innovative solutions in response to
+          complex design questions. Architecture is the medium by which we express culture across
+          temporalities. Our design approach is multifaceted, rendering thoughtful, resilient spaces
+          for our community as we help realize building endeavors from concept to completion.
+          <br />
+          <br />
+          We deliver comprehensive architectural and design-build services that include concept,
+          permits and construction through to completion. Our growing portfolio of built work ranges
+          from residential multi-family housing, hospitality design, mixed-use development,
+          commercial work-space design, residential and commercial design-builds to public art
+          installations. With a cumulative long-standing and diversified experience in the
+          Washington, DC metropolitan area, our team understands and celebrates the local
+          vernacular histories that shape our urban fabric.
+        </span>
+      ),
+    },
+    {
+      name: 'Erika Butler-Jones',
+      role: 'Branding & Marketing Consultant',
+      headshotPath: ebj,
+      website: 'https://www.erikabutlerjones.com',
+      bio: (
+        <span>
+          Erika Butler-Jones is an interior designer, a creative director, and cultural historian
+          based in Pittsburgh, Pennsylvania. An expert storyteller and alumna of Harvard University
+          (B.A.) and Parsons School of Design (M.A.), Erika’s work dwells at the intersection of
+          aesthetics, design, and Black cultural history. You can find her on Instagram
+          @erikabutlerjones.
+        </span>
+      ),
+    },
+    {
+      name: 'INEZ',
+      role: 'Soundscape Artist',
+      headshotPath: inez,
+      website: 'https://inez.us/home',
+      bio: (
+        <span>
+          Proud Homewood resident, Pittsburgh native, and self-proclaimed FireShorty™️, INEZ is a
+          multi-faceted artistic Renaissance woman. INEZ, a Cum Laude, Berklee College of Music
+          alumna, is a musical polymath for performance, singing, music production, arranging,
+          songwriting, drumming, and audio mixing, mastering and engineering. INEZ’s recent
+          production/engineering credits include Healthline.com, Kelly Strayhorn Theater,
+          and WYEP. and  INEZ is currently in residence with Unisound's BTAR (Black Teaching
+          Artist in Residence) program and Pittsburgh Community Broadcasting's
+          91.3FM WYEP/90.5 WESA - AIR (Artists in Residence) program. INEZ hopes to continue
+          uplifting, advocating, and creating space for Black women and femmes, using love
+          and the full-spectrum of her talents.
+        </span>
+      ),
+    },
+    {
+      name: 'JASON MCKOY',
+      role: 'Branding Designer',
+      headshotPath: jason,
+      website: 'https://mckoycreative.com/',
+      bio: (
+        <span>
+          JASON MCKOY is an ARTvocate, Social Innovator, Branding + Identity Consultant, and weirdo
+          from NYC now living in PGH. He wears a lot of hats. Living with Major Depressive Disorder
+          and Anxiety has informed how he navigates the world creatively. Whether through
+          illustration or multimedia art installation, Jason sees each piece of his work as a
+          solution to a puzzle. He is the founder of, McKoy Creative, a warm hug for small
+          businesses and non-profit organizations, providing creative services from concept
+          to completion that benefit communities. When not making stuff, he's either playing video
+          games, creating cocktails, or sleeping.
+        </span>
+      ),
+    },
+    {
+      name: 'Jeremiah Strawbridge',
+      role: 'Videographer',
+      headshotPath: jeremiah,
+      website: null,
+      bio: (
+        <span>
+          Jeremiah Strawbridge is a Central PA based multimedia creative specialist. He holds a
+          Bachelor’s degree in Media and Professional Communication with certificates in Digital
+          Media and Corporate and Community Relations. His work, grounded in an understanding of
+          the importance of narratives, continuously moves him to explore new approaches to
+          storytelling.
+        </span>
+      ),
+    },
+    {
+      name: 'Matthew Maxwell',
+      role: 'Soundscape Project Manager & Artist',
+      headshotPath: matt,
+      website: 'https://www.familyfirstmusicgroup.com/',
+      bio: (
+        <span>
+          Matthew Maxwell is an artist, producer & entrepreneur. Being two generations removed from
+          his family’s music legacy, Matthew has a goal of fulfilling the deferred hopes and broken
+          dreams of family members long gone in the entertainment industry. His mantra is 'faith,
+          family, and music', which serve as constant inspirations for his Maryland based
+          independent label, Family First Music Group, LLC (FFMG). His goal for his art is simple:
+          to inspire people to pursue purpose, and as a former wall-street analyst turned artist,
+          he not only holds this goal near to his heart but lives it to the fullest.
+        </span>
+      ),
+    },
+    {
+      name: 'pvkvsv',
+      role: 'Soundscape Artist',
+      headshotPath: pvkvsv,
+      website: 'https://soundcloud.com/pvkvsv',
+      bio: (
+        <span>
+          pvkvsv (pah•kah'•sah) is a producer, beatmaker, DJ, and curator. With the eclectic musical
+          taste he has cultivated, pvkvsv continually seeks to expand upon his artistry. Within the
+          past year he has performed live improvised soundscape pieces for both the Associated
+          Artists of Pittsburgh’s Performance Series and with Soy Sos & STAYCEE PEARL dance project
+          at Kelly Strayhorn Alloy Studios. pvkvsv was also selected as a Pittsburgh Community
+          Broadcasting’s Artist in Residency via 91.3 WYEP/ 90.5 WESA. Being a self-taught producer
+          , creating music was one of the few ways for him to express and examine himself. As a
+          co-founder of Pittsburgh Open Decks, a monthly event where aspiring and experienced DJs
+          can sign up to perform on flagship CDJs with no restriction on genre or experience level,
+          pvkvsv aims to create avenues for those who may lack a formal musical education to
+          express themselves and build upon their own interest in music.
+        </span>
+      ),
+    },
+    {
+      name: 'Waverly Shivers Jr.',
+      role: '3D Modeler',
+      headshotPath: waverly,
+      website: 'https://www.waverlyjrdesigns.com/',
+      bio: (
+        <span>
+          Experienced Industrial Designer with a demonstrated history of working in the wholesale
+          industry. Skilled in AutoCAD, SolidWorks, Adobe Photoshop, Sketchbook Pro, and Model
+          Making. Strong engineering professional with a Bachelor's degree focused in Industrial
+          and Product Design from Art Institute of Pittsburgh.
+        </span>
+      ),
+    },
+    {
+      name: 'Xavery Williams',
+      role: 'Soundscape Audio Engineer',
+      headshotPath: whiteLeaf,
+      website: 'https://soundbetter.com/profiles/19252-the-white-leaf-music-company',
+      bio: (
+        <span>
+          Has mixed, mastered, and reviewed music for Grammy-nominated and multi-platinum
+          singer-songwriters.
+          <br />
+          <br />
+          Always a self-starter, Xavery founded a music production club in middle school, earned
+          his first college degree in Audio Production while still in high school, and now is a
+          recent graduate of Berklee College of Music with a Master’s in Music Production,
+          Technology, and Innovation; with a secured Post-Master’s Fellowship in the Office of the
+          President the following year and has since left his term at Virginia Beach Recording Arts,
+          formerly known as Timbaland's Thomas Crowne Studio, as a traditional producer and audio
+          engineer, to write a book on mixing and mastering as the official spearhead to the launch
+          of The White Leaf Music Company, LLC sometime in 2023.
+        </span>
+      ),
+    },
+  ],
+  supporterDirectory: [],
+};
+
+export default contributors;
