@@ -19,10 +19,10 @@ export const NavBarRoutes = [
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,
   },
-  {
-    title: 'Ways to Support',
-    path: RouteList.SUPPORT,
-  },
+  // {
+  //   title: 'Ways to Support',
+  //   path: RouteList.SUPPORT,
+  // },
 ];
 
 export const MobileMenuRoutes = [
@@ -38,8 +38,8 @@ export const MobileMenuRoutes = [
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,
   },
-  {
-    title: 'Ways to Support',
-    path: RouteList.SUPPORT,
-  },
+  // {
+  //   title: 'Ways to Support',
+  //   path: RouteList.SUPPORT,
+  // },
 ];

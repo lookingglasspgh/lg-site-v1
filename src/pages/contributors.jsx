@@ -3,7 +3,7 @@ import { Flex } from '@chakra-ui/react';
 
 import CollaboratorsSection from '@/components/contributors/CollaboratorsSection';
 import Layout from '@/components/common/Layout';
-import SupportersSection from '@/components/contributors/SupportersSection';
+import PartnersSection from '@/components/contributors/PartnersSection';
 
 const ContributorsPage = () => (
   <Layout>
@@ -12,7 +12,7 @@ const ContributorsPage = () => (
       direction="column"
     >
       <CollaboratorsSection />
-      <SupportersSection />
+      <PartnersSection />
     </Flex>
   </Layout>
 );

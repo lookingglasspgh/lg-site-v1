@@ -15,8 +15,8 @@ import waverly from '@/public/collaborators/waverly.webp';
 import whiteLeaf from '@/public/collaborators/white-leaf.webp';
 
 const contributors = {
-  CONTRIBUTORS: 'Contributors',
-  SUPPORTERS: 'Supporters',
+  COLLABORATORS: 'Collaborators',
+  PARTNERS: 'Partners',
   collabDirectory: [
     {
       name: 'Adrian Jones',
@@ -247,7 +247,38 @@ const contributors = {
       ),
     },
   ],
-  supporterDirectory: [],
+  partnerDirectory: [
+    {
+      name: 'Pittsburgh Center for Arts & Media',
+      role: 'Fiscal Sponsor',
+      website: 'https://pghartsmedia.org/',
+    },
+    {
+      name: 'Awesome Pittsburgh',
+      role: 'Grantor',
+      website: 'https://www.awesomefoundation.org/en/chapters/pittsburgh',
+    },
+    {
+      name: 'Collective Action School',
+      role: 'Grantor',
+      website: 'https://school.logicmag.io/',
+    },
+    {
+      name: 'Elsie Hillman Foundation',
+      role: 'Grantor',
+      website: 'https://www.elsiehhillmanfoundation.org/',
+    },
+    {
+      name: 'Opportunity Fund',
+      role: 'Grantor',
+      website: 'https://theopportunityfund.org/',
+    },
+    {
+      name: 'Processing Foundation',
+      role: 'Grantor',
+      website: 'https://processingfoundation.org/',
+    },
+  ],
 };
 
 export default contributors;

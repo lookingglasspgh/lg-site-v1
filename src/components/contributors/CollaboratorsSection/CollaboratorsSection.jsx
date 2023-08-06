@@ -38,10 +38,10 @@ const CollaboratorsSection = () => {
       direction="column"
       width="100%"
       m="0 auto"
-      p="3rem 1rem"
+      p={{ base: '3rem 1rem', md: '3rem', xl: '3rem 0rem' }}
       maxWidth={commonWidths.maxSectionWidth}
     >
-      <Heading as="h1" mb="3rem">Collaborators</Heading>
+      <Heading as="h1" mb="3rem">{contributors.COLLABORATORS}</Heading>
       <SimpleGrid
         gap={{ base: '2rem', lg: '1rem', xl: '2rem' }}
         columns={{ base: '1', md: '2', lg: '3' }}
@@ -55,8 +55,12 @@ const CollaboratorsSection = () => {
             boxShadow="2xl"
           >
             <Box
-              width={{ base: '150px', lg: '200px', xl: '100%' }}
-              height={{ base: '150px', lg: '200px', xl: '100%' }}
+              width={{
+                base: '16.5rem', md: '15rem', lg: '13.5rem', xl: '100%',
+              }}
+              height={{
+                base: '16.5rem', md: '15rem', lg: '13.5rem', xl: '100%',
+              }}
               mb="1rem"
             >
               <SiteImage
@@ -68,7 +72,7 @@ const CollaboratorsSection = () => {
             <Flex direction="column">
               <Flex direction="column" minHeight="110px">
                 <Text
-                  fontSize="lg"
+                  fontSize="xl"
                   variant="secondary"
                   mb="0.25rem"
                 >
@@ -89,8 +93,8 @@ const CollaboratorsSection = () => {
               >
                 <Button
                   variant="outline"
-                  borderColor="ivory.500"
-                  color="ivory.500"
+                  borderColor="ivory.400"
+                  color="ivory.400"
                   _hover={{ backgroundColor: 'black.500' }}
                   onClick={() => openBio(collaborator.bio)}
                 >
@@ -98,15 +102,13 @@ const CollaboratorsSection = () => {
                   <Text ml="0.5rem" variant="secondary" size="sm">Bio</Text>
                 </Button>
                 { collaborator.website && (
-                <Link
-                  color="ivory.500"
-                  href={collaborator.website}
-                  isExternal
-                  ml="1rem"
-                  display="flex"
-                >
-                  <ExternalLink size={24} />
-                </Link>
+                  <Link
+                    color="ivory.400"
+                    href={collaborator.website}
+                    isExternal
+                  >
+                    <ExternalLink size={24} />
+                  </Link>
                 )}
               </Flex>
             </Flex>
