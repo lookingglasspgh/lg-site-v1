@@ -9,7 +9,7 @@ const PageHead = ({ pageDescription, title }) => (
       name="description"
       content={pageDescription}
     />
-    <meta property="og:image" content="work/east-liberty-ymca.webp" />
+    <meta property="og:image" content="resources/og-image.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png" />
