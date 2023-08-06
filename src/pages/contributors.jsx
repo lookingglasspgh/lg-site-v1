@@ -3,16 +3,20 @@ import { Flex } from '@chakra-ui/react';
 
 import CollaboratorsSection from '@/components/contributors/CollaboratorsSection';
 import Layout from '@/components/common/Layout';
-import PartnersSection from '@/components/contributors/PartnersSection';
+import RouteMetadata from '@/constants/RouteMetadata';
+import SupportersSection from '@/components/contributors/SupportersSection';
 
 const ContributorsPage = () => (
-  <Layout>
+  <Layout
+    title={RouteMetadata.contributors.title}
+    pageDescription={RouteMetadata.contributors.description}
+  >
     <Flex
       id="page-container"
       direction="column"
     >
       <CollaboratorsSection />
-      <PartnersSection />
+      <SupportersSection />
     </Flex>
   </Layout>
 );

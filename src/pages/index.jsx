@@ -6,9 +6,13 @@ import HeroSection from '@/components/home/HeroSection';
 import Layout from '@/components/common/Layout';
 import OriginsSections from '@/components/home/OriginsSection/OriginsSection';
 import QuoteSection from '@/components/home/QuoteSection/QuoteSection';
+import RouteMetadata from '@/constants/RouteMetadata';
 
 const Home = () => (
-  <Layout>
+  <Layout
+    title={RouteMetadata.home.title}
+    pageDescription={RouteMetadata.home.description}
+  >
     <Flex
       id="page-container"
       direction="column"

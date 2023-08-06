@@ -16,7 +16,7 @@ import whiteLeaf from '@/public/collaborators/white-leaf.webp';
 
 const contributors = {
   COLLABORATORS: 'Collaborators',
-  PARTNERS: 'Partners',
+  SUPPORTERS: 'Supporters',
   collabDirectory: [
     {
       name: 'Adrian Jones',

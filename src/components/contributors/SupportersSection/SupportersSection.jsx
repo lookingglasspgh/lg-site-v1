@@ -14,16 +14,16 @@ import contributors from '@/content/contributors';
 
 const { commonWidths, gradients } = commonStyles;
 
-const PartnersSection = () => (
+const SupportersSection = () => (
   <Flex
-    id="partner-section-container"
+    id="supporters-section-container"
     direction="column"
     width="100%"
     m="0 auto"
     p={{ base: '0 1rem 4rem 1rem', md: '0 3rem 4rem 3rem', xl: '0 0 4rem 0' }}
     maxWidth={commonWidths.maxSectionWidth}
   >
-    <Heading as="h2" mb="3rem">{contributors.PARTNERS}</Heading>
+    <Heading as="h2" mb="3rem">{contributors.SUPPORTERS}</Heading>
     <SimpleGrid
       gap={{ base: '2rem', lg: '1rem', xl: '2rem' }}
       columns={{ base: '1', lg: '2' }}
@@ -70,4 +70,4 @@ const PartnersSection = () => (
   </Flex>
 );
 
-export default PartnersSection;
+export default SupportersSection;
