@@ -4,6 +4,7 @@ import {
   Button,
   Flex,
   Heading,
+  Link,
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
@@ -19,7 +20,6 @@ import SiteImage from '@/components/common/SiteImage';
 import PreviewVideoModal from '@/components/common/PreviewVideoModal';
 
 const { commonWidths } = commonStyles;
-
 const textAndButtonMaxWidths = {
   base: '350px', md: '470px', lg: '450px', xl: '470px',
 };
@@ -36,8 +36,6 @@ const HeroSection = () => {
     onOpen: onTeenieModalOpen,
     onClose: onTeenieModalClose,
   } = useDisclosure({ id: 'teenieModal' });
-
-  const openSubscriptionPage = () => window.open('https://lookingglasspgh.substack.com/', '_blank');
 
   return (
     <>
@@ -74,15 +72,20 @@ const HeroSection = () => {
             maxWidth={textAndButtonMaxWidths}
             direction={{ base: 'column', lg: 'row' }}
           >
-            <Button
-              size={{ base: 'md', lg: 'md' }}
-              onClick={openSubscriptionPage}
+            <Link
+              _hover={{ textDecoration: 'none' }}
+              href={common.SUBSCRIBE_LINK}
+              isExternal
             >
-              <Mail size={20} />
-              <Text ml="0.5rem" variant="secondary">
-                {common.SUBSCRIBE}
-              </Text>
-            </Button>
+              <Button
+                size={{ base: 'md', lg: 'md' }}
+              >
+                <Mail size={20} />
+                <Text ml="0.5rem" variant="secondary">
+                  {common.SUBSCRIBE}
+                </Text>
+              </Button>
+            </Link>
             <Button
               variant="ghost"
               size={{ base: 'md', lg: 'md' }}

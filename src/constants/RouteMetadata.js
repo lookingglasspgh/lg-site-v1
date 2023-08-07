@@ -1,6 +1,6 @@
 const RouteMetadata = {
   home: {
-    title: 'Looking Glass',
+    title: 'Looking Glass: Remembering & Imagining',
     description: 'Looking Glass is an app-based archive of Black life in Pittsburgh. We use augmented reality to connect the present to the past and imagined futures.',
   },
   artifacts: {
@@ -17,7 +17,7 @@ const RouteMetadata = {
   },
   support: {
     title: 'Ways to Support | Looking Glass',
-    description: 'Help sustain the archive.',
+    description: 'Help sustain and grow the archive.',
   },
 };
 

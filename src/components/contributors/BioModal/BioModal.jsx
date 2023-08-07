@@ -25,7 +25,10 @@ const BioModal = ({ bio, isOpen, onClose }) => (
       </ModalHeader>
       <ModalBody pt="2rem" pb="3rem">
         <Container>
-          <Text fontSize={{ base: 'md', md: 'lg', xl: 'lg' }}>
+          <Text
+            fontSize={{ base: 'md', md: 'lg', xl: 'lg' }}
+            lineHeight="1.7"
+          >
             {bio}
           </Text>
         </Container>
