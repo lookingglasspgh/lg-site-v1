@@ -8,7 +8,6 @@ const SiteImage = chakra(Image, {
     'src',
     'alt',
     'priority',
-    'loading',
     'style',
     'fill',
     'sizes',

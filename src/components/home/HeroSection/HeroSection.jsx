@@ -110,7 +110,7 @@ const HeroSection = () => {
           >
             <SiteImage
               src={eastLibertyYmca}
-              loading="eager"
+              priority
               alt={home.COLLAGE_ALT}
               sizes="
                 325px,

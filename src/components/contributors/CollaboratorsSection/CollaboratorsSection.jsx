@@ -66,6 +66,7 @@ const CollaboratorsSection = () => {
               <SiteImage
                 src={collaborator.headshotPath}
                 alt={collaborator.headshotAlt}
+                priority={!!collaborator?.priority}
                 style={{ borderRadius: '4px' }}
                 sizes="
                   16.5rem,
