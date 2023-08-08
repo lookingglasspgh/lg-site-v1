@@ -45,7 +45,12 @@ const OriginsSection = () => {
             direction="column"
             mb="2rem"
           >
-            <Heading as="h3" mb="1.5" variant="secondary">
+            <Heading
+              as="h3"
+              variant="secondary"
+              maxWidth={{ base: '300px', sm: '100%' }}
+              mb="0.5rem"
+            >
               {origins.HEADLINE}
             </Heading>
             <Text variant="secondary" fontSize="xl">
