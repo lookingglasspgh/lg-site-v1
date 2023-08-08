@@ -112,12 +112,10 @@ const HeroSection = () => {
               src={eastLibertyYmca}
               loading="eager"
               alt="40.461142, -79.926171 - Looking Glass x Teenie Harris"
-              sizes="100vw"
+              sizes="325px, (min-width: 768px) 550px, (min-width: 992px) 450, (min-width: 1280px) 600px"
               style={{
                 borderRadius: '4px',
                 boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-                width: '100%',
-                height: '100%',
               }}
             />
           </Box>
