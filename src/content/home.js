@@ -12,9 +12,11 @@ const home = {
   ABOUT_CAPTION:
     'Looking Glass is an app-based archive of Black life in Pittsburgh. We use augmented reality to connect the present to the past and imagined futures.',
   COLLAGE_TITLE: '40.461142, -79.926171',
+  COLLAGE_ALT: '40.461142, -79.926171 - Looking Glass & Teenie Harris Collage',
   HOOKS_QUOTE:
     '“The process of remembering can be a practice which ‘transforms history from a judgement on the past in the name of a present truth to a counter-memory that combats our current modes of truth and justice, helping us to understand and change the present by placing it in a new relation to the past\u2019\u201D',
   HOOKS_ATTRIBUTION: '- bell hooks',
+  CONCEPT_ART_ALT: 'Looking Glass Sculpture Concept Art by artist Victoria Elliott',
   explore: {
     HEADLINE: 'Travel the City & Explore the Archive',
     CAPTION:
