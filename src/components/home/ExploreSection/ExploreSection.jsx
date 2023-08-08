@@ -93,7 +93,7 @@ const ExploreSection = () => {
           loop
           playsInline
           poster="work/demo-placeholder.webp"
-          style={{ 'border-radius': '40px', border: '8px solid #020314' }}
+          style={{ borderRadius: '40px', border: '8px solid #020314' }}
           ref={videoRef}
         >
           <source

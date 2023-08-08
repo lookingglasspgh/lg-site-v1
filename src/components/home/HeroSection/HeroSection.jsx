@@ -57,7 +57,6 @@ const HeroSection = () => {
             size={{ base: '2xl', xl: '3xl' }}
             textAlign={{ base: 'center', lg: 'left' }}
             mb="1.5rem"
-            sx={{ 'line-height': '1.2' }}
           >
             {home.HEADLINE}
           </Heading>
