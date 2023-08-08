@@ -111,6 +111,7 @@ const CollaboratorsSection = () => {
                 { collaborator.website && (
                   <Link
                     color="ivory.400"
+                    aria-label={`Link to ${collaborator.website}`}
                     href={collaborator.website}
                     isExternal
                   >
