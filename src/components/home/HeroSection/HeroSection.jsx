@@ -71,6 +71,7 @@ const HeroSection = () => {
           <Flex
             maxWidth={textAndButtonMaxWidths}
             direction={{ base: 'column', lg: 'row' }}
+            alignItems="center"
           >
             <Link
               _hover={{ textDecoration: 'none' }}
