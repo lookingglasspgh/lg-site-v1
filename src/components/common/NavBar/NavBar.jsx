@@ -22,6 +22,7 @@ const NavBar = () => (
       id="home-link"
       as={NextLink}
       href={RouteList.HOME}
+      prefetch={false}
       width={{ base: '200px', md: '250px' }}
       height={{ base: '80px', md: '100px' }}
       position="relative"

@@ -70,6 +70,7 @@ const MobileMenu = () => {
                   mr="1.5rem"
                   mb="1rem"
                   transition="all 0.2s"
+                  prefetch={false}
                   _last={{ mb: '0' }}
                   _hover={{ color: 'pink.500' }}
                 >

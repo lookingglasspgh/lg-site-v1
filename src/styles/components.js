@@ -5,6 +5,7 @@ export const Button = {
       boxShadow: '2xl',
       color: 'ivory.400',
       _hover: { background: 'pink.600' },
+      _active: { background: 'pink.600' },
     },
     ghost: {
       _hover: { background: 'none' },
@@ -15,6 +16,7 @@ export const Button = {
       borderStyle: 'solid',
       boxShadow: '2xl',
       _hover: { background: 'ivory.600' },
+      _active: { background: 'ivory.600' },
     },
   },
 };
