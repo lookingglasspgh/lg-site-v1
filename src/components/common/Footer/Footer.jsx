@@ -26,6 +26,7 @@ const Footer = () => (
       <SiteImage
         src="/resources/logo-lg-black.svg"
         fill
+        sizes="200px, (min-width: 768px) 250px"
         alt="Looking Glass logo"
       />
     </Box>

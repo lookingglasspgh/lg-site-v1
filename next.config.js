@@ -1,6 +1,23 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
 
-module.exports = nextConfig;
+// eslint-disable-next-line import/no-extraneous-dependencies
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true' && process.env.NODE_ENV === 'production',
+});
+
+module.exports = () => {
+  const reactStrictMode = true;
+
+  const redirects = async () => [
+    {
+      source: '/statement-of-purpose.html',
+      destination: '/',
+      permanent: true,
+    },
+  ];
+
+  return withBundleAnalyzer({
+    reactStrictMode,
+    redirects,
+  });
+};

@@ -56,17 +56,24 @@ const CollaboratorsSection = () => {
           >
             <Box
               width={{
-                base: '16.5rem', md: '15rem', lg: '13.5rem', xl: '100%',
+                base: '16.5rem', md: '15rem', lg: '13.5rem', xl: '19.625rem',
               }}
               height={{
-                base: '16.5rem', md: '15rem', lg: '13.5rem', xl: '100%',
+                base: '16.5rem', md: '15rem', lg: '13.5rem', xl: '19.625rem',
               }}
               mb="1rem"
             >
               <SiteImage
                 src={collaborator.headshotPath}
                 alt={collaborator.headshotAlt}
+                priority={!!collaborator?.priority}
                 style={{ borderRadius: '4px' }}
+                sizes="
+                  16.5rem,
+                  (min-width: 768px) 15rem,
+                  (min-width: 992px) 13.5rem,
+                  (min-width: 1280px) 19.625rem
+                "
               />
             </Box>
             <Flex direction="column">
@@ -104,6 +111,7 @@ const CollaboratorsSection = () => {
                 { collaborator.website && (
                   <Link
                     color="ivory.400"
+                    aria-label={`Link to ${collaborator.website}`}
                     href={collaborator.website}
                     isExternal
                   >

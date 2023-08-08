@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  Box,
   Button,
   Container,
   Flex,
@@ -44,7 +45,12 @@ const OriginsSection = () => {
             direction="column"
             mb="2rem"
           >
-            <Heading as="h3" mb="1.5" variant="secondary">
+            <Heading
+              as="h3"
+              variant="secondary"
+              maxWidth={{ base: '300px', sm: '100%' }}
+              mb="0.5rem"
+            >
               {origins.HEADLINE}
             </Heading>
             <Text variant="secondary" fontSize="xl">
@@ -57,13 +63,17 @@ const OriginsSection = () => {
             mb="2rem"
             width="100%"
           >
-            <SiteImage
-              src={holcMap}
-              style={{ borderRadius: '4px' }}
-              width="100%"
-              mb="0.5rem"
-              alt={origins.IMAGE_SOURCE}
-            />
+            <Box
+              maxWidth={{ base: '325px', md: '464px', lg: '530px' }}
+              m="0 auto 0.5rem auto"
+            >
+              <SiteImage
+                src={holcMap}
+                style={{ borderRadius: '4px' }}
+                sizes="325px, (min-width: 768px) 464px, (min-width: 992px) 530px"
+                alt={origins.IMAGE_SOURCE}
+              />
+            </Box>
             <Link
               fontSize="sm"
               color="ivory.400"

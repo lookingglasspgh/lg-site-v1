@@ -38,8 +38,14 @@ const QuoteSection = () => (
       }}
     >
       <SiteImage
-        alt="Looking Glass Sculpture Concept Art by artist Victoria Elliott"
         src={conceptArt}
+        alt={home.CONCEPT_ART_ALT}
+        sizes="
+          300px,
+          (min-width: 768px) 400px,
+          (min-width: 992px) 425px,
+          (min-width: 1280px) 500px
+        "
       />
     </Flex>
     <Flex

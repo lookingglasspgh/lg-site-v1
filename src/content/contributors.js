@@ -24,6 +24,7 @@ const contributors = {
       headshotPath: adrian,
       headshotAlt: 'Image of Adrian Jones, Looking Glass Founder',
       website: null,
+      priority: true,
       bio: (
         <span>
           Adrian Jones is a Pittsburgh-based artist, historian and creative
@@ -42,6 +43,7 @@ const contributors = {
       headshotPath: drsantos,
       headshotAlt: 'Image of Dorothy R. Santos, Ph.D., Looking Glass Advisor',
       website: 'https://dorothysantos.com/',
+      priority: true,
       bio: (
         <span>
           Dorothy R. Santos, Ph.D. (she/they) is a Filipino American storyteller, poet, artist, and
@@ -63,6 +65,7 @@ const contributors = {
       headshotPath: xiaowei,
       headshotAlt: 'Image of Xiaowei Wang, Ph.D., Looking Glass Advisor',
       website: 'https://www.xiaoweiwang.com/',
+      priority: true,
       bio: (
         <span>
           Xiaowei R. Wang, Ph.D. is an artist, writer, organizer and coder. They are the author of

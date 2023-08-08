@@ -30,6 +30,7 @@ const NavBar = () => (
       <SiteImage
         src="/resources/logo-lg-black.svg"
         fill
+        sizes="200px, (min-width: 768px) 250px"
         alt="Looking Glass logo and link to home page"
       />
     </Link>

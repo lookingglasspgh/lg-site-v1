@@ -57,7 +57,6 @@ const HeroSection = () => {
             size={{ base: '2xl', xl: '3xl' }}
             textAlign={{ base: 'center', lg: 'left' }}
             mb="1.5rem"
-            sx={{ 'line-height': '1.2' }}
           >
             {home.HEADLINE}
           </Heading>
@@ -110,8 +109,14 @@ const HeroSection = () => {
           >
             <SiteImage
               src={eastLibertyYmca}
-              loading="eager"
-              alt="40.461142, -79.926171 - Looking Glass x Teenie Harris"
+              priority
+              alt={home.COLLAGE_ALT}
+              sizes="
+                325px,
+                (min-width: 768px) 550px,
+                (min-width: 992px) 450px,
+                (min-width: 1280px) 600px
+              "
               style={{
                 borderRadius: '4px',
                 boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
