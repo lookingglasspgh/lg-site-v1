@@ -46,7 +46,6 @@ const TeenieModal = ({ isOpen, onClose }) => (
       <ModalBody
         pt="2rem"
         pb="3rem"
-        lineHeight="1.7"
       >
         <Text fontSize={{ base: 'md', md: 'lg' }}>
           {description.firstSection}
