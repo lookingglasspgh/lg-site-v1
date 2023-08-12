@@ -11,12 +11,13 @@ import {
 } from '@chakra-ui/react';
 import { AlignLeft, ExternalLink } from 'react-feather';
 
+import BioModal from '../BioModal/BioModal';
 import commonStyles from '@/styles/commonStyles';
 import contributors from '@/content/contributors';
+import SectionContainer from '@/components/common/SectionContainer';
 import SiteImage from '@/components/common/SiteImage/SiteImage';
-import BioModal from '../BioModal/BioModal';
 
-const { commonWidths, gradients } = commonStyles;
+const { gradients } = commonStyles;
 
 const CollaboratorsSection = () => {
   const [bioModalText, setBioModalText] = useState(null);
@@ -33,18 +34,18 @@ const CollaboratorsSection = () => {
   };
 
   return (
-    <Flex
+    <SectionContainer
       id="collab-section-container"
       direction="column"
-      width="100%"
-      m="0 auto"
+      alignItems="flex-start"
       p={{ base: '3rem 1rem', md: '3rem', xl: '3rem 0rem' }}
-      maxWidth={commonWidths.maxSectionWidth}
+      width="100%"
     >
       <Heading as="h1" mb="3rem">{contributors.COLLABORATORS}</Heading>
       <SimpleGrid
         gap={{ base: '2rem', lg: '1rem', xl: '2rem' }}
         columns={{ base: '1', md: '2', lg: '3' }}
+        width="100%"
       >
         { contributors.collabDirectory.map((collaborator) => (
           <Flex
@@ -128,7 +129,7 @@ const CollaboratorsSection = () => {
         isOpen={isBioModalOpen}
         onClose={onBioModalClose}
       />
-    </Flex>
+    </SectionContainer>
   );
 };
 

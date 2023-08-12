@@ -13,9 +13,10 @@ import commonStyles from '@/styles/commonStyles';
 import common from '@/content/common';
 import home from '@/content/home';
 import holcMap from '@/public/artifacts/holc.webp';
+import SectionContainer from '@/components/common/SectionContainer';
 import SiteImage from '@/components/common/SiteImage';
 
-const { commonWidths, gradients } = commonStyles;
+const { gradients } = commonStyles;
 const { origins } = home;
 
 const holcLink = 'https://data.wprdc.org/dataset/redlining-maps-from-the-home-owners-loan-corporation';
@@ -30,14 +31,10 @@ const OriginsSection = () => {
       background={gradients.black}
       width="100%"
       boxShadow="2xl"
-      padding="4rem 1rem"
     >
-      <Flex
+      <SectionContainer
         id="content-container"
-        maxWidth={commonWidths.maxSectionWidth}
-        direction="column"
-        alignItems="flex-start"
-        m="0 auto"
+        padding="4rem 1rem"
       >
         <Container>
           <Flex
@@ -148,7 +145,7 @@ const OriginsSection = () => {
             </Text>
           )}
         </Container>
-      </Flex>
+      </SectionContainer>
     </Flex>
   );
 };

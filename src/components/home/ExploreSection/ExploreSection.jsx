@@ -8,10 +8,8 @@ import {
 import { isSafari } from 'react-device-detect';
 import { useInView } from 'framer-motion';
 
-import commonStyles from '@/styles/commonStyles';
 import home from '@/content/home';
-
-const { commonWidths } = commonStyles;
+import SectionContainer from '@/components/common/SectionContainer';
 
 const ExploreSection = () => {
   const sectionRef = useRef(null);
@@ -44,14 +42,11 @@ const ExploreSection = () => {
   }, [isVideoInView]);
 
   return (
-    <Flex
+    <SectionContainer
       id="explore-section"
       direction={{ base: 'column', lg: 'row' }}
       padding="4rem 0"
-      margin="0 auto"
-      alignItems="center"
       justifyContent="space-between"
-      maxWidth={commonWidths.maxSectionWidth}
       ref={sectionRef}
     >
       <Flex
@@ -102,7 +97,7 @@ const ExploreSection = () => {
           />
         </video>
       </Flex>
-    </Flex>
+    </SectionContainer>
   );
 };
 

@@ -13,13 +13,12 @@ import { Mail, MapPin, PlayCircle } from 'react-feather';
 import TeenieModal from '../TeenieModal/TeenieModal';
 
 import common from '@/content/common';
-import commonStyles from '@/styles/commonStyles';
 import eastLibertyYmca from '@/public/work/east-liberty-ymca.webp';
 import home from '@/content/home';
-import SiteImage from '@/components/common/SiteImage';
 import PreviewVideoModal from '@/components/common/PreviewVideoModal';
+import SectionContainer from '@/components/common/SectionContainer';
+import SiteImage from '@/components/common/SiteImage';
 
-const { commonWidths } = commonStyles;
 const textAndButtonMaxWidths = {
   base: '350px', md: '470px', lg: '450px', xl: '470px',
 };
@@ -39,13 +38,9 @@ const HeroSection = () => {
 
   return (
     <>
-      <Flex
+      <SectionContainer
         id="hero-section"
         direction={{ base: 'column', lg: 'row' }}
-        alignItems="center"
-        m="0 auto"
-        p="3rem 1rem"
-        maxWidth={commonWidths.maxSectionWidth}
       >
         <Flex
           id="headline-container"
@@ -137,7 +132,7 @@ const HeroSection = () => {
             </Text>
           </Button>
         </Flex>
-      </Flex>
+      </SectionContainer>
       <PreviewVideoModal
         isOpen={isPreviewModalOpen}
         onClose={onPreviewModalClose}

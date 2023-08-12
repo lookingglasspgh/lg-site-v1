@@ -46,7 +46,7 @@ const SupportTile = ({
             fontSize="2xl"
             mb="1.5rem"
             minHeight={{ base: 'auto', md: '4rem', lg: 'auto' }}
-            textAlign={{ base: 'center', xl: 'left' }}
+            textAlign="center"
           >
             {heading}
           </Heading>

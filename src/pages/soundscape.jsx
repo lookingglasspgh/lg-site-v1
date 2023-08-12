@@ -1,20 +1,32 @@
-import React, { useEffect } from 'react';
-import { Box } from '@chakra-ui/react';
-import { useRouter } from 'next/router';
+import React from 'react';
+import {
+  Flex,
+  Heading,
+} from '@chakra-ui/react';
 
-import { RouteList } from '@/constants/RouteList';
+import commonStyles from '@/styles/commonStyles';
+import Layout from '@/components/common/Layout';
+import RouteMetadata from '@/constants/RouteMetadata';
+import soundscape from '@/content/soundscape';
 
-const SoundscapePage = () => {
-  const router = useRouter();
-  useEffect(() => {
-    router.push(RouteList.HOME);
-  }, []);
+const { commonWidths } = commonStyles;
+const { soundscape: SoundscapeMetadata } = RouteMetadata;
 
-  return (
-    <Box>
-      Soundscape
-    </Box>
-  );
-};
+const SoundscapePage = () => (
+  <Layout
+    pageDescription={SoundscapeMetadata.description}
+    title={SoundscapeMetadata.title}
+  >
+    <Flex
+      id="soundscape-container"
+      width="100%"
+      p={{ base: '3rem 1rem 4rem 1rem', md: '3rem 3rem 4rem 3rem', xl: '3rem 0 10rem 0' }}
+      m="0 auto"
+      maxWidth={commonWidths.maxSectionWidth}
+    >
+      <Heading as="h1" mb="3rem">{soundscape.HEADING}</Heading>
+    </Flex>
+  </Layout>
+);
 
 export default SoundscapePage;

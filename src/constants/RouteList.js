@@ -11,13 +11,13 @@ export const NavBarRoutes = [
   //   title: 'Artifacts',
   //   path: RouteList.ARTIFACTS,
   // },
-  // {
-  //   title: 'Soundscape',
-  //   path: RouteList.SOUNDSCAPE,
-  // },
   {
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,
+  },
+  {
+    title: 'Soundscape',
+    path: RouteList.SOUNDSCAPE,
   },
   {
     title: 'Ways to Support',
@@ -30,13 +30,13 @@ export const MobileMenuRoutes = [
   //   title: 'Artifacts',
   //   path: RouteList.ARTIFACTS,
   // },
-  // {
-  //   title: 'Soundscape',
-  //   path: RouteList.SOUNDSCAPE,
-  // },
   {
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,
+  },
+  {
+    title: 'Soundscape',
+    path: RouteList.SOUNDSCAPE,
   },
   {
     title: 'Ways to Support',

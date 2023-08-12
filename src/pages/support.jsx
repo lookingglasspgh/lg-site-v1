@@ -1,15 +1,14 @@
 import React from 'react';
 import { Book, Mail, Send } from 'react-feather';
-import { Flex, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Heading, SimpleGrid } from '@chakra-ui/react';
 
 import common from '@/content/common';
-import commonStyles from '@/styles/commonStyles';
 import Layout from '@/components/common/Layout';
 import RouteMetadata from '@/constants/RouteMetadata';
+import SectionContainer from '@/components/common/SectionContainer';
 import support from '@/content/support';
 import SupportTile from '@/components/support/SupportTile';
 
-const { commonWidths } = commonStyles;
 const { support: SupportMetadata } = RouteMetadata;
 
 const supportTiles = [
@@ -40,18 +39,22 @@ const SupportPage = () => (
     pageDescription={SupportMetadata.description}
     title={SupportMetadata.title}
   >
-    <Flex
+    <SectionContainer
       id="support-section-container"
       direction="column"
+      alignItems="flex-start"
+      p={{
+        base: '3rem 1rem 4rem 1rem',
+        md: '3rem 3rem 4rem 3rem',
+        xl: '3rem 0 10rem 0',
+      }}
       width="100%"
-      m="0 auto"
-      p={{ base: '3rem 1rem 4rem 1rem', md: '3rem 3rem 4rem 3rem', xl: '3rem 0 10rem 0' }}
-      maxWidth={commonWidths.maxSectionWidth}
     >
       <Heading as="h1" mb="3rem">{support.HEADING}</Heading>
       <SimpleGrid
         gap={{ base: '2rem', lg: '2rem', xl: '2rem' }}
         columns={{ base: '1', md: '2', xl: '3' }}
+        width="100%"
       >
         { supportTiles.map((tile) => (
           <SupportTile
@@ -62,7 +65,7 @@ const SupportPage = () => (
           />
         ))}
       </SimpleGrid>
-    </Flex>
+    </SectionContainer>
   </Layout>
 );
 
