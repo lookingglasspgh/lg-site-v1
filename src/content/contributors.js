@@ -116,7 +116,7 @@ const contributors = {
         <span>
           Erika Butler-Jones is an interior designer, a creative director, and cultural historian
           based in Pittsburgh, Pennsylvania. An expert storyteller and alumna of Harvard University
-          (B.A.) and Parsons School of Design (M.A.), Erika’s work dwells at the intersection of
+          and Parsons School of Design, Erika’s work dwells at the intersection of
           aesthetics, design, and Black cultural history. You can find her on Instagram
           @erikabutlerjones.
         </span>
