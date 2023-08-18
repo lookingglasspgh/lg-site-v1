@@ -61,7 +61,7 @@ const HeroSection = () => {
             {home.HEADLINE}
           </Heading>
           <Text
-            maxWidth={textAndButtonMaxWidths}
+            maxWidth={{ ...textAndButtonMaxWidths, lg: '470px' }}
             fontSize={{ base: 'lg', md: '2xl' }}
             mb="2.5rem"
           >
