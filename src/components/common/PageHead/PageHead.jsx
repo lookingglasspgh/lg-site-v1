@@ -15,7 +15,7 @@ const PageHead = ({ pageMetadata }) => {
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content="resources/og-image.png" />
+      <meta property="og:image" content="https://www.looking-glass.space/resources/og-image.png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:type" content="image/png" />
