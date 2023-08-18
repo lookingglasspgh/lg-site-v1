@@ -10,7 +10,6 @@ import support from '@/content/support';
 import SupportTile from '@/components/support/SupportTile';
 
 const { commonWidths } = commonStyles;
-const { support: SupportMetadata } = RouteMetadata;
 
 const supportTiles = [
   {
@@ -36,10 +35,7 @@ const supportTiles = [
 ];
 
 const SupportPage = () => (
-  <Layout
-    pageDescription={SupportMetadata.description}
-    title={SupportMetadata.title}
-  >
+  <Layout pageMetadata={RouteMetadata.support}>
     <Flex
       id="support-section-container"
       direction="column"

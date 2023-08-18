@@ -6,12 +6,12 @@ import Footer from '@/components/common/Footer';
 import NavBar from '@/components/common/NavBar';
 import PageHead from '@/components/common/PageHead';
 
-const Layout = ({ children, pageDescription, title }) => (
+const Layout = ({
+  children,
+  pageMetadata,
+}) => (
   <>
-    <PageHead
-      pageDescription={pageDescription}
-      title={title}
-    />
+    <PageHead pageMetadata={pageMetadata} />
     <Flex
       height="100vh"
       width="100%"
@@ -29,13 +29,11 @@ const Layout = ({ children, pageDescription, title }) => (
 
 Layout.propTypes = {
   children: PropTypes.shape({}).isRequired,
-  pageDescription: PropTypes.string,
-  title: PropTypes.string,
-};
-
-Layout.defaultProps = {
-  pageDescription: 'Remembering & commemorating Black life in Pittsburgh',
-  title: 'Looking Glass',
+  pageMetadata: PropTypes.shape({
+    canonicalUrl: PropTypes.string,
+    description: PropTypes.string,
+    title: PropTypes.string,
+  }).isRequired,
 };
 
 export default Layout;
