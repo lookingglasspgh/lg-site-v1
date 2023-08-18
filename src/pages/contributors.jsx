@@ -7,10 +7,7 @@ import RouteMetadata from '@/constants/RouteMetadata';
 import SupportersSection from '@/components/contributors/SupportersSection';
 
 const ContributorsPage = () => (
-  <Layout
-    title={RouteMetadata.contributors.title}
-    pageDescription={RouteMetadata.contributors.description}
-  >
+  <Layout pageMetadata={RouteMetadata.contributors}>
     <Flex
       id="page-container"
       direction="column"

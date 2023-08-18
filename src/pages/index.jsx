@@ -9,10 +9,7 @@ import QuoteSection from '@/components/home/QuoteSection/QuoteSection';
 import RouteMetadata from '@/constants/RouteMetadata';
 
 const Home = () => (
-  <Layout
-    title={RouteMetadata.home.title}
-    pageDescription={RouteMetadata.home.description}
-  >
+  <Layout pageMetadata={RouteMetadata.home}>
     <Flex
       id="page-container"
       direction="column"
