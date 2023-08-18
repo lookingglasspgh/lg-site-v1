@@ -186,9 +186,11 @@ const contributors = {
           his family’s music legacy, Matthew has a goal of fulfilling the deferred hopes and broken
           dreams of family members long gone in the entertainment industry. His mantra is 'faith,
           family, and music', which serve as constant inspirations for his Maryland based
-          independent label, Family First Music Group, LLC (FFMG). His goal for his art is simple:
-          to inspire people to pursue purpose, and as a former wall-street analyst turned artist,
-          he not only holds this goal near to his heart but lives it to the fullest.
+          independent label, Family First Music Group (FFMG). His goal for his art is simple: to
+          inspire people to pursue purpose, and as a former wall-street analyst turned artist, he
+          not only holds this goal near to his heart but lives it to the fullest. As a
+          business-creative hybrid, Matthew holds a BA in Economics from Harvard University and a
+          MM in Music Production & Technology from Berklee College of Music.
         </span>
       ),
     },
