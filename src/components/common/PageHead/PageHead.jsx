@@ -7,10 +7,7 @@ const PageHead = ({ pageMetadata }) => {
   return (
     <Head>
       <title>{title}</title>
-      <meta
-        name="description"
-        content={description}
-      />
+      <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonicalUrl} />
@@ -19,6 +16,8 @@ const PageHead = ({ pageMetadata }) => {
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:alt" content="Looking Glass circular glass logo" />
+      <meta property="og:site_name" content="Looking Glass: Remembering & Imagining" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="canonical" href={canonicalUrl} />
       <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png" />
