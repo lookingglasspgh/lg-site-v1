@@ -9,12 +9,10 @@ import SectionContainer from '@/components/common/SectionContainer';
 import support from '@/content/support';
 import SupportTile from '@/components/support/SupportTile';
 
-const { support: SupportMetadata } = RouteMetadata;
-
 const supportTiles = [
   {
-    description: `Learn more about Pittsburgh's Black history and support local bookstores.
-    10% of each purchase helps to support Looking Glass.`,
+    description: `Learn more about Pittsburgh's Black history through our reading lists.
+    Ten percent of each purchase goes to support Looking Glass.`,
     heading: 'Visit our Bookshop',
     icon: <Book size={48} />,
     tileLink: common.BOOKSHOP_LINK,
@@ -35,10 +33,7 @@ const supportTiles = [
 ];
 
 const SupportPage = () => (
-  <Layout
-    pageDescription={SupportMetadata.description}
-    title={SupportMetadata.title}
-  >
+  <Layout pageMetadata={RouteMetadata.support}>
     <SectionContainer
       id="support-section-container"
       direction="column"
