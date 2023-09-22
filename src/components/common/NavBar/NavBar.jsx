@@ -26,7 +26,6 @@ const NavBar = () => (
       width={{ base: '200px', md: '250px' }}
       height={{ base: '80px', md: '100px' }}
       position="relative"
-      ml={{ base: 'auto', lg: '0' }}
     >
       <SiteImage
         src="/resources/logo-lg-black.svg"

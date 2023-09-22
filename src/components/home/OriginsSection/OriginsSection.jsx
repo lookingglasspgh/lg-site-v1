@@ -12,7 +12,6 @@ import {
 import commonStyles from '@/styles/commonStyles';
 import common from '@/content/common';
 import home from '@/content/home';
-import holcMap from '@/public/artifacts/holc.webp';
 import SiteImage from '@/components/common/SiteImage';
 
 const { commonWidths, gradients } = commonStyles;
@@ -64,11 +63,14 @@ const OriginsSection = () => {
             width="100%"
           >
             <Box
-              maxWidth={{ base: '325px', md: '464px', lg: '530px' }}
+              position="relative"
+              width={{ base: '325px', md: '464px', lg: '530px' }}
+              height={{ base: '325px', md: '464px', lg: '530px' }}
               m="0 auto 0.5rem auto"
             >
               <SiteImage
-                src={holcMap}
+                src={home.images.holcMap}
+                fill
                 style={{ borderRadius: '4px' }}
                 sizes="325px, (min-width: 768px) 464px, (min-width: 992px) 530px"
                 alt={origins.IMAGE_SOURCE}
