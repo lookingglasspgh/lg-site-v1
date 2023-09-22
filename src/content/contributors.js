@@ -164,7 +164,7 @@ const contributors = {
       name: 'Jeremiah Strawbridge',
       role: 'Videographer',
       headshotPath: jeremiah,
-      website: null,
+      website: 'https://www.youtube.com/@JeremiahStrawbridge',
       bio: (
         <span>
           Jeremiah Strawbridge is a Central PA based multimedia creative specialist. He holds a

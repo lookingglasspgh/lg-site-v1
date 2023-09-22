@@ -14,7 +14,6 @@ import TeenieModal from '../TeenieModal/TeenieModal';
 
 import common from '@/content/common';
 import commonStyles from '@/styles/commonStyles';
-import eastLibertyYmca from '@/public/work/east-liberty-ymca.webp';
 import home from '@/content/home';
 import SiteImage from '@/components/common/SiteImage';
 import PreviewVideoModal from '@/components/common/PreviewVideoModal';
@@ -100,6 +99,7 @@ const HeroSection = () => {
         <Flex id="collage-container-1" direction="column">
           <Box
             id="collage-wrapper"
+            position="relative"
             width={{
               base: '325px', md: '550px', lg: '450px', xl: '600px',
             }}
@@ -108,8 +108,9 @@ const HeroSection = () => {
             }}
           >
             <SiteImage
-              src={eastLibertyYmca}
+              src={home.images.heroCollage}
               priority
+              fill
               alt={home.COLLAGE_ALT}
               sizes="
                 325px,

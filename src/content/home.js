@@ -29,6 +29,13 @@ const home = {
     AUTHOR: 'By Adrian Jones',
     IMAGE_SOURCE: 'Redlining Maps from the HOLC, 1937',
   },
+  demoLoop: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/demo-loop.mp4',
+  images: {
+    conceptArt: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/concept-art.webp',
+    demoPlaceholder: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/demo-placeholder.webp',
+    heroCollage: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/east-liberty-ymca.webp',
+    holcMap: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/holc.webp',
+  },
 };
 
 export default home;
