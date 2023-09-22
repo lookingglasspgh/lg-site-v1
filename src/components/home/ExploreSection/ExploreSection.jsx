@@ -92,12 +92,12 @@ const ExploreSection = () => {
           muted
           loop
           playsInline
-          poster="work/demo-placeholder.webp"
+          poster={home.images.demoPlaceholder}
           style={{ borderRadius: '40px', border: '8px solid #020314' }}
           ref={videoRef}
         >
           <source
-            data-src="work/demo-loop.mp4"
+            data-src={home.demoLoop}
             type="video/mp4"
           />
         </video>

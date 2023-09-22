@@ -16,7 +16,17 @@ module.exports = () => {
     },
   ];
 
+  const images = {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lg-site-assets.s3.us-east-2.amazonaws.com',
+      },
+    ],
+  };
+
   return withBundleAnalyzer({
+    images,
     reactStrictMode,
     redirects,
   });

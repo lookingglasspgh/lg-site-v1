@@ -29,7 +29,8 @@ const MobileMenu = () => {
       <Box
         display={{ base: 'block', lg: 'none' }}
         width={{ base: '24px', md: '32px' }}
-        ml="auto"
+        position="absolute"
+        right="1rem"
         color="black.500"
         cursor="pointer"
         onClick={onDrawerOpen}

@@ -6,7 +6,6 @@ import {
   Text,
 } from '@chakra-ui/react';
 
-import conceptArt from '@/public/work/concept-art.webp';
 import commonStyles from '@/styles/commonStyles';
 import home from '@/content/home';
 import SiteImage from '@/components/common/SiteImage';
@@ -27,6 +26,7 @@ const QuoteSection = () => (
   >
     <Flex
       id="concept-art-container"
+      position="relative"
       m={{
         base: '-1rem 0 0 0', md: '-3rem 0 0 0', lg: '0 2rem 0 0', xl: '0 4rem 0 0',
       }}
@@ -38,8 +38,9 @@ const QuoteSection = () => (
       }}
     >
       <SiteImage
-        src={conceptArt}
+        src={home.images.conceptArt}
         alt={home.CONCEPT_ART_ALT}
+        fill
         sizes="
           300px,
           (min-width: 768px) 400px,
