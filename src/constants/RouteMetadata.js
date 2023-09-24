@@ -10,8 +10,8 @@ const RouteMetadata = {
   },
   contributors: {
     canonicalUrl: 'https://www.looking-glass.space/contributors',
-    description: 'The vital collaborators and supporters that push this project forward.',
-    title: 'Contributors | Looking Glass',
+    description: 'The individuals and organizations that push Looking Glass forward.',
+    title: 'Collaborators & Supporters | Looking Glass',
   },
   soundscape: {
     description: 'A six-track companion to the app, inspired by the experiences of Black Pittsburgh.',
@@ -19,7 +19,7 @@ const RouteMetadata = {
   },
   support: {
     canonicalUrl: 'https://www.looking-glass.space/support',
-    description: 'Help sustain and grow the archive.',
+    description: 'Help sustain and grow the Looking Glass archive.',
     title: 'Ways to Support | Looking Glass',
   },
 };
