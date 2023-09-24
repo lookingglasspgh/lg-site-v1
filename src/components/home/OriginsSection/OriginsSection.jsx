@@ -45,7 +45,7 @@ const OriginsSection = () => {
             mb="2rem"
           >
             <Heading
-              as="h3"
+              as="h2"
               variant="secondary"
               maxWidth={{ base: '300px', sm: '100%' }}
               mb="0.5rem"

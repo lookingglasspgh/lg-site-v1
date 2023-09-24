@@ -59,13 +59,17 @@ const HeroSection = () => {
           >
             {home.HEADLINE}
           </Heading>
-          <Text
+          <Heading
+            as="h2"
             maxWidth={{ ...textAndButtonMaxWidths, lg: '470px' }}
             fontSize={{ base: 'lg', md: '2xl' }}
+            fontFamily="body"
+            fontWeight="normal"
+            lineHeight="1.5"
             mb="2.5rem"
           >
             {home.ABOUT_CAPTION}
-          </Text>
+          </Heading>
           <Flex
             maxWidth={textAndButtonMaxWidths}
             direction={{ base: 'column', lg: 'row' }}
