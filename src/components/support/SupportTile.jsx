@@ -41,7 +41,7 @@ const SupportTile = ({
             <Icon />
           </Box>
           <Heading
-            as="h3"
+            as="h2"
             variant="secondary"
             fontSize="2xl"
             mb="1.5rem"
