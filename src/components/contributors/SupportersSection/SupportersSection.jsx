@@ -44,6 +44,7 @@ const SupportersSection = () => (
             borderRadius="lg"
             boxShadow="2xl"
           >
+            <div>Adrian</div>
             <Flex direction="column">
               <Text
                 variant="secondary"
