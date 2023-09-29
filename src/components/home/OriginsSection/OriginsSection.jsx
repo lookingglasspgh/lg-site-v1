@@ -99,11 +99,10 @@ const OriginsSection = () => {
             treated Black residents with little regard.
             <br />
             <br />
-            Neighborhoods that residents had known
-            for decades were being forcefully transformed in the interest of maximizing profits
-            for land owners. As I spoke with more people, read more accounts and walked through
-            more spaces, I learned that the marks of gentrification are especially vicious and
-            repugnant in East Liberty.
+            Neighborhoods that residents had known as home for decades were being forcefully
+            transformed in the interest of maximizing profits for land owners. As I spoke with
+            more people, read more accounts and walked through more spaces, I learned that the
+            marks of gentrification are especially vicious and repugnant in East Liberty.
             { showReadMore && (
               <span>..</span>
             )}
@@ -128,15 +127,15 @@ const OriginsSection = () => {
               the past and sites of memory possess tremendous offensive and defensive value.
               <br />
               <br />
-              My awareness of this multilayered struggle inspired a vision, I imagined a camera
-              that was able to reveal the history buried within a gentrified neighborhood. From
-              that image grew plans for an app-based archive of Black life in Pittsburgh equipped
-              with an augmented reality lens.
+              My awareness of this multilayered struggle inspired a vision––I imagined a camera
+              that was able to unearth the history buried within a gentrified neighborhood. From
+              that image grew plans for Looking Glass, an app-based archive of Black life in
+              Pittsburgh equipped with an augmented reality lens.
               <br />
               <br />
-              It was important to me that Looking Glass begin
-              with a focus on East Liberty, because the intense efforts to displace and disrupt
-              long-time residents have yet to cease.
+              Looking Glass will contain stories that are rooted in all parts of the city, but it
+              was important to me that it begin with a focus on East Liberty. The intense efforts
+              to displace and disrupt the neighborhood&#39;s long-time residents have yet to cease.
               <br />
               <br />
               The enduring risk to homes and sites of memory calls for engaging in the work of
@@ -144,9 +143,8 @@ const OriginsSection = () => {
               be found when we connect to the past.
               <br />
               <br />
-              I hope Looking Glass as an archive that also
-              maps stories to their points of origin will be a resource that facilitates this
-              connection and reaffirms that the story of Black Pittsburgh cannot be rewritten.
+              It&#39;s my hope that Looking Glass will be a resource that facilitates meaningful
+              connections to the past and in turn helps us imagine and pursue a more just future.
             </Text>
           )}
         </Container>
