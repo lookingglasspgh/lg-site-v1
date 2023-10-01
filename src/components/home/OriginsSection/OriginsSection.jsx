@@ -99,10 +99,11 @@ const OriginsSection = () => {
             treated Black residents with little regard.
             <br />
             <br />
-            Neighborhoods that residents had known as home for decades were being forcefully
+            Neighborhoods that they had known as home for decades were being forcefully
             transformed in the interest of maximizing profits for land owners. As I spoke with
             more people, read more accounts and walked through more spaces, I learned that the
-            marks of gentrification are especially vicious and repugnant in East Liberty.
+            marks of gentrification are especially vicious and repugnant in the East Liberty
+            neighborhood.
             { showReadMore && (
               <span>..</span>
             )}
@@ -133,14 +134,15 @@ const OriginsSection = () => {
               Pittsburgh equipped with an augmented reality lens.
               <br />
               <br />
-              Looking Glass will contain stories that are rooted in all parts of the city, but it
-              was important to me that it begin with a focus on East Liberty. The intense efforts
-              to displace and disrupt the neighborhood&#39;s long-time residents have yet to cease.
+              While Looking Glass will contain stories and artifacts with roots in all parts of the
+              city, it was important to me that it begin with a focus on East Liberty, as the
+              intense efforts to displace and disrupt the neighborhood’s long-time residents have
+              yet to cease.
               <br />
               <br />
-              The enduring risk to homes and sites of memory calls for engaging in the work of
-              recording and gathering stories. I believe there is power, healing and guidance to
-              be found when we connect to the past.
+              I believe the enduring risk to homes and sites of memory calls for engaging in the
+              work of gathering and recording stories. When we connect to the past, we can find
+              power, healing and guidance for the path ahead.
               <br />
               <br />
               It&#39;s my hope that Looking Glass will be a resource that facilitates meaningful
