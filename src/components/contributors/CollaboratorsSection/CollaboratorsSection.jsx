@@ -11,10 +11,10 @@ import {
 } from '@chakra-ui/react';
 import { AlignLeft, ExternalLink } from 'react-feather';
 
+import BioModal from '../BioModal/BioModal';
 import commonStyles from '@/styles/commonStyles';
 import contributors from '@/content/contributors';
 import SiteImage from '@/components/common/SiteImage/SiteImage';
-import BioModal from '../BioModal/BioModal';
 
 const { commonWidths, gradients } = commonStyles;
 

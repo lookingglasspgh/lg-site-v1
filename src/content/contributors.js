@@ -27,8 +27,8 @@ const contributors = {
       priority: true,
       bio: (
         <span>
-          Adrian Jones is a Pittsburgh-based artist, historian and creative
-          technologist whose practice is shaped by a commitment to those living
+          Adrian Jones is a Pittsburgh-based artist, creative technologist
+          and archivist whose practice is shaped by a commitment to those living
           in society’s margins. After earning a Bachelor's degree in Electrical
           Engineering from Harvard University, his work in software development
           led him towards exploring the power of speculative imagination and
