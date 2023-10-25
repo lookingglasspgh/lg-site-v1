@@ -20,7 +20,6 @@ const fragments = {
       to see the model within an AR view.
     </span>
   ),
-  MODEL_URL: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/east_liberty_fragments.glb',
   MODEL_ALT: '3D scene depicting four models of buildings in East Liberty',
   AR_VIEW: 'Activating AR View',
   QR_INSTRUCTIONS: 'Use the QR code below to visit this page on an AR compatible iOS or Android device.',
