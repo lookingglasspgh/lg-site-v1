@@ -2,13 +2,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import {
   Box,
+  Button,
   Container,
   Flex,
   Heading,
   Spinner,
   Text,
+  useDisclosure,
 } from '@chakra-ui/react';
+import { HelpCircle } from 'react-feather';
 
+import ARViewModal from '@/components/fragments/ARViewModal';
 import commonStyles from '@/styles/commonStyles';
 import fragments from '@/content/fragments';
 import Layout from '@/components/common/Layout';
@@ -27,6 +31,13 @@ const modelViewerStyles = {
 const FragmentsPage = () => {
   const [showSpinner, setShowSpinner] = useState(true);
   const modelViewerRef = useRef(null);
+
+  const {
+    isOpen: isARViewModalOpen,
+    onOpen: onARViewModalOpen,
+    onClose: onARViewModalClose,
+  } = useDisclosure({ id: 'arViewModal' });
+
   const onModelLoad = () => {
     setShowSpinner(false);
     modelViewerRef.current.style.setProperty('opacity', '1');
@@ -70,17 +81,18 @@ const FragmentsPage = () => {
           >
             <Text fontSize="lg">{fragments.DESCRIPTION}</Text>
           </Container>
-          <Box
-            maxWidth="700px"
-            width="100%"
-            height="500px"
-            borderRadius="lg"
-            background={gradients.black}
-            border="1px solid #020314"
-            boxShadow="2xl"
-            display="grid"
-          >
-            { showSpinner && (
+          <Flex direction="column" width="100%">
+            <Box
+              maxWidth="700px"
+              width="100%"
+              height="500px"
+              borderRadius="lg"
+              background={gradients.black}
+              border="1px solid #020314"
+              boxShadow="2xl"
+              display="grid"
+            >
+              { showSpinner && (
               <Spinner
                 color="pink.500"
                 width="100px"
@@ -90,23 +102,40 @@ const FragmentsPage = () => {
                 zIndex="20"
                 margin="auto"
               />
-            )}
-            <model-viewer
-              ref={modelViewerRef}
-              alt={fragments.MODEL_ALT}
-              src="./models/east-liberty-fragments.glb"
-              poster="./models/fragments-poster.webp"
-              ar
-              shadow-intensity="1"
-              camera-controls
-              camera-orbit="125deg 90deg 0"
-              touch-action="pan-y"
-              field-of-view="75deg"
-              style={modelViewerStyles}
-            />
-          </Box>
+              )}
+              <model-viewer
+                ref={modelViewerRef}
+                alt={fragments.MODEL_ALT}
+                src={fragments.MODEL_URL}
+                poster="/models/fragments-poster.webp"
+                ar
+                loading="eager"
+                shadow-intensity="1"
+                camera-controls
+                camera-orbit="125deg 90deg 0"
+                touch-action="pan-y"
+                field-of-view="75deg"
+                style={modelViewerStyles}
+              />
+            </Box>
+            <Button
+              variant="outline"
+              alignItems="center"
+              m="1rem auto 0 auto"
+              size="sm"
+              width="fit-content"
+              onClick={onARViewModalOpen}
+            >
+              <Text mr="0.5rem">{fragments.AR_VIEW}</Text>
+              <HelpCircle size={16} />
+            </Button>
+          </Flex>
         </Flex>
       </Flex>
+      <ARViewModal
+        isOpen={isARViewModalOpen}
+        onClose={onARViewModalClose}
+      />
     </Layout>
   );
 };
