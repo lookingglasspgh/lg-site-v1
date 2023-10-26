@@ -106,7 +106,7 @@ const FragmentsPage = () => {
               <model-viewer
                 ref={modelViewerRef}
                 alt={fragments.MODEL_ALT}
-                src="/models/fragments.glb"
+                src={fragments.MODEL_URL}
                 poster="/models/fragments-poster.webp"
                 ar
                 loading="eager"
