@@ -21,7 +21,7 @@ const fragments = {
     </span>
   ),
   MODEL_ALT: '3D scene depicting four models of buildings in East Liberty',
-  MODEL_URL: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/fragments-plane.glb',
+  MODEL_URL: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/fragments-edited.glb',
   AR_VIEW: 'Activating AR View',
   QR_INSTRUCTIONS: 'Use the QR code below to visit this page on an AR compatible iOS or Android device.',
   QR_ALT: 'QR code directing to the url looking-glass.space/neighborhood-fragments',
