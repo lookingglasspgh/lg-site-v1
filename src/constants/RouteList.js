@@ -2,15 +2,12 @@ export const RouteList = {
   HOME: '/',
   ARTIFACTS: '/artifacts',
   CONTRIBUTORS: '/contributors',
+  FRAGMENTS: '/neighborhood-fragments',
   SOUNDSCAPE: '/soundscape',
   SUPPORT: '/support',
 };
 
 export const NavBarRoutes = [
-  // {
-  //   title: 'Artifacts',
-  //   path: RouteList.ARTIFACTS,
-  // },
   // {
   //   title: 'Soundscape',
   //   path: RouteList.SOUNDSCAPE,
@@ -18,6 +15,10 @@ export const NavBarRoutes = [
   {
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,
+  },
+  {
+    title: 'Neighborhood Fragments',
+    path: RouteList.FRAGMENTS,
   },
   {
     title: 'Ways to Support',
@@ -27,16 +28,16 @@ export const NavBarRoutes = [
 
 export const MobileMenuRoutes = [
   // {
-  //   title: 'Artifacts',
-  //   path: RouteList.ARTIFACTS,
-  // },
-  // {
   //   title: 'Soundscape',
   //   path: RouteList.SOUNDSCAPE,
   // },
   {
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,
+  },
+  {
+    title: 'Neighborhood Fragments',
+    path: RouteList.FRAGMENTS,
   },
   {
     title: 'Ways to Support',
