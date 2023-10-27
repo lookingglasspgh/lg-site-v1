@@ -16,7 +16,7 @@ const RouteMetadata = {
   fragments: {
     canonicalUrl: `${baseUrl}${RouteList.FRAGMENTS}`,
     description: 'Spaces from East Liberty in 3D model form.',
-    title: 'Pieces of East Liberty | Looking Glass',
+    title: 'Neighborhood Fragments | Looking Glass',
   },
   soundscape: {
     canonicalUrl: `${baseUrl}${RouteList.SOUNDSCAPE}`,
