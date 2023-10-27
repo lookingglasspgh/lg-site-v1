@@ -15,13 +15,16 @@ const fragments = {
       and signs of the exclusionary development that has reshaped the neighborhood.
       <br />
       <br />
-      While viewing on desktop, click and drag the model to rotate the camera within the scene.
-      Hold the shift key while dragging to pan the camera. Visit this page on a mobile device
-      to see the model within an AR view.
+      Visit this page on a mobile device to see the model within an AR view–when activated you
+      can use your fingers to scale and reposition the model.
+      <br />
+      <br />
+      While viewing on desktop, click and drag the model to rotate the camera.
+      Hold the shift key while dragging to pan the camera.
     </span>
   ),
   MODEL_ALT: '3D scene depicting four models of buildings in East Liberty',
-  MODEL_URL: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/fragments-scaled.glb',
+  MODEL_URL: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/fragments.glb',
   AR_VIEW: 'Activating AR View',
   QR_INSTRUCTIONS: 'Use the QR code below to visit this page on an AR compatible iOS or Android device.',
   QR_ALT: 'QR code directing to the url looking-glass.space/neighborhood-fragments',
