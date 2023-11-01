@@ -15,8 +15,9 @@ const fragments = {
       and signs of the exclusionary development that has reshaped the neighborhood.
       <br />
       <br />
-      Visit this page on a mobile device to see the model within an AR view–when activated you
-      can use your fingers to scale and reposition the model.
+      Visit this page on a mobile device and press the model&rsquo;s cube button to
+      enter an AR view. For the best results, start by aiming your phone at a clear
+      space. When the AR view is active you can use your fingers to scale and reposition the model.
       <br />
       <br />
       While viewing on desktop, click and drag the model to rotate the camera.
