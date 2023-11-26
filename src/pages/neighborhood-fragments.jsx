@@ -29,7 +29,7 @@ const modelViewerStyles = {
 };
 
 const FragmentsPage = () => {
-  const [showSpinner, setShowSpinner] = useState(true);
+  const [isModelLoading, setIsModelLoading] = useState(true);
   const modelViewerRef = useRef(null);
 
   const {
@@ -39,8 +39,9 @@ const FragmentsPage = () => {
   } = useDisclosure({ id: 'arViewModal' });
 
   const onModelLoad = () => {
-    setShowSpinner(false);
+    setIsModelLoading(false);
     modelViewerRef.current.style.setProperty('opacity', '1');
+    modelViewerRef.current.setAttribute('ar', true);
   };
 
   useEffect(() => {
@@ -92,7 +93,7 @@ const FragmentsPage = () => {
               boxShadow="2xl"
               display="grid"
             >
-              { showSpinner && (
+              { isModelLoading && (
               <Spinner
                 color="pink.500"
                 width="100px"
@@ -108,7 +109,6 @@ const FragmentsPage = () => {
                 alt={fragments.MODEL_ALT}
                 src={fragments.MODEL_URL}
                 poster="/models/fragments-poster.webp"
-                ar
                 loading="eager"
                 shadow-intensity="1"
                 camera-controls
