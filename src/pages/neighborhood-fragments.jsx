@@ -41,6 +41,7 @@ const FragmentsPage = () => {
   const onModelLoad = () => {
     setIsModelLoading(false);
     modelViewerRef.current.style.setProperty('opacity', '1');
+    modelViewerRef.current.setAttribute('ar', true);
   };
 
   useEffect(() => {
@@ -108,7 +109,6 @@ const FragmentsPage = () => {
                 alt={fragments.MODEL_ALT}
                 src={fragments.MODEL_URL}
                 poster="/models/fragments-poster.webp"
-                ar={!isModelLoading}
                 loading="eager"
                 shadow-intensity="1"
                 camera-controls
