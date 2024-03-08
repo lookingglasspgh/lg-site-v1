@@ -8,7 +8,7 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import { Mail, MapPin, PlayCircle } from 'react-feather';
+import { Inbox, MapPin, PlayCircle } from 'react-feather';
 
 import TeenieModal from '../TeenieModal/TeenieModal';
 
@@ -83,7 +83,7 @@ const HeroSection = () => {
               <Button
                 size={{ base: 'md', lg: 'md' }}
               >
-                <Mail size={20} />
+                <Inbox size={20} />
                 <Text ml="0.5rem" variant="secondary">
                   {common.SUBSCRIBE}
                 </Text>
