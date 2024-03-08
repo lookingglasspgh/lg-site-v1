@@ -1,8 +1,13 @@
 import React from 'react';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Link } from '@chakra-ui/react';
+import { Inbox, Youtube } from 'react-feather';
 
-import ContactButton from '@/components/common/ContactButton';
+import ContactButton from '../ContactButton';
+
+import common from '@/content/common';
 import SiteImage from '@/components/common/SiteImage';
+
+const lgYoutube = 'https://www.youtube.com/@lookingglasspgh';
 
 const Footer = () => (
   <Flex
@@ -20,8 +25,7 @@ const Footer = () => (
       width={{ base: '200px', md: '250px' }}
       height={{ base: '80px', md: '100px' }}
       position="relative"
-      direction="column"
-      mb={{ base: '2rem', md: '0' }}
+      mb={{ base: '1.5rem', md: '0' }}
     >
       <SiteImage
         src="/resources/logo-lg-black.svg"
@@ -30,11 +34,16 @@ const Footer = () => (
         alt="Looking Glass logo"
       />
     </Box>
-    <Flex id="footer-items">
-      <ContactButton
-        isFooterButton
-        size={{ base: 'sm', md: 'md' }}
-      />
+    <Flex gap="1.5rem" flexDirection="column">
+      <Flex alignItems="center" gap="1.5rem" justifyContent="flex-end">
+        <ContactButton isFooterButton padding="0" height="100%" />
+        <Link color="black.300" href={common.SUBSCRIBE_LINK}>
+          <Inbox size={24} />
+        </Link>
+        <Link color="black.300" href={lgYoutube}>
+          <Youtube size={24} />
+        </Link>
+      </Flex>
     </Flex>
   </Flex>
 );

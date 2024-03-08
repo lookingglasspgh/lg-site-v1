@@ -21,9 +21,9 @@ const ContactButton = ({ isFooterButton, ...restProps }) => {
 
   const getButtonStyles = () => (
     {
-      borderColor: isFooterButton ? 'black.500' : 'ivory.400',
-      color: isFooterButton ? 'black.500' : 'ivory.400',
-      hoverBackground: isFooterButton ? 'ivory.600' : 'black.400',
+      borderColor: isFooterButton ? '' : 'ivory.400',
+      color: isFooterButton ? 'black.300' : 'ivory.400',
+      hoverBackground: isFooterButton ? '' : 'black.400',
     }
   );
 
@@ -46,20 +46,24 @@ const ContactButton = ({ isFooterButton, ...restProps }) => {
       color="ivory.400"
     >
       <Button
-        variant="outline"
+        variant={isFooterButton ? 'ghost' : 'outline'}
         color={getButtonStyles().color}
         borderColor={getButtonStyles().borderColor}
         onClick={onButtonClick}
         _hover={{ background: getButtonStyles().hoverBackground }}
+        minWidth="unset"
+        alt={common.footer.CONTACT_ALT}
         {...restProps}
       >
-        <Mail size={20} />
+        <Mail size={24} />
+        { !isFooterButton && (
         <Text
           color={getButtonStyles().color}
           ml="0.5rem"
         >
           {common.CONTACT}
         </Text>
+        )}
       </Button>
     </Tooltip>
   );
