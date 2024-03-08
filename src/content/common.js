@@ -7,6 +7,11 @@ const common = {
   BOOKSHOP_LINK: 'https://bookshop.org/shop/looking-glass',
   SUBSCRIBE_LINK: 'https://lookingglasspgh.substack.com/',
   HOME_LINK: 'https://looking-glass.space',
+  footer: {
+    TERMS: 'Terms',
+    PRIVACY: 'Privacy',
+    CONTACT_ALT: 'Contact Email Button',
+  },
 };
 
 export default common;

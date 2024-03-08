@@ -37,6 +37,7 @@ const NavBar = () => (
     <Flex
       id="nav-list"
       display={{ base: 'none', lg: 'flex' }}
+      gap="1.5rem"
     >
       { NavBarRoutes.map((route) => (
         <Link
@@ -45,7 +46,6 @@ const NavBar = () => (
           color="black.500"
           href={route.path}
           fontSize="lg"
-          mr="1.5rem"
           transition="all 0.2s"
           _hover={{ color: 'pink.500' }}
         >

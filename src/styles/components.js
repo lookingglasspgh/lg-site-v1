@@ -39,6 +39,7 @@ export const Divider = {
 export const Heading = {
   baseStyle: {
     color: 'black.500',
+    fontFamily: 'heading',
   },
   variants: {
     secondary: {
@@ -50,6 +51,7 @@ export const Heading = {
 export const Text = {
   baseStyle: {
     color: 'black.500',
+    fontFamily: 'body',
   },
   variants: {
     secondary: {
