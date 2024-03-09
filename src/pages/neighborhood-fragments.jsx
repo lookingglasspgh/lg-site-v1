@@ -79,6 +79,7 @@ const FragmentsPage = () => {
             p="0"
             m={{ base: '0 0 4rem 0', md: '0 4rem 0 0' }}
             maxWidth="500px"
+            backdropFilter="blur(1px)"
           >
             <Text fontSize="lg">{fragments.DESCRIPTION}</Text>
           </Container>

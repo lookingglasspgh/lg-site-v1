@@ -18,15 +18,20 @@ const RouteMetadata = {
     description: 'Spaces from East Liberty in 3D model form.',
     title: 'Neighborhood Fragments | Looking Glass',
   },
-  soundscape: {
-    canonicalUrl: `${baseUrl}${RouteList.SOUNDSCAPE}`,
-    description: 'A six-track companion to the app, inspired by the experiences of Black Pittsburgh.',
-    title: 'Soundscape | Looking Glass',
+  privacy: {
+    canonicalUrl: `${baseUrl}${RouteList.PRIVACY}`,
+    description: 'Looking Glass is designed to never store or share sensitive information, including location data. Read our Privacy Policy for more information.',
+    title: 'Privacy Policy | Looking Glass',
   },
   support: {
     canonicalUrl: `${baseUrl}${RouteList.SUPPORT}`,
     description: 'Help sustain and grow the Looking Glass archive.',
     title: 'Ways to Support | Looking Glass',
+  },
+  terms: {
+    canonicalUrl: `${baseUrl}${RouteList.TERMS}`,
+    description: 'The Terms of Service that govern the use of Looking Glass.',
+    title: 'Terms of Service | Looking Glass',
   },
 };
 
