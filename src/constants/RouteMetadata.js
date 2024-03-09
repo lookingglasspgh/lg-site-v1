@@ -23,11 +23,6 @@ const RouteMetadata = {
     description: 'Looking Glass is designed to never store or share sensitive information, including location data. Read our Privacy Policy for more information.',
     title: 'Privacy Policy | Looking Glass',
   },
-  soundscape: {
-    canonicalUrl: `${baseUrl}${RouteList.SOUNDSCAPE}`,
-    description: 'A six-track companion to the app, inspired by the experiences of Black Pittsburgh.',
-    title: 'Soundscape | Looking Glass',
-  },
   support: {
     canonicalUrl: `${baseUrl}${RouteList.SUPPORT}`,
     description: 'Help sustain and grow the Looking Glass archive.',
