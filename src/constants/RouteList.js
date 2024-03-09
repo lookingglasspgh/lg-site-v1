@@ -3,15 +3,12 @@ export const RouteList = {
   ARTIFACTS: '/artifacts',
   CONTRIBUTORS: '/contributors',
   FRAGMENTS: '/neighborhood-fragments',
-  SOUNDSCAPE: '/soundscape',
+  PRIVACY: '/privacy',
   SUPPORT: '/support',
+  TERMS: '/terms',
 };
 
 export const NavBarRoutes = [
-  // {
-  //   title: 'Soundscape',
-  //   path: RouteList.SOUNDSCAPE,
-  // },
   {
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,
@@ -27,10 +24,6 @@ export const NavBarRoutes = [
 ];
 
 export const MobileMenuRoutes = [
-  // {
-  //   title: 'Soundscape',
-  //   path: RouteList.SOUNDSCAPE,
-  // },
   {
     title: 'Contributors',
     path: RouteList.CONTRIBUTORS,
