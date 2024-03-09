@@ -20,7 +20,7 @@ const RouteMetadata = {
   },
   privacy: {
     canonicalUrl: `${baseUrl}${RouteList.PRIVACY}`,
-    description: 'Looking Glass is designed to never store or share sensitive information, including location data. Read our Privacy Policy for more information.',
+    description: 'Looking Glass is designed to never store or share sensitive information, including location data. Read our Privacy Policy to learn more.',
     title: 'Privacy Policy | Looking Glass',
   },
   support: {
