@@ -3,8 +3,9 @@ export const RouteList = {
   ARTIFACTS: '/artifacts',
   CONTRIBUTORS: '/contributors',
   FRAGMENTS: '/neighborhood-fragments',
-  SOUNDSCAPE: '/soundscape',
+  PRIVACY: '/privacy',
   SUPPORT: '/support',
+  TERMS: '/terms',
 };
 
 export const NavBarRoutes = [

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Book, Mail, Send } from 'react-feather';
+import { Book, Inbox, Send } from 'react-feather';
 import { Flex, Heading, SimpleGrid } from '@chakra-ui/react';
 
 import common from '@/content/common';
@@ -22,7 +22,7 @@ const supportTiles = [
   {
     description: 'Sign up for our mailing list and stay up to date on project milestones and events as we prepare for launch!',
     heading: 'Get Release Updates',
-    icon: <Mail size={48} />,
+    icon: <Inbox size={48} />,
     tileLink: common.SUBSCRIBE_LINK,
   },
   {

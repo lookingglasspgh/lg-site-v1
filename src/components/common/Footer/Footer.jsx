@@ -1,51 +1,51 @@
 import React from 'react';
-import { Box, Flex, Link } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import { Inbox, Youtube } from 'react-feather';
 
 import ContactButton from '../ContactButton';
+import {
+  FooterContainer,
+  ImageContainer,
+  LinkContainer,
+  StyledLink,
+} from './Footer.styles';
 
 import common from '@/content/common';
+import { RouteList } from '@/constants/RouteList';
 import SiteImage from '@/components/common/SiteImage';
 
 const lgYoutube = 'https://www.youtube.com/@lookingglasspgh';
 
 const Footer = () => (
-  <Flex
-    id="footer-container"
-    width="100%"
-    padding={{ base: '2.5rem', md: '1.5rem' }}
-    alignItems="center"
-    justifyContent={{ base: 'center', md: 'space-between' }}
-    direction={{ base: 'column', md: 'row' }}
-    borderTop="0.5px solid"
-    borderTopColor="black.300"
-    backgroundColor="ivory.500"
-  >
-    <Box
-      width={{ base: '200px', md: '250px' }}
-      height={{ base: '80px', md: '100px' }}
-      position="relative"
-      mb={{ base: '1.5rem', md: '0' }}
-    >
+  <FooterContainer id="footer-container">
+    <ImageContainer>
       <SiteImage
         src="/resources/logo-lg-black.svg"
         fill
         sizes="200px, (min-width: 768px) 250px"
         alt="Looking Glass logo"
       />
-    </Box>
+    </ImageContainer>
     <Flex gap="1.5rem" flexDirection="column">
-      <Flex alignItems="center" gap="1.5rem" justifyContent="flex-end">
+      <LinkContainer>
         <ContactButton isFooterButton padding="0" height="100%" />
-        <Link color="black.300" href={common.SUBSCRIBE_LINK}>
+        <StyledLink href={common.SUBSCRIBE_LINK}>
           <Inbox size={24} />
-        </Link>
-        <Link color="black.300" href={lgYoutube}>
+        </StyledLink>
+        <StyledLink href={lgYoutube}>
           <Youtube size={24} />
-        </Link>
-      </Flex>
+        </StyledLink>
+      </LinkContainer>
+      <LinkContainer gap={{ base: '1.5rem', md: '1rem' }}>
+        <StyledLink href={RouteList.TERMS}>
+          <Text>{common.footer.TERMS}</Text>
+        </StyledLink>
+        <StyledLink href={RouteList.PRIVACY}>
+          <Text>{common.footer.PRIVACY}</Text>
+        </StyledLink>
+      </LinkContainer>
     </Flex>
-  </Flex>
+  </FooterContainer>
 );
 
 export default Footer;
