@@ -16,6 +16,7 @@ import ARViewModal from '@/components/fragments/ARViewModal';
 import commonStyles from '@/styles/commonStyles';
 import fragments from '@/content/fragments';
 import Layout from '@/components/common/Layout';
+import PageText from '@/components/common/PageText';
 import RouteMetadata from '@/constants/RouteMetadata';
 
 const { commonWidths, gradients } = commonStyles;
@@ -72,20 +73,20 @@ const FragmentsPage = () => {
       >
         <Heading as="h1" mb="3rem">{fragments.TITLE}</Heading>
         <Flex
-          direction={{ base: 'column', md: 'row' }}
+          direction={{ base: 'column', lg: 'row' }}
           justifyContent="space-between"
         >
           <Container
             p="0"
-            m={{ base: '0 0 4rem 0', md: '0 4rem 0 0' }}
-            maxWidth="500px"
+            m={{ base: '0 0 4rem 0', lg: '0 6rem 0 0' }}
+            maxWidth={{ base: 'unset', lg: '500px' }}
             backdropFilter="blur(1px)"
           >
-            <Text fontSize="lg">{fragments.DESCRIPTION}</Text>
+            <PageText>{fragments.DESCRIPTION}</PageText>
           </Container>
           <Flex direction="column" width="100%">
             <Box
-              maxWidth="700px"
+              maxWidth={{ base: 'unset', lg: '700px' }}
               width="100%"
               height="500px"
               borderRadius="lg"

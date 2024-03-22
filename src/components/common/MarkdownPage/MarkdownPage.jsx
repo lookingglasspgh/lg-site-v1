@@ -1,14 +1,10 @@
 import React from 'react';
-import {
-  chakra,
-  Flex,
-  Heading,
-  Text,
-} from '@chakra-ui/react';
+import { chakra, Flex, Heading } from '@chakra-ui/react';
 import Markdown from 'react-markdown';
 import PropTypes from 'prop-types';
 
 import commonStyles from '@/styles/commonStyles';
+import PageText from '../PageText';
 
 const { commonWidths } = commonStyles;
 
@@ -35,7 +31,7 @@ const MarkdownPage = ({ markdownContent }) => {
   const renderH1 = (props) => <Heading as="h1" mb="2rem" {...props} />;
   const renderH2 = (props) => <Heading as="h2" m="1.5rem 0 1rem" fontSize="3xl" {...props} />;
   const renderLi = (props) => <StyledLi {...props} />;
-  const renderP = (props) => <Text m="0.5rem 0" fontSize="lg" {...props} />;
+  const renderP = (props) => <PageText m="0.5rem 0" {...props} />;
 
   return (
     <MarkdownContainer>

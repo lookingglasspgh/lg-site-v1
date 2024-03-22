@@ -77,7 +77,7 @@ const HeroSection = () => {
           >
             <Link
               _hover={{ textDecoration: 'none' }}
-              href={common.SUBSCRIBE_LINK}
+              href={common.links.SUBSCRIBE_LINK}
               isExternal
             >
               <Button
