@@ -4,6 +4,7 @@ import NextLink from 'next/link';
 
 import MobileMenu from './components/MobileMenu';
 
+import common from '@/content/common';
 import { NavBarRoutes, RouteList } from '@/constants/RouteList';
 import SiteImage from '@/components/common/SiteImage';
 
@@ -26,12 +27,13 @@ const NavBar = () => (
       width={{ base: '200px', md: '250px' }}
       height={{ base: '80px', md: '100px' }}
       position="relative"
+      aria-label={common.accessibility.HOME_ALT}
     >
       <SiteImage
         src="/resources/logo-lg-black.svg"
         fill
         sizes="200px, (min-width: 768px) 250px"
-        alt="Looking Glass logo and link to home page"
+        alt={common.accessibility.LOGO_ALT}
       />
     </Link>
     <Flex
