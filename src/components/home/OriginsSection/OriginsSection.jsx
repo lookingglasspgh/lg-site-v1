@@ -12,6 +12,7 @@ import {
 import commonStyles from '@/styles/commonStyles';
 import common from '@/content/common';
 import home from '@/content/home';
+import PageText from '@/components/common/PageText';
 import SiteImage from '@/components/common/SiteImage';
 
 const { commonWidths, gradients } = commonStyles;
@@ -87,10 +88,9 @@ const OriginsSection = () => {
               {origins.IMAGE_SOURCE}
             </Link>
           </Flex>
-          <Text
+          <PageText
             id="origins-body"
             variant="secondary"
-            fontSize={{ base: 'md', md: 'xl' }}
             m="0 auto"
           >
             When I moved to Pittsburgh from Harrisburg, PA in 2017, my new neighbors made
@@ -109,17 +109,16 @@ const OriginsSection = () => {
             )}
             <br />
             <br />
-          </Text>
+          </PageText>
           { showReadMore && (
             <Button onClick={toggleReadMore} width="100%">
               {common.READ_MORE}
             </Button>
           )}
           { !showReadMore && (
-            <Text
+            <PageText
               id="origins-body-more"
               variant="secondary"
-              fontSize={{ base: 'md', md: 'xl' }}
               m="0 auto"
             >
               Gentrification not only displaces vulnerable people but it also furthers the erasure
@@ -147,7 +146,7 @@ const OriginsSection = () => {
               <br />
               It&#39;s my hope that Looking Glass will be a resource that facilitates meaningful
               connections to the past and in turn helps us imagine and pursue a more just future.
-            </Text>
+            </PageText>
           )}
         </Container>
       </Flex>
