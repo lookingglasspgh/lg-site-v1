@@ -52,7 +52,7 @@ const ContactButton = ({ isFooterButton, ...restProps }) => {
         onClick={onButtonClick}
         _hover={{ background: getButtonStyles().hoverBackground }}
         minWidth="unset"
-        alt={common.footer.CONTACT_ALT}
+        aria-label={common.accessibility.CONTACT_ALT}
         {...restProps}
       >
         <Mail size={24} />

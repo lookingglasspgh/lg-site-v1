@@ -17,13 +17,13 @@ const supportTiles = [
     Ten percent of each purchase goes to support Looking Glass.`,
     heading: 'Visit our Bookshop',
     icon: <Book size={48} />,
-    tileLink: common.BOOKSHOP_LINK,
+    tileLink: common.links.BOOKSHOP_LINK,
   },
   {
     description: 'Sign up for our mailing list and stay up to date on project milestones and events as we prepare for launch!',
     heading: 'Get Release Updates',
     icon: <Inbox size={48} />,
-    tileLink: common.SUBSCRIBE_LINK,
+    tileLink: common.links.SUBSCRIBE_LINK,
   },
   {
     description: `If you connect with our mission to expand access to Black histories and futures,

@@ -14,8 +14,6 @@ import common from '@/content/common';
 import { RouteList } from '@/constants/RouteList';
 import SiteImage from '@/components/common/SiteImage';
 
-const lgYoutube = 'https://www.youtube.com/@lookingglasspgh';
-
 const Footer = () => (
   <FooterContainer id="footer-container">
     <ImageContainer>
@@ -23,16 +21,26 @@ const Footer = () => (
         src="/resources/logo-lg-black.svg"
         fill
         sizes="200px, (min-width: 768px) 250px"
-        alt="Looking Glass logo"
+        alt={common.accessibility.LOGO_ALT}
       />
     </ImageContainer>
     <Flex gap="1.5rem" flexDirection="column">
       <LinkContainer>
-        <ContactButton isFooterButton padding="0" height="100%" />
-        <StyledLink href={common.SUBSCRIBE_LINK}>
+        <ContactButton
+          isFooterButton
+          padding="0"
+          height="100%"
+        />
+        <StyledLink
+          href={common.links.SUBSCRIBE_LINK}
+          aria-label={common.accessibility.SUBSCRIBE_ALT}
+        >
           <Inbox size={24} />
         </StyledLink>
-        <StyledLink href={lgYoutube}>
+        <StyledLink
+          href={common.links.YOUTUBE_LINK}
+          aria-label={common.accessibility.YOUTUBE_ALT}
+        >
           <Youtube size={24} />
         </StyledLink>
       </LinkContainer>
