@@ -1,18 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/jsx-filename-extension */
-import adrian from '@/public/collaborators/adrian.webp';
-import drsantos from '@/public/collaborators/drsantos.webp';
-import xiaowei from '@/public/collaborators/xiaowei.webp';
-import drummond from '@/public/collaborators/drummond.webp';
-import ebj from '@/public/collaborators/ebj.webp';
-import inez from '@/public/collaborators/inez.webp';
-import jason from '@/public/collaborators/jason.webp';
-import jeremiah from '@/public/collaborators/jeremiah.webp';
-import matt from '@/public/collaborators/matt.webp';
-import pvkvsv from '@/public/collaborators/pvkvsv.webp';
-import waverly from '@/public/collaborators/waverly.webp';
-import whiteLeaf from '@/public/collaborators/white-leaf.webp';
 
 const contributors = {
   COLLABORATORS: 'Collaborators',
@@ -21,7 +9,7 @@ const contributors = {
     {
       name: 'Adrian Jones',
       role: 'Founder',
-      headshotPath: adrian,
+      headshotPath: '/collaborators/adrian.webp',
       headshotAlt: 'Image of Adrian Jones, Looking Glass Founder',
       website: null,
       priority: true,
@@ -40,7 +28,7 @@ const contributors = {
     {
       name: 'Dorothy R. Santos, Ph.D.',
       role: 'Advisor',
-      headshotPath: drsantos,
+      headshotPath: '/collaborators/drsantos.webp',
       headshotAlt: 'Image of Dorothy R. Santos, Ph.D., Looking Glass Advisor',
       website: 'https://dorothysantos.com/',
       priority: true,
@@ -62,7 +50,7 @@ const contributors = {
     {
       name: 'Xiaowei Wang, Ph.D.',
       role: 'Advisor',
-      headshotPath: xiaowei,
+      headshotPath: '/collaborators/xiaowei.webp',
       headshotAlt: 'Image of Xiaowei Wang, Ph.D., Looking Glass Advisor',
       website: 'https://www.xiaoweiwang.com/',
       priority: true,
@@ -86,7 +74,7 @@ const contributors = {
     {
       name: 'Drummond Projects',
       role: 'Architectural Modeler & Renderer',
-      headshotPath: drummond,
+      headshotPath: '/collaborators/drummond.webp',
       website: 'https://www.drummondprojects.com/',
       bio: (
         <span>
@@ -110,7 +98,7 @@ const contributors = {
     {
       name: 'Erika Butler-Jones',
       role: 'Branding & Marketing Consultant',
-      headshotPath: ebj,
+      headshotPath: '/collaborators/ebj.webp',
       website: 'https://www.erikabutlerjones.com',
       bio: (
         <span>
@@ -123,9 +111,25 @@ const contributors = {
       ),
     },
     {
+      name: 'Haris Domond',
+      role: 'Research Assistant',
+      headshotPath: '/collaborators/haris.webp',
+      website: null,
+      bio: (
+        <span>
+          Haris Domond is a Chicago-based thinker with a motivation to reduce systemic inequity in
+          all of its forms. His work in healthcare, affordable housing, and workplace diversity has
+          been shaped by his education at Harvard University (BA and MTS) where he studied theology,
+          critical race theory, and ethics. Deeply inspired by James Baldwin, George D. Kelsey and
+          Willie James Jennings, Haris has researched, written and presented extensively on the
+          evolving nature of racial segregation in the United States.
+        </span>
+      ),
+    },
+    {
       name: 'INEZ',
       role: 'Soundscape Artist',
-      headshotPath: inez,
+      headshotPath: '/collaborators/inez.webp',
       website: 'https://inez.us/home',
       bio: (
         <span>
@@ -145,7 +149,7 @@ const contributors = {
     {
       name: 'JASON MCKOY',
       role: 'Branding Designer',
-      headshotPath: jason,
+      headshotPath: '/collaborators/jason.webp',
       website: 'https://mckoycreative.com/',
       bio: (
         <span>
@@ -163,7 +167,7 @@ const contributors = {
     {
       name: 'Jeremiah Strawbridge',
       role: 'Videographer',
-      headshotPath: jeremiah,
+      headshotPath: '/collaborators/jeremiah.webp',
       website: 'https://www.youtube.com/@JeremiahStrawbridge',
       bio: (
         <span>
@@ -178,7 +182,7 @@ const contributors = {
     {
       name: 'Matthew Maxwell',
       role: 'Soundscape Project Manager & Artist',
-      headshotPath: matt,
+      headshotPath: '/collaborators/matt.webp',
       website: 'https://www.familyfirstmusicgroup.com/',
       bio: (
         <span>
@@ -197,7 +201,7 @@ const contributors = {
     {
       name: 'pvkvsv',
       role: 'Soundscape Artist',
-      headshotPath: pvkvsv,
+      headshotPath: '/collaborators/pvkvsv.webp',
       website: 'https://soundcloud.com/pvkvsv',
       bio: (
         <span>
@@ -218,7 +222,7 @@ const contributors = {
     {
       name: 'Waverly Shivers Jr.',
       role: '3D Modeler',
-      headshotPath: waverly,
+      headshotPath: '/collaborators/waverly.webp',
       website: 'https://www.waverlyjrdesigns.com/',
       bio: (
         <span>
@@ -232,7 +236,7 @@ const contributors = {
     {
       name: 'Xavery Williams',
       role: 'Soundscape Audio Engineer',
-      headshotPath: whiteLeaf,
+      headshotPath: '/collaborators/white-leaf.webp',
       website: 'https://soundbetter.com/profiles/19252-the-white-leaf-music-company',
       bio: (
         <span>

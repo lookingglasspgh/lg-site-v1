@@ -55,6 +55,7 @@ const CollaboratorsSection = () => {
             boxShadow="2xl"
           >
             <Box
+              position="relative"
               width={{
                 base: '16.5rem', md: '15rem', lg: '13.5rem', xl: '19.625rem',
               }}
@@ -67,6 +68,7 @@ const CollaboratorsSection = () => {
                 src={collaborator.headshotPath}
                 alt={collaborator.headshotAlt}
                 priority={!!collaborator?.priority}
+                fill
                 style={{ borderRadius: '4px' }}
                 sizes="
                   16.5rem,
