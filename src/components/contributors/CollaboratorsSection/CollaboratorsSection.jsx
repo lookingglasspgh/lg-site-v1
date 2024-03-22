@@ -83,6 +83,7 @@ const CollaboratorsSection = () => {
                 <Text
                   fontSize="xl"
                   variant="secondary"
+                  fontWeight="semibold"
                   mb="0.25rem"
                 >
                   {collaborator.name}
