@@ -1,5 +1,5 @@
 ﻿const terms = `
-# Looking Glass - Terms of Service
+# Terms of Service
 
 **Effective Date: 01/01/2024**
 

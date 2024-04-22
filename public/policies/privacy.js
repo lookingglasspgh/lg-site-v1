@@ -1,5 +1,5 @@
 ﻿const privacy = `
-# Looking Glass - Privacy Policy
+# Privacy Policy
 
 **Effective Date: 01/01/2024**
 
