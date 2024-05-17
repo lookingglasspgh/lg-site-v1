@@ -6,8 +6,7 @@ const fragments = {
   DESCRIPTION: (
     <span>
       Neighborhood Fragments is an AR experiment created with drone photography
-      and photogrammetry and inspired by questions around historic preservation and
-      digital-aided analysis.
+      and photogrammetry.
       <br />
       <br />
       Juxtaposed within this 3D scene are captures of spaces in East Liberty representing
