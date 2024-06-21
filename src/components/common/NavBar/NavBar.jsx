@@ -49,7 +49,7 @@ const NavBar = () => (
           href={route.path}
           fontSize="lg"
           transition="all 0.2s"
-          _hover={{ color: 'pink.500' }}
+          _hover={{ color: 'pink.900' }}
         >
           {route.title}
         </Link>
