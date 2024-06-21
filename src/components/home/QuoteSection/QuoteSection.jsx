@@ -10,7 +10,7 @@ import commonStyles from '@/styles/commonStyles';
 import home from '@/content/home';
 import SiteImage from '@/components/common/SiteImage';
 
-const victoriaLink = 'https://www.instagram.com/victoriadoesartoverhere/';
+const victoriaLink = 'https://victoriadoesartoverhere.com/home';
 
 const { gradients } = commonStyles;
 

@@ -5,7 +5,7 @@ const baseUrl = 'https://www.looking-glass.space';
 const RouteMetadata = {
   home: {
     canonicalUrl: baseUrl,
-    description: 'Looking Glass is an app-based archive of Black life in Pittsburgh. We use augmented reality to connect the present to the past and imagined futures.',
+    description: 'Looking Glass is an app-based archive of Black life in Pittsburgh. We use augmented reality to connect the present to both the past and imagined futures.',
     title: 'Looking Glass: Remembering & Imagining',
   },
   contributors: {
