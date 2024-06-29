@@ -27,8 +27,8 @@ const AppStoreContainer = chakra(Box, {
 
 const PlayStoreContainer = chakra(Box, {
   baseStyle: {
-    width: { base: '270px' },
-    height: { base: '80px' },
+    width: { base: '238px' },
+    height: { base: '70px' },
     position: 'relative',
   },
 });
@@ -53,7 +53,7 @@ const DownloadModal = ({ isOpen, onClose }) => (
             alignItems="center"
             mb="2.5rem"
           >
-            <Heading as="h3" fontSize="xl" mb="0.5rem">
+            <Heading as="h3" fontSize="xl" mb="1rem">
               {common.DOWNLOAD_IOS}
             </Heading>
             <Link
@@ -76,7 +76,7 @@ const DownloadModal = ({ isOpen, onClose }) => (
             flexDirection="column"
             alignItems="center"
           >
-            <Heading as="h3" fontSize="xl" mb="0.5rem">
+            <Heading as="h3" fontSize="xl" mb="1rem">
               {common.DOWNLOAD_ANDROID}
             </Heading>
             <PlayStoreContainer opacity="0.5">
