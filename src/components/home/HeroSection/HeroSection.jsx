@@ -8,13 +8,13 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import { Download, Inbox, MapPin } from 'react-feather';
+import { Inbox, MapPin } from 'react-feather';
 
 import TeenieModal from '../TeenieModal/TeenieModal';
 
 import common from '@/content/common';
 import commonStyles from '@/styles/commonStyles';
-import DownloadModal from '@/components/common/DownloadModal';
+import DownloadButton from '@/components/common/DownloadButton';
 import home from '@/content/home';
 import SiteImage from '@/components/common/SiteImage';
 
@@ -24,12 +24,6 @@ const textAndButtonMaxWidths = {
 };
 
 const HeroSection = () => {
-  const {
-    isOpen: isDownloadModalOpen,
-    onOpen: onDownloadModelOpen,
-    onClose: onDownloadModalClose,
-  } = useDisclosure({ id: 'downloadModal' });
-
   const {
     isOpen: isTeenieModalOpen,
     onOpen: onTeenieModalOpen,
@@ -75,15 +69,7 @@ const HeroSection = () => {
             direction={{ base: 'column', lg: 'row' }}
             alignItems="center"
           >
-            <Button
-              size={{ base: 'md', lg: 'md' }}
-              onClick={onDownloadModelOpen}
-            >
-              <Download size={20} />
-              <Text ml="0.5rem" variant="secondary">
-                {common.DOWNLOAD}
-              </Text>
-            </Button>
+            <DownloadButton />
             <Link
               _hover={{ textDecoration: 'none' }}
               href={common.links.SUBSCRIBE_LINK}
@@ -93,6 +79,7 @@ const HeroSection = () => {
                 variant="ghost"
                 size={{ base: 'md', lg: 'md' }}
                 ml={{ base: '0', lg: '0.5rem' }}
+                mt={{ base: '0.5rem', lg: '0' }}
               >
                 <Inbox size={20} />
                 <Text ml="0.5rem">
@@ -145,10 +132,6 @@ const HeroSection = () => {
           </Button>
         </Flex>
       </Flex>
-      <DownloadModal
-        isOpen={isDownloadModalOpen}
-        onClose={onDownloadModalClose}
-      />
       <TeenieModal
         isOpen={isTeenieModalOpen}
         onClose={onTeenieModalClose}

@@ -1,6 +1,7 @@
 const common = {
   MORE: 'More',
   DOWNLOAD: 'Download the App',
+  DOWNLOAD_NAV: 'Get the App',
   SUBSCRIBE: 'Join our Newsletter',
   PLAY_PREVIEW: 'Pre-Release Preview',
   CONTACT: 'Get in Touch',
