@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Text, Tooltip } from '@chakra-ui/react';
 import { Inbox, Youtube } from 'react-feather';
 
 import ContactButton from '../ContactButton';
@@ -13,6 +13,8 @@ import {
 import common from '@/content/common';
 import { RouteList } from '@/constants/RouteList';
 import SiteImage from '@/components/common/SiteImage';
+
+const { tooltips } = common.footer;
 
 const Footer = () => (
   <FooterContainer id="footer-container">
@@ -31,18 +33,30 @@ const Footer = () => (
           padding="0"
           height="100%"
         />
-        <StyledLink
-          href={common.links.SUBSCRIBE_LINK}
-          aria-label={common.accessibility.SUBSCRIBE_ALT}
+        <Tooltip
+          placement="top"
+          label={tooltips.NEWSLETTER}
+          hasArrow
         >
-          <Inbox size={24} />
-        </StyledLink>
-        <StyledLink
-          href={common.links.YOUTUBE_LINK}
-          aria-label={common.accessibility.YOUTUBE_ALT}
+          <StyledLink
+            href={common.links.SUBSCRIBE_LINK}
+            aria-label={common.accessibility.SUBSCRIBE_ALT}
+          >
+            <Inbox size={24} />
+          </StyledLink>
+        </Tooltip>
+        <Tooltip
+          placement="top"
+          label={tooltips.YOUTUBE}
+          hasArrow
         >
-          <Youtube size={24} />
-        </StyledLink>
+          <StyledLink
+            href={common.links.YOUTUBE_LINK}
+            aria-label={common.accessibility.YOUTUBE_ALT}
+          >
+            <Youtube size={24} />
+          </StyledLink>
+        </Tooltip>
       </LinkContainer>
       <LinkContainer gap={{ base: '1.5rem', md: '1rem' }}>
         <StyledLink href={RouteList.TERMS}>
