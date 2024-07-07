@@ -25,6 +25,12 @@ const common = {
   footer: {
     TERMS: 'Terms',
     PRIVACY: 'Privacy',
+    tooltips: {
+      CONTACT_CLICK: 'Copied!',
+      CONTACT_HOVER: 'Copy Contact Email',
+      NEWSLETTER: 'Join Newsletter',
+      YOUTUBE: 'LG Youtube',
+    },
   },
 };
 
