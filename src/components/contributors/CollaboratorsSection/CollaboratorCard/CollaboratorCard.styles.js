@@ -47,14 +47,18 @@ export const Container = chakra(Flex, {
   },
 });
 
+const imageSizes = {
+  base: '8rem',
+  sm: '10rem',
+  md: '16rem',
+  lg: '13rem',
+  xl: '19.625rem',
+};
+
 export const ImageContainer = chakra(Box, {
   baseStyle: {
     position: 'relative',
-    width: {
-      base: '8rem', sm: '10rem', md: '16rem', lg: '13rem', xl: '19.625rem',
-    },
-    height: {
-      base: '8rem', sm: '10rem', md: '16rem', lg: '13rem', xl: '19.625rem',
-    },
+    width: imageSizes,
+    height: imageSizes,
   },
 });

@@ -27,9 +27,10 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
         fill
         style={{ borderRadius: '4px' }}
         sizes="
-          11rem,
-          (min-width: 768px) 15rem,
-          (min-width: 992px) 13.5rem,
+          8rem,
+          (min-width: 480px) 10rem,
+          (min-width: 768px) 16rem,
+          (min-width: 992px) 13rem,
           (min-width: 1280px) 19.625rem
         "
       />

@@ -43,6 +43,7 @@ const SupportersSection = () => (
             padding="2rem"
             borderRadius="lg"
             boxShadow="2xl"
+            gap="1rem"
           >
             <Flex direction="column">
               <Text
@@ -61,7 +62,7 @@ const SupportersSection = () => (
               </Text>
             </Flex>
             <Box color="ivory.400">
-              <ExternalLink size={24} />
+              <ExternalLink size={20} />
             </Box>
           </Flex>
         </Link>
