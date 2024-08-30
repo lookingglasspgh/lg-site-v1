@@ -1,22 +1,18 @@
 import React, { useState } from 'react';
 import {
-  Box,
-  Button,
   Flex,
   Heading,
-  Link,
   SimpleGrid,
-  Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import { AlignLeft, ExternalLink } from 'react-feather';
 
 import BioModal from '../BioModal/BioModal';
 import commonStyles from '@/styles/commonStyles';
 import contributors from '@/content/contributors';
-import SiteImage from '@/components/common/SiteImage/SiteImage';
 
-const { commonWidths, gradients } = commonStyles;
+import CollaboratorCard from './CollaboratorCard';
+
+const { commonWidths } = commonStyles;
 
 const CollaboratorsSection = () => {
   const [bioModalText, setBioModalText] = useState(null);
@@ -43,87 +39,14 @@ const CollaboratorsSection = () => {
     >
       <Heading as="h1" mb="3rem">{contributors.COLLABORATORS}</Heading>
       <SimpleGrid
-        gap={{ base: '2rem', lg: '1rem', xl: '2rem' }}
+        gap={{ base: '2rem', md: '1rem', lg: '2rem' }}
         columns={{ base: '1', md: '2', lg: '3' }}
       >
         { contributors.collabDirectory.map((collaborator) => (
-          <Flex
-            background={gradients.black}
-            direction="column"
-            padding="2rem"
-            borderRadius="lg"
-            boxShadow="2xl"
-          >
-            <Box
-              position="relative"
-              width={{
-                base: '16.5rem', md: '15rem', lg: '13.5rem', xl: '19.625rem',
-              }}
-              height={{
-                base: '16.5rem', md: '15rem', lg: '13.5rem', xl: '19.625rem',
-              }}
-              mb="1rem"
-            >
-              <SiteImage
-                src={collaborator.headshotPath}
-                alt={collaborator.headshotAlt}
-                priority={!!collaborator?.priority}
-                fill
-                style={{ borderRadius: '4px' }}
-                sizes="
-                  16.5rem,
-                  (min-width: 768px) 15rem,
-                  (min-width: 992px) 13.5rem,
-                  (min-width: 1280px) 19.625rem
-                "
-              />
-            </Box>
-            <Flex direction="column">
-              <Flex direction="column" minHeight="110px">
-                <Text
-                  fontSize="xl"
-                  variant="secondary"
-                  fontWeight="semibold"
-                  mb="0.25rem"
-                >
-                  {collaborator.name}
-                </Text>
-                <Text
-                  variant="secondary"
-                  fontSize="lg"
-                  mb="1.5rem"
-                >
-                  {collaborator.role}
-                </Text>
-              </Flex>
-              <Flex
-                width="100%"
-                justifyContent="space-between"
-                alignItems="center"
-              >
-                <Button
-                  variant="outline"
-                  borderColor="ivory.400"
-                  color="ivory.400"
-                  _hover={{ backgroundColor: 'black.500' }}
-                  onClick={() => openBio(collaborator.bio)}
-                >
-                  <AlignLeft size={20} />
-                  <Text ml="0.5rem" variant="secondary" size="sm">Bio</Text>
-                </Button>
-                { collaborator.website && (
-                  <Link
-                    color="ivory.400"
-                    aria-label={`Link to ${collaborator.website}`}
-                    href={collaborator.website}
-                    isExternal
-                  >
-                    <ExternalLink size={24} />
-                  </Link>
-                )}
-              </Flex>
-            </Flex>
-          </Flex>
+          <CollaboratorCard
+            collaborator={collaborator}
+            onBioClick={openBio}
+          />
         ))}
       </SimpleGrid>
       <BioModal
