@@ -12,9 +12,9 @@ import {
 } from '@chakra-ui/react';
 import { HelpCircle } from 'react-feather';
 
-import ARViewModal from '@/components/fragments/ARViewModal';
+import ARViewModal from '@/components/arSpotlight/ARViewModal';
 import commonStyles from '@/styles/commonStyles';
-import fragments from '@/content/fragments';
+import fragments from '@/content/arSpotlight';
 import Layout from '@/components/common/Layout';
 import PageText from '@/components/common/PageText';
 import RouteMetadata from '@/constants/RouteMetadata';
@@ -29,7 +29,7 @@ const modelViewerStyles = {
   opacity: '0.2',
 };
 
-const FragmentsPage = () => {
+const ARSpotlightPage = () => {
   const [isModelLoading, setIsModelLoading] = useState(true);
   const modelViewerRef = useRef(null);
 
@@ -62,7 +62,7 @@ const FragmentsPage = () => {
   }, []);
 
   return (
-    <Layout pageMetadata={RouteMetadata.fragments}>
+    <Layout pageMetadata={RouteMetadata.arSpotlight}>
       <Flex
         id="fragments-page-container"
         direction="column"
@@ -142,4 +142,4 @@ const FragmentsPage = () => {
   );
 };
 
-export default FragmentsPage;
+export default ARSpotlightPage;

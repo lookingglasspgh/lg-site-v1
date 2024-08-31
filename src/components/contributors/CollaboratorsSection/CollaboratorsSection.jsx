@@ -7,12 +7,10 @@ import {
 } from '@chakra-ui/react';
 
 import BioModal from '../BioModal/BioModal';
-import commonStyles from '@/styles/commonStyles';
 import contributors from '@/content/contributors';
 
 import CollaboratorCard from './CollaboratorCard';
-
-const { commonWidths } = commonStyles;
+import sectionWidths from '../Contributors.styles';
 
 const CollaboratorsSection = () => {
   const [bioModalText, setBioModalText] = useState(null);
@@ -35,7 +33,7 @@ const CollaboratorsSection = () => {
       width="100%"
       m="0 auto"
       p={{ base: '3rem 1rem', md: '3rem', xl: '3rem 0rem' }}
-      maxWidth={commonWidths.maxSectionWidth}
+      maxWidth={sectionWidths}
     >
       <Heading as="h1" mb="3rem">{contributors.COLLABORATORS}</Heading>
       <SimpleGrid

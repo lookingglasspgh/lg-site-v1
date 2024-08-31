@@ -32,7 +32,6 @@ export const CardDetails = chakra(Flex, {
     minHeight: { base: 'unset', md: '83px', xl: 'unset' },
     gap: '0.25rem',
     marginBottom: { base: '1.5rem', xl: '2.5rem' },
-    maxWidth: { base: '150px', sm: 'unset' },
   },
 });
 
@@ -60,5 +59,6 @@ export const ImageContainer = chakra(Box, {
     position: 'relative',
     width: imageSizes,
     height: imageSizes,
+    flexShrink: 0,
   },
 });

@@ -3,9 +3,9 @@ export const RouteList = {
   ARTIFACTS: '/artifacts',
   APP_SUPPORT: '/app-support',
   CONTRIBUTORS: '/contributors',
-  FRAGMENTS: '/neighborhood-fragments',
+  AR_SPOTLIGHT: '/ar-spotlight',
+  PRESS: '/press',
   PRIVACY: '/privacy',
-  SUPPORT: '/support',
   TERMS: '/terms',
 };
 
@@ -15,12 +15,12 @@ export const NavBarRoutes = [
     path: RouteList.CONTRIBUTORS,
   },
   {
-    title: 'Neighborhood Fragments',
-    path: RouteList.FRAGMENTS,
+    title: 'AR Spotlight',
+    path: RouteList.AR_SPOTLIGHT,
   },
   {
-    title: 'Ways to Support',
-    path: RouteList.SUPPORT,
+    title: 'Press',
+    path: RouteList.PRESS,
   },
 ];
 
@@ -30,11 +30,11 @@ export const MobileMenuRoutes = [
     path: RouteList.CONTRIBUTORS,
   },
   {
-    title: 'Neighborhood Fragments',
-    path: RouteList.FRAGMENTS,
+    title: 'AR Spotlight',
+    path: RouteList.AR_SPOTLIGHT,
   },
   {
-    title: 'Ways to Support',
-    path: RouteList.SUPPORT,
+    title: 'Press',
+    path: RouteList.PRESS,
   },
 ];

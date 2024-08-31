@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-import fragments from '@/content/fragments';
+import fragments from '@/content/arSpotlight';
 import SiteImage from '@/components/common/SiteImage';
 
 const fragmentsQr = 'https://lg-site-assets.s3.us-east-2.amazonaws.com/fragments-qr.webp';

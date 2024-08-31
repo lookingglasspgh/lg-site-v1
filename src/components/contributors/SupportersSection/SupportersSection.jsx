@@ -12,7 +12,9 @@ import { ExternalLink } from 'react-feather';
 import commonStyles from '@/styles/commonStyles';
 import contributors from '@/content/contributors';
 
-const { commonWidths, gradients } = commonStyles;
+import sectionWidths from '../Contributors.styles';
+
+const { gradients } = commonStyles;
 
 const SupportersSection = () => (
   <Flex
@@ -21,7 +23,7 @@ const SupportersSection = () => (
     width="100%"
     m="0 auto"
     p={{ base: '0 1rem 4rem 1rem', md: '0 3rem 4rem 3rem', xl: '0 0 4rem 0' }}
-    maxWidth={commonWidths.maxSectionWidth}
+    maxWidth={sectionWidths}
   >
     <Heading as="h2" mb="3rem">{contributors.SUPPORTERS}</Heading>
     <SimpleGrid
@@ -61,7 +63,7 @@ const SupportersSection = () => (
                 {partner.role}
               </Text>
             </Flex>
-            <Box color="ivory.400">
+            <Box color="ivory.600">
               <ExternalLink size={20} />
             </Box>
           </Flex>
