@@ -80,7 +80,7 @@ const ARSpotlightPage = () => {
             p="0"
             m={{ base: '0 0 4rem 0', lg: '0 6rem 0 0' }}
             maxWidth={{ base: 'unset', lg: '500px' }}
-            backdropFilter="blur(1px)"
+            backdropFilter="blur(3px)"
           >
             <PageText>{fragments.DESCRIPTION}</PageText>
           </Container>
