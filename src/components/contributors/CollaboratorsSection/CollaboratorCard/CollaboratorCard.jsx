@@ -69,7 +69,6 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
             <CardButton
               variant="outline"
               size={{ base: 'xs', sm: 'sm' }}
-              onClick={() => onBioClick(collaborator.bio)}
             >
               <ExternalLink size={16} />
               <ButtonText>{contributors.SITE}</ButtonText>
