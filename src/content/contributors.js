@@ -15,13 +15,18 @@ const contributors = {
       priority: true,
       bio: (
         <span>
-          Adrian Jones is a Pittsburgh-based artist, creative technologist
-          and archivist whose practice is shaped by a commitment to those living
-          in society’s margins. After earning a Bachelor's degree in Electrical
-          Engineering from Harvard University, his work in software development
-          led him towards exploring the power of speculative imagination and
-          intergenerational storytelling within digital spaces. In January 2023,
-          he was named Collective Action School’s inaugural Community Technologist.
+          Adrian Jones is an artist, creative technologist and archivist whose practice is shaped
+          by a commitment to those living in society’s margins. Utilizing his formal background
+          in electrical engineering and software development, Adrian's creative work explores the
+          power of speculative imagination and intergenerational storytelling within digital spaces.
+          <br />
+          <br />
+          In 2021, Adrian began developing Looking Glass, an app-based archive of Black life in
+          Pittsburgh, which uses augmented reality to connect the present to both the past and
+          imagined futures. Looking Glass is built on the belief that the practices of remembering
+          and imagining have the power to transform. By deepening our understanding of the present
+          and envisioning the city as a space where Black life can be celebrated, Looking Glass
+          aims to open new pathways toward healing and collective action.
         </span>
       ),
     },

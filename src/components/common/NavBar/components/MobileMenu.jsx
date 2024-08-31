@@ -14,7 +14,7 @@ import {
 import { Menu } from 'react-feather';
 import NextLink from 'next/link';
 
-import ContactButton from '@/components/common/ContactButton';
+import DownloadButton from '@/components/common/DownloadButton';
 import { MobileMenuRoutes } from '@/constants/RouteList';
 
 const MobileMenu = () => {
@@ -73,13 +73,13 @@ const MobileMenu = () => {
                   transition="all 0.2s"
                   prefetch={false}
                   _last={{ mb: '0' }}
-                  _hover={{ color: 'pink.500' }}
+                  _hover={{ color: 'pink.50' }}
                 >
                   {route.title}
                 </Link>
               ))}
             </Flex>
-            <ContactButton mt="auto" width="100%" />
+            <DownloadButton m="auto 0" />
           </DrawerBody>
         </DrawerContent>
       </Drawer>

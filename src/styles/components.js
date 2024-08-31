@@ -1,11 +1,11 @@
 export const Button = {
   variants: {
     solid: {
-      background: 'pink.600',
+      background: 'pink.800',
       boxShadow: '2xl',
-      color: 'ivory.400',
-      _hover: { background: 'pink.600' },
-      _active: { background: 'pink.600' },
+      color: 'ivory.300',
+      _hover: { background: 'pink.900' },
+      _active: { background: 'pink.900' },
     },
     ghost: {
       _hover: { background: 'none' },

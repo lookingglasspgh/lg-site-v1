@@ -8,15 +8,15 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react';
-import { Inbox, MapPin, PlayCircle } from 'react-feather';
+import { Inbox, MapPin } from 'react-feather';
 
 import TeenieModal from '../TeenieModal/TeenieModal';
 
 import common from '@/content/common';
 import commonStyles from '@/styles/commonStyles';
+import DownloadButton from '@/components/common/DownloadButton';
 import home from '@/content/home';
 import SiteImage from '@/components/common/SiteImage';
-import PreviewVideoModal from '@/components/common/PreviewVideoModal';
 
 const { commonWidths } = commonStyles;
 const textAndButtonMaxWidths = {
@@ -24,12 +24,6 @@ const textAndButtonMaxWidths = {
 };
 
 const HeroSection = () => {
-  const {
-    isOpen: isPreviewModalOpen,
-    onOpen: onPreviewModalOpen,
-    onClose: onPreviewModalClose,
-  } = useDisclosure({ id: 'previewModal' });
-
   const {
     isOpen: isTeenieModalOpen,
     onOpen: onTeenieModalOpen,
@@ -75,29 +69,24 @@ const HeroSection = () => {
             direction={{ base: 'column', lg: 'row' }}
             alignItems="center"
           >
+            <DownloadButton />
             <Link
               _hover={{ textDecoration: 'none' }}
               href={common.links.SUBSCRIBE_LINK}
               isExternal
             >
               <Button
+                variant="ghost"
                 size={{ base: 'md', lg: 'md' }}
+                ml={{ base: '0', lg: '0.5rem' }}
+                mt={{ base: '0.5rem', lg: '0' }}
               >
                 <Inbox size={20} />
-                <Text ml="0.5rem" variant="secondary">
+                <Text ml="0.5rem">
                   {common.SUBSCRIBE}
                 </Text>
               </Button>
             </Link>
-            <Button
-              variant="ghost"
-              size={{ base: 'md', lg: 'md' }}
-              ml={{ base: '0', lg: '0.5rem' }}
-              onClick={onPreviewModalOpen}
-            >
-              <PlayCircle size={20} />
-              <Text ml="0.5rem">{common.PLAY_PREVIEW}</Text>
-            </Button>
           </Flex>
         </Flex>
         <Flex id="collage-container-1" direction="column">
@@ -143,10 +132,6 @@ const HeroSection = () => {
           </Button>
         </Flex>
       </Flex>
-      <PreviewVideoModal
-        isOpen={isPreviewModalOpen}
-        onClose={onPreviewModalClose}
-      />
       <TeenieModal
         isOpen={isTeenieModalOpen}
         onClose={onTeenieModalClose}
