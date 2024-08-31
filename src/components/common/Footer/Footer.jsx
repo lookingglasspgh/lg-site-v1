@@ -29,7 +29,6 @@ const Footer = () => (
     <Flex gap="1.5rem" flexDirection="column">
       <LinkContainer>
         <ContactButton
-          isFooterButton
           padding="0"
           height="100%"
         />

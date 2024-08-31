@@ -32,6 +32,7 @@ const SupportersSection = () => (
     >
       { contributors.partnerDirectory.map((partner) => (
         <Link
+          key={partner.name}
           href={partner.website}
           color="ivory.400"
           isExternal

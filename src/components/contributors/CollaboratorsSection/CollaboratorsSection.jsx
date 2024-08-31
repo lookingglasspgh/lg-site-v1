@@ -42,6 +42,7 @@ const CollaboratorsSection = () => {
       >
         { contributors.collabDirectory.map((collaborator) => (
           <CollaboratorCard
+            key={collaborator.name}
             collaborator={collaborator}
             onBioClick={openBio}
           />

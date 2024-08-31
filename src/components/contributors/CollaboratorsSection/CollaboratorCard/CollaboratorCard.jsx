@@ -89,7 +89,7 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
 
 CollaboratorCard.propTypes = {
   collaborator: PropTypes.shape({
-    bio: PropTypes.string,
+    bio: PropTypes.shape({}),
     headshotAlt: PropTypes.string,
     headshotPath: PropTypes.string,
     name: PropTypes.string,
