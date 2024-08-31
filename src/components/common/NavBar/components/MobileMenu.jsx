@@ -1,10 +1,8 @@
 import React from 'react';
 import {
-  Box,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
-  DrawerContent,
   DrawerHeader,
   DrawerOverlay,
   Flex,
@@ -17,6 +15,8 @@ import NextLink from 'next/link';
 import DownloadButton from '@/components/common/DownloadButton';
 import { MobileMenuRoutes } from '@/constants/RouteList';
 
+import { DrawerContent, MenuButtonContainer } from './MobileMenu.styles';
+
 const MobileMenu = () => {
   const {
     isOpen: isDrawerOpen,
@@ -26,29 +26,18 @@ const MobileMenu = () => {
 
   return (
     <>
-      <Box
-        display={{ base: 'block', lg: 'none' }}
-        width={{ base: '24px', md: '32px' }}
-        position="absolute"
-        right="1rem"
-        color="black.500"
-        cursor="pointer"
+      <MenuButtonContainer
         onClick={onDrawerOpen}
       >
         <Menu size="100%" />
-      </Box>
+      </MenuButtonContainer>
       <Drawer
         isOpen={isDrawerOpen}
         placement="right"
         onClose={onDrawerClose}
       >
         <DrawerOverlay />
-        <DrawerContent
-          bg="rgba(27,28,44, .9)"
-          color="ivory.400"
-          padding="1rem"
-          backdropFilter="blur(6px)"
-        >
+        <DrawerContent>
           <DrawerHeader>
             <DrawerCloseButton
               size="lg"
@@ -61,7 +50,7 @@ const MobileMenu = () => {
             flexDirection="column"
             mt="3rem"
           >
-            <Flex direction="column">
+            <Flex direction="column" gap="1rem">
               {MobileMenuRoutes.map((route) => (
                 <Link
                   as={NextLink}
@@ -69,7 +58,6 @@ const MobileMenu = () => {
                   href={route.path}
                   fontSize="2xl"
                   mr="1.5rem"
-                  mb="1rem"
                   transition="all 0.2s"
                   prefetch={false}
                   _last={{ mb: '0' }}
@@ -79,7 +67,7 @@ const MobileMenu = () => {
                 </Link>
               ))}
             </Flex>
-            <DownloadButton m="auto 0" />
+            <DownloadButton mt="4rem" />
           </DrawerBody>
         </DrawerContent>
       </Drawer>
