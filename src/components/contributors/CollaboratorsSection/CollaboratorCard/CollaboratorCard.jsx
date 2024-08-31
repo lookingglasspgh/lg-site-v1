@@ -26,13 +26,7 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
         priority={!!collaborator?.priority}
         fill
         style={{ borderRadius: '4px' }}
-        sizes="
-          8rem,
-          (min-width: 480px) 10rem,
-          (min-width: 768px) 16rem,
-          (min-width: 992px) 13rem,
-          (min-width: 1280px) 19.625rem
-        "
+        sizes="19.625rem"
       />
     </ImageContainer>
     <Flex direction="column">
