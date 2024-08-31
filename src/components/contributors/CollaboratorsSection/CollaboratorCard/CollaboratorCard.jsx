@@ -59,7 +59,7 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
       >
         <CardButton
           variant="outline"
-          size={{ base: 'xs', md: 'sm' }}
+          size={{ base: 'xs', sm: 'sm' }}
           onClick={() => onBioClick(collaborator.bio)}
         >
           <AlignLeft size={16} />
@@ -74,7 +74,7 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
           >
             <CardButton
               variant="outline"
-              size={{ base: 'xs', md: 'sm' }}
+              size={{ base: 'xs', sm: 'sm' }}
               onClick={() => onBioClick(collaborator.bio)}
             >
               <ExternalLink size={16} />

@@ -9,7 +9,7 @@ import {
 export const ButtonText = chakra(Text, {
   baseStyle: {
     color: 'ivory.400',
-    fontSize: { base: 'xs', md: 'sm' },
+    fontSize: { base: 'xs', sm: 'sm' },
   },
 });
 
