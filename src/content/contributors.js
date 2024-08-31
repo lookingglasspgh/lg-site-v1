@@ -5,6 +5,8 @@
 const contributors = {
   COLLABORATORS: 'Collaborators',
   SUPPORTERS: 'Supporters',
+  BIO: 'Bio',
+  SITE: 'Site',
   collabDirectory: [
     {
       name: 'Adrian Jones',

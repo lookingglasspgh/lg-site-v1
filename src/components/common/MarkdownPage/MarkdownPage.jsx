@@ -15,7 +15,7 @@ const MarkdownContainer = chakra(Flex, {
     margin: '0 auto',
     padding: { base: '3rem 1rem 4rem 1rem', md: '3rem 3rem 4rem 3rem', xl: '3rem 0 10rem 0' },
     maxWidth: commonWidths.maxSectionWidth,
-    backdropFilter: 'blur(2px)',
+    backdropFilter: 'blur(3px)',
   },
 });
 
