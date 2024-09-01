@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Button, Tooltip } from '@chakra-ui/react';
+import { Text, Tooltip } from '@chakra-ui/react';
 import { Mail } from 'react-feather';
 
 import common from '@/content/common';
 
+import { FooterButton } from '../Footer/Footer.styles';
+
 const email = 'info@looking-glass.space';
 
-const { tooltips } = common.footer;
+const { footer } = common;
 
-const ContactButton = ({ ...restProps }) => {
+const ContactButton = () => {
   const [isClicked, setIsClicked] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);
@@ -22,27 +23,22 @@ const ContactButton = ({ ...restProps }) => {
     setTimeout(() => setIsClicked(false), 2000);
   };
 
-  const tooltipLabel = isClicked ? tooltips.CONTACT_CLICK : tooltips.CONTACT_HOVER;
-
   return (
     <Tooltip
-      label={tooltipLabel}
+      label={footer.CONTACT_CLICK}
       placement="top"
       hasArrow
-      isOpen={isClicked || isHovered}
+      isOpen={isClicked}
       isClicked={isClicked}
     >
-      <Button
+      <FooterButton
         variant="ghost"
+        size="sm"
         onClick={onButtonClick}
-        minWidth="unset"
-        aria-label={common.accessibility.CONTACT_ALT}
-        onMouseOver={() => setIsHovered(true)}
-        onMouseOut={() => setIsHovered(false)}
-        {...restProps}
       >
-        <Mail size={24} />
-      </Button>
+        <Mail size={20} />
+        <Text>{footer.CONTACT}</Text>
+      </FooterButton>
     </Tooltip>
   );
 };

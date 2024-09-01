@@ -9,7 +9,7 @@ import {
 export const ButtonText = chakra(Text, {
   baseStyle: {
     color: 'ivory.400',
-    fontSize: { base: 'xs', sm: 'sm' },
+    fontSize: 'sm',
   },
 });
 
@@ -37,18 +37,18 @@ export const CardDetails = chakra(Flex, {
 
 export const Container = chakra(Flex, {
   baseStyle: {
-    flexDirection: { base: 'row', md: 'column' },
-    alignItems: { base: 'center', md: 'flex-start' },
+    flexDirection: 'column',
     padding: { base: '1rem', md: '2rem' },
-    gap: { base: '1rem', sm: '2rem', md: '1rem' },
+    gap: '1rem',
     borderRadius: 'lg',
     boxShadow: '2xl',
+    maxWidth: { base: '15rem', md: 'unset' },
+    margin: '0 auto',
   },
 });
 
 const imageSizes = {
-  base: '8rem',
-  sm: '10rem',
+  base: '13rem',
   md: '16rem',
   lg: '13rem',
   xl: '19.625rem',
