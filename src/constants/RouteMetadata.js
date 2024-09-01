@@ -5,7 +5,7 @@ const baseUrl = 'https://www.looking-glass.space';
 const RouteMetadata = {
   appSupport: {
     canonicalUrl: `${baseUrl}${RouteList.APP_SUPPORT}`,
-    description: 'Share feedback or let us know how we can help your usage.',
+    description: 'Share feedback or let us know how we can help.',
     title: 'App Support | Looking Glass: AR Archive',
   },
   arSpotlight: {

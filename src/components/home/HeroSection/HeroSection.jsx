@@ -19,6 +19,9 @@ import home from '@/content/home';
 import SiteImage from '@/components/common/SiteImage';
 
 const { commonWidths } = commonStyles;
+const imageSizes = {
+  base: '325px', md: '550px', lg: '450px', xl: '600px',
+};
 const textAndButtonMaxWidths = {
   base: '350px', md: '470px', lg: '450px', xl: '470px',
 };
@@ -93,24 +96,15 @@ const HeroSection = () => {
           <Box
             id="collage-wrapper"
             position="relative"
-            width={{
-              base: '325px', md: '550px', lg: '450px', xl: '600px',
-            }}
-            height={{
-              base: '319px', md: '539px', lg: '441px', xl: '588px',
-            }}
+            width={imageSizes}
+            height={imageSizes}
           >
             <SiteImage
               src={home.images.heroCollage}
               priority
               fill
               alt={home.COLLAGE_ALT}
-              sizes="
-                325px,
-                (min-width: 768px) 550px,
-                (min-width: 992px) 450px,
-                (min-width: 1280px) 600px
-              "
+              sizes="325px, (min-width: 768px) 550px, (min-width: 992px) 450px, (min-width: 1280px) 600px"
               style={{
                 borderRadius: '4px',
                 boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',

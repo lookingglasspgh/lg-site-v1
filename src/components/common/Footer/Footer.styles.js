@@ -1,9 +1,16 @@
 import {
   Box,
+  Button,
   chakra,
   Flex,
-  Link,
 } from '@chakra-ui/react';
+
+export const FooterButton = chakra(Button, {
+  baseStyle: {
+    padding: '0 0.25rem',
+    gap: '0.5rem',
+  },
+});
 
 export const FooterContainer = chakra(Flex, {
   baseStyle: {
@@ -30,11 +37,7 @@ export const ImageContainer = chakra(Box, {
 export const LinkContainer = chakra(Flex, {
   baseStyle: {
     alignItems: 'center',
-    gap: '1.5rem',
+    gap: '1rem',
     justifyContent: 'flex-end',
   },
-});
-
-export const StyledLink = chakra(Link, {
-  color: 'black.300',
 });

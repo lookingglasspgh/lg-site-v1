@@ -32,7 +32,7 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
     <Flex direction="column">
       <CardDetails>
         <Text
-          fontSize={{ base: 'md', sm: 'lg', xl: 'xl' }}
+          fontSize={{ base: 'lg', xl: 'xl' }}
           variant="secondary"
           fontWeight="semibold"
           mb="0.25rem"
@@ -41,7 +41,7 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
         </Text>
         <Text
           variant="secondary"
-          fontSize={{ base: 'sm', sm: 'md', xl: 'lg' }}
+          fontSize={{ base: 'md', xl: 'lg' }}
         >
           {collaborator.role}
         </Text>
@@ -53,7 +53,7 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
       >
         <CardButton
           variant="outline"
-          size={{ base: 'xs', sm: 'sm' }}
+          size="sm"
           onClick={() => onBioClick(collaborator.bio)}
         >
           <AlignLeft size={16} />
@@ -68,7 +68,7 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
           >
             <CardButton
               variant="outline"
-              size={{ base: 'xs', sm: 'sm' }}
+              size="sm"
             >
               <ExternalLink size={16} />
               <ButtonText>{contributors.SITE}</ButtonText>
