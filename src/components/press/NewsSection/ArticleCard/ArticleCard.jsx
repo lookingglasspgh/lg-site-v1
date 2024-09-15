@@ -1,31 +1,44 @@
 import React from 'react';
 import { ExternalLink } from 'react-feather';
-import { Flex, Link, Text } from '@chakra-ui/react';
+import {
+  chakra,
+  Flex,
+  Link,
+  Text,
+} from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-import commonStyles from '@/styles/commonStyles';
 import press from '@/content/press';
 
-const { gradients } = commonStyles;
+const Card = chakra(Flex, {
+  baseStyle: {
+    backgroundColor: 'ivory.500',
+    border: '1px solid',
+    borderRadius: 'lg',
+    borderColor: 'black.400',
+    boxShadow: 'xl',
+    cursor: 'pointer',
+    flexDirection: 'column',
+    padding: '1.5rem',
+    textDecoration: 'none',
+    transition: 'all 300ms',
+    _hover: {
+      backgroundColor: 'ivory.600',
+    },
+  },
+});
 
 const ArticleCard = ({ article }) => (
   <Link
     aria-label={`${press.news.LINK_ALT} ${article.title}`}
     href={article.url}
     isExternal
+    _hover={{ textDecoration: 'none' }}
   >
-    <Flex
-      background={gradients.black}
-      direction="column"
-      padding="2rem"
-      borderRadius="lg"
-      boxShadow="xl"
-      cursor="pointer"
-    >
+    <Card>
       <Flex direction="column">
         <Flex direction="column" mb="0.5rem">
           <Text
-            variant="secondary"
             fontSize={{ base: 'sm', xl: 'md' }}
             mb="1.25rem"
           >
@@ -33,7 +46,6 @@ const ArticleCard = ({ article }) => (
           </Text>
           <Text
             fontSize={{ base: 'lg', xl: 'xl' }}
-            variant="secondary"
             fontWeight="semibold"
             minHeight={{ base: 'unset', md: '81px' }}
             mb={{ base: '1rem', md: '' }}
@@ -45,18 +57,17 @@ const ArticleCard = ({ article }) => (
             justifyContent="space-between"
           >
             <Text
-              variant="secondary"
               fontSize={{ base: 'md', xl: 'lg' }}
             >
               {article.publication}
             </Text>
-            <Flex color="ivory.600">
+            <Flex color="black.400">
               <ExternalLink size={20} />
             </Flex>
           </Flex>
         </Flex>
       </Flex>
-    </Flex>
+    </Card>
   </Link>
 );
 
