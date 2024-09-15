@@ -227,6 +227,24 @@ const contributors = {
       ),
     },
     {
+      name: 'Victoria Elliott',
+      role: 'Concept Artist',
+      headshotPath: '/collaborators/victoria.webp',
+      website: 'https://victoriadoesartoverhere.com/home',
+      bio: (
+        <span>
+          Victoria Elliott is an illustrator and writer based in Los Angeles, California. She
+          graduated from Harvard College in 2016 with a degree in Environmental Science and Public
+          Policy, and moved to LA shortly thereafter to pursue a career in screenwriting. Victoria
+          is currently an Audio Manager at Green Street Pictures, an independent animation studio
+          in Pasadena, CA. Her previous credits include Script Supervising and Coordinating at
+          Bento Box Entertainment and CBS Television Studios. Her illustration work includes
+          commissions for Tufts University, WACO Theater Center, the Harvard Beth Israel Deaconess
+          Medical Center and Black Girls Smile.
+        </span>
+      ),
+    },
+    {
       name: 'Waverly Shivers Jr.',
       role: '3D Modeler',
       headshotPath: '/collaborators/waverly.webp',
