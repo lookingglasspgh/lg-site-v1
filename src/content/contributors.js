@@ -29,6 +29,8 @@ const contributors = {
           and imagining have the power to transform. By deepening our understanding of the present
           and envisioning the city as a space where Black life can be celebrated, Looking Glass
           aims to open new pathways toward healing and collective action.
+          Adrian was named Collective Action School’s inaugural Community Technologist in 2023 and
+          he is currently a member of the New Museum’s cultural incubator, NEW INC.
         </span>
       ),
     },
@@ -145,7 +147,7 @@ const contributors = {
           alumna, is a musical polymath for performance, singing, music production, arranging,
           songwriting, drumming, and audio mixing, mastering and engineering. INEZ’s recent
           production/engineering credits include Healthline.com, Kelly Strayhorn Theater,
-          and WYEP. and  INEZ is currently in residence with Unisound's BTAR (Black Teaching
+          and WYEP. INEZ is currently in residence with Unisound's BTAR (Black Teaching
           Artist in Residence) program and Pittsburgh Community Broadcasting's
           91.3FM WYEP/90.5 WESA - AIR (Artists in Residence) program. INEZ hopes to continue
           uplifting, advocating, and creating space for Black women and femmes, using love
