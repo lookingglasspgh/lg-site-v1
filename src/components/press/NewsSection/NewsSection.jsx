@@ -21,7 +21,7 @@ const NewsSection = () => (
     <Heading as="h1" mb="3rem">{press.news.HEADING}</Heading>
     <SimpleGrid
       gap={{
-        base: '2rem', md: '1.5rem', lg: '1.25rem', xl: '2rem',
+        base: '2rem', md: '1.5rem', lg: '2rem',
       }}
       columns={{ base: '1', md: '2', lg: '3' }}
     >

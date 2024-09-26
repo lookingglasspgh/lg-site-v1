@@ -47,7 +47,12 @@ const ArticleCard = ({ article }) => (
           <Text
             fontSize={{ base: 'lg', xl: 'xl' }}
             fontWeight="semibold"
-            minHeight={{ base: 'unset', md: '81px' }}
+            minHeight={{
+              base: 'unset',
+              md: '81px',
+              lg: '108px',
+              xl: '90px',
+            }}
             mb={{ base: '1rem', md: '' }}
           >
             {article.title}

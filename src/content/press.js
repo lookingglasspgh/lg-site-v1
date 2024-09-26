@@ -10,6 +10,12 @@ const press = {
     LINK_ALT: 'Link to',
     articles: [
       {
+        title: 'NEW INC, New Museum’s Cultural Incubator, Announces Eleventh Member Cohort...',
+        publication: 'New Museum',
+        date: 'September 9, 2024',
+        url: 'https://235bowery.s3.amazonaws.com/pressreleases/294/NEW%20INC%20Y11_VFinal.pdf',
+      },
+      {
         title: 'New AR App Brings Pittsburgh’s Black History To Life',
         publication: 'POCIT',
         date: 'August 13, 2024',
