@@ -110,6 +110,7 @@ const ARSpotlightPage = () => {
                 ref={modelViewerRef}
                 alt={fragments.MODEL_ALT}
                 src={fragments.MODEL_URL}
+                exposure="2"
                 poster="/models/fragments-poster.webp"
                 loading="eager"
                 shadow-intensity="1"
