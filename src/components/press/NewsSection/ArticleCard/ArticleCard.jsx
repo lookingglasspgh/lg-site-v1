@@ -12,7 +12,7 @@ import press from '@/content/press';
 
 const Card = chakra(Flex, {
   baseStyle: {
-    backgroundColor: 'ivory.500',
+    backgroundColor: 'ivory.300',
     border: '1px solid',
     borderRadius: 'lg',
     borderColor: 'black.400',
