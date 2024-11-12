@@ -10,6 +10,12 @@ const press = {
     LINK_ALT: 'Link to',
     articles: [
       {
+        title: 'Meet your 24 Technical.ly Awards nominees for 2024',
+        publication: 'Technical.ly',
+        date: 'November 7, 2024',
+        url: 'https://technical.ly/startups/technically-awards-2024-pittsburgh-nominees/',
+      },
+      {
         title: 'NEW INC, New Museum’s Cultural Incubator, Announces Eleventh Member Cohort...',
         publication: 'New Museum',
         date: 'September 9, 2024',
