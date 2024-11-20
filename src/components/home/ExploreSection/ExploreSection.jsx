@@ -64,7 +64,6 @@ const ExploreSection = () => {
           <Heading
             as="h2"
             mb="1.5rem"
-            maxWidth="325px"
           >
             { home.explore.HEADLINE }
           </Heading>
@@ -90,7 +89,6 @@ const ExploreSection = () => {
         <video
           autoPlay
           muted
-          loop
           playsInline
           poster={home.images.demoPlaceholder}
           style={{ borderRadius: '40px', border: '8px solid #020314' }}
