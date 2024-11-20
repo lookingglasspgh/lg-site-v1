@@ -18,7 +18,7 @@ const home = {
   HOOKS_ATTRIBUTION: '- bell hooks',
   CONCEPT_ART_ALT: 'Looking Glass Sculpture Concept Art by artist Victoria Elliott',
   explore: {
-    HEADLINE: 'Travel the City & Explore the Archive',
+    HEADLINE: 'Uncover an Alternate City',
     CAPTION:
       "Looking Glass's primary feature is its explore view. Use the map to discover markers where people, events, and institutions are remembered.",
     CAPTION_TWO:
@@ -29,10 +29,10 @@ const home = {
     AUTHOR: 'By Adrian Jones',
     IMAGE_SOURCE: 'Redlining Maps from the HOLC, 1937',
   },
-  demoLoop: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/demo-loop.mp4',
+  demoLoop: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/ar-activation.mp4',
   images: {
     conceptArt: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/concept-art.webp',
-    demoPlaceholder: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/demo-placeholder.webp',
+    demoPlaceholder: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/loop-placeholder.webp',
     heroCollage: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/east-liberty-ymca.webp',
     holcMap: 'https://lg-site-assets.s3.us-east-2.amazonaws.com/holc.webp',
   },
