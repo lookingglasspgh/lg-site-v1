@@ -10,6 +10,12 @@ const press = {
     LINK_ALT: 'Link to',
     articles: [
       {
+        title: 'New augmented reality app overlays Pittsburgh’s Black history on present-day East Liberty',
+        publication: '90.5 WESA (NPR)',
+        date: 'December 9, 2024',
+        url: 'https://www.wesa.fm/arts-culture/2024-12-09/black-history-augmented-reality-app',
+      },
+      {
         title: 'Meet your 24 Technical.ly Awards nominees for 2024',
         publication: 'Technical.ly',
         date: 'November 7, 2024',
