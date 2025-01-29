@@ -1,12 +1,8 @@
 import React from 'react';
 import {
-  Button,
   Flex,
   Heading,
-  Link,
-  Text,
 } from '@chakra-ui/react';
-import { ExternalLink } from 'react-feather';
 
 import commonStyles from '@/styles/commonStyles';
 import PageText from '@/components/common/PageText';
@@ -27,23 +23,6 @@ const InfoSection = () => (
     <Heading as="h1" mb="3rem">{info.HEADING}</Heading>
     <Flex backdropFilter="blur(3px)" direction="column" gap="2rem">
       <PageText>{info.CONTACT}</PageText>
-      <Link
-        aria-label="Looking Glass Media Assets"
-        href={info.MEDIA_LINK}
-        isExternal
-      >
-        <Button
-          variant="outline"
-          boxShadow="none"
-          alignItems="center"
-          size={{ base: 'sm', md: 'md' }}
-          padding="0.5rem"
-          gap="0.5rem"
-        >
-          <ExternalLink size={16} />
-          <Text>{info.ASSETS}</Text>
-        </Button>
-      </Link>
     </Flex>
   </Flex>
 );
