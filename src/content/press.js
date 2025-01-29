@@ -2,13 +2,17 @@ const press = {
   info: {
     HEADING: 'Info & Resources',
     CONTACT: 'Reach out to info@looking-glass.space to discuss potential press opportunities. ',
-    ASSETS: 'Media Assets',
-    MEDIA_LINK: 'https://drive.google.com/drive/folders/1UvJKi3XESKiWgi3MvDdo-Rl6JoNeysnM?usp=drive_link',
   },
   news: {
     HEADING: 'Stories',
     LINK_ALT: 'Link to',
     articles: [
+      {
+        title: 'An interactive app by a local artist seeks to preserve Pittsburgh’s Black history',
+        publication: 'Pittsburgh City Paper',
+        date: 'January 29, 2025',
+        url: 'https://www.pghcitypaper.com/arts-entertainment/an-interactive-app-by-a-local-artist-seeks-to-preserve-pittsburghs-black-history-27420895',
+      },
       {
         title: 'New augmented reality app overlays Pittsburgh’s Black history on present-day East Liberty',
         publication: '90.5 WESA (NPR)',
