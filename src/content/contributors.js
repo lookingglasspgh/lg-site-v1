@@ -229,6 +229,23 @@ const contributors = {
       ),
     },
     {
+      name: 'Reiley Freed',
+      role: 'Oral Historian',
+      headshotPath: '/collaborators/reiley.webp',
+      // website: '',
+      bio: (
+        <span>
+          Reiley M. Freed is a public historian specializing in 19th – 20th century Black American
+          history from Cleveland, Ohio. She is presently a Master’s student at Duquesne University,
+          pursuing a career in archiving and curating the lived experiences of Black Americans. She
+          earned her B.A. in History from Seton Hill University, where she curated the first Black
+          history collection in the university’s archives. Her research explores Black experiences
+          in higher education, the Chitlin’ Circuit, and Black domestic culture, with her work
+          featured on the Rock & Roll Hall of Fame’s educational website.
+        </span>
+      ),
+    },
+    {
       name: 'Victoria Elliott',
       role: 'Concept Artist',
       headshotPath: '/collaborators/victoria.webp',
