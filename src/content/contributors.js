@@ -232,7 +232,7 @@ const contributors = {
       name: 'Reiley Freed',
       role: 'Oral Historian',
       headshotPath: '/collaborators/reiley.webp',
-      // website: '',
+      website: 'https://bhph.my.canva.site',
       bio: (
         <span>
           Reiley M. Freed is a public historian specializing in 19th – 20th century Black American
