@@ -26,11 +26,10 @@ const contributors = {
           In 2021, Adrian began developing Looking Glass, an app-based archive of Black life in
           Pittsburgh, which uses augmented reality to connect the present to both the past and
           imagined futures. Looking Glass is built on the belief that the practices of remembering
-          and imagining have the power to transform. By changing our perspective on time and
-          envisioning the city as a space where Black life can be celebrated, Looking Glass aims
-          to open new pathways toward healing and collective action.
-          Adrian was named Collective Action School’s inaugural Community Technologist in 2023 and
-          he is currently a member of the New Museum’s cultural incubator, NEW INC.
+          and imagining have the power to transform and open new pathways toward healing and
+          collective action. Adrian’s work has been recognized by Collective Action School, NPR,
+          the Technical.ly Awards and the New Museum of Contemporary Art’s cultural incubator,
+          NEW INC.
         </span>
       ),
     },
