@@ -12,10 +12,10 @@ import press from '@/content/press';
 
 const Card = chakra(Flex, {
   baseStyle: {
-    backgroundColor: 'ivory.300',
+    backgroundColor: 'ivory.600',
     border: '1px solid',
     borderRadius: 'lg',
-    borderColor: 'black.400',
+    borderColor: 'ivory.900',
     boxShadow: 'xl',
     cursor: 'pointer',
     flexDirection: 'column',
@@ -23,7 +23,7 @@ const Card = chakra(Flex, {
     textDecoration: 'none',
     transition: 'all 300ms',
     _hover: {
-      backgroundColor: 'ivory.600',
+      backgroundColor: 'ivory.500',
     },
   },
 });
@@ -66,7 +66,7 @@ const ArticleCard = ({ article }) => (
             >
               {article.publication}
             </Text>
-            <Flex color="black.400">
+            <Flex color="black.300">
               <ExternalLink size={20} />
             </Flex>
           </Flex>

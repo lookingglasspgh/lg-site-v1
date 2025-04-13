@@ -258,6 +258,7 @@ const contributors = {
           brings all these identities to every interview and believes an interview is itself
           a creative act.
           <br />
+          <br />
           As an editor and producer at Pittsburgh’s NPR station, she gravitates toward intimate
           and immersive stories that celebrate place and let people sound like themselves. Her
           work has aired nationally with WNYC’s Science Friday, Vox’s Longform Podcast and
