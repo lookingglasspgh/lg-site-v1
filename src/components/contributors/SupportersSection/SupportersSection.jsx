@@ -9,12 +9,9 @@ import {
 } from '@chakra-ui/react';
 import { ExternalLink } from 'react-feather';
 
-import commonStyles from '@/styles/commonStyles';
 import contributors from '@/content/contributors';
 
 import sectionWidths from '../Contributors.styles';
-
-const { gradients } = commonStyles;
 
 const SupportersSection = () => (
   <Flex
@@ -39,7 +36,9 @@ const SupportersSection = () => (
           _hover={{ textDecoration: 'none' }}
         >
           <Flex
-            background={gradients.black}
+            background="ivory.600"
+            border="1px solid"
+            borderColor="ivory.900"
             direction="row"
             alignItems="center"
             justifyContent="space-between"
@@ -47,24 +46,24 @@ const SupportersSection = () => (
             borderRadius="lg"
             boxShadow="2xl"
             gap="1rem"
+            _hover={{ background: 'ivory.500' }}
+            transition="all 300ms"
           >
             <Flex direction="column">
               <Text
-                variant="secondary"
                 fontSize={{ base: 'lg', md: 'xl' }}
                 mb="0.25rem"
               >
                 {partner.name}
               </Text>
               <Text
-                variant="secondary"
                 fontSize={{ base: 'md', md: 'lg' }}
                 textDecoration="none"
               >
                 {partner.role}
               </Text>
             </Flex>
-            <Box color="ivory.600">
+            <Box color="black.300">
               <ExternalLink size={20} />
             </Box>
           </Flex>

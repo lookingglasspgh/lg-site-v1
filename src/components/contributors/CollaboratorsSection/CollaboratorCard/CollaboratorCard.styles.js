@@ -8,20 +8,20 @@ import {
 
 export const ButtonText = chakra(Text, {
   baseStyle: {
-    color: 'ivory.400',
+    color: 'black.400',
     fontSize: 'sm',
   },
 });
 
 export const CardButton = chakra(Button, {
   baseStyle: {
-    borderColor: 'ivory.400',
-    color: 'ivory.400',
+    borderColor: 'black.300',
+    color: 'black.300',
     alignItems: 'center',
     gap: '0.5rem',
     padding: '0.5rem',
     _hover: {
-      backgroundColor: 'black.500',
+      backgroundColor: 'ivory.500',
     },
   },
 });
@@ -37,6 +37,8 @@ export const CardDetails = chakra(Flex, {
 
 export const Container = chakra(Flex, {
   baseStyle: {
+    border: '1px solid',
+    borderColor: 'ivory.900',
     flexDirection: 'column',
     padding: { base: '1rem', md: '2rem' },
     gap: '1rem',

@@ -245,6 +245,27 @@ const contributors = {
       ),
     },
     {
+      name: 'Susan Scott Peterson',
+      role: 'Oral Historian',
+      headshotPath: '/collaborators/susan.webp',
+      website: 'https://susanscottpeterson.com/',
+      bio: (
+        <span>
+          Susan Scott Peterson is an audio producer, oral historian, writer and journalist in
+          Pittsburgh. She grew up in northeast Ohio; grew up more in Austin, Texas; has roots
+          in Indiana and Mississippi; extended families in Canada, Spain and Guinea. She
+          brings all these identities to every interview and believes an interview is itself
+          a creative act.
+          <br />
+          <br />
+          As an editor and producer at Pittsburgh’s NPR station, she gravitates toward intimate
+          and immersive stories that celebrate place and let people sound like themselves. Her
+          work has aired nationally with WNYC’s Science Friday, Vox’s Longform Podcast and
+          NPR’s Outside/In.
+        </span>
+      ),
+    },
+    {
       name: 'Victoria Elliott',
       role: 'Concept Artist',
       headshotPath: '/collaborators/victoria.webp',
