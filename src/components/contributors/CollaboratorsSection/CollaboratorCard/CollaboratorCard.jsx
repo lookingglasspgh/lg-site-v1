@@ -18,7 +18,7 @@ import {
 const { gradients } = commonStyles;
 
 const CollaboratorCard = ({ collaborator, onBioClick }) => (
-  <Container background={gradients.black}>
+  <Container background={gradients.gray}>
     <ImageContainer>
       <SiteImage
         src={collaborator.headshotPath}
@@ -33,14 +33,12 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
       <CardDetails>
         <Text
           fontSize={{ base: 'lg', xl: 'xl' }}
-          variant="secondary"
           fontWeight="semibold"
           mb="0.25rem"
         >
           {collaborator.name}
         </Text>
         <Text
-          variant="secondary"
           fontSize={{ base: 'md', xl: 'lg' }}
         >
           {collaborator.role}
@@ -61,7 +59,6 @@ const CollaboratorCard = ({ collaborator, onBioClick }) => (
         </CardButton>
         { collaborator.website && (
           <Link
-            color="ivory.400"
             aria-label={`Link to ${collaborator.website}`}
             href={collaborator.website}
             isExternal
