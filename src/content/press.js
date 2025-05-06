@@ -8,6 +8,12 @@ const press = {
     LINK_ALT: 'Link to',
     articles: [
       {
+        title: 'Using AR to Preserve Pittsburgh’s Black History: Interview with Adrian Jones',
+        publication: 'Honest History',
+        date: 'May 4, 2025',
+        url: 'https://honesthistory.co/blogs/blog/using-ar-to-preserve-pittsburgh-s-black-history-interview-with-adrian-jones-5',
+      },
+      {
         title: 'An interactive app by a local artist seeks to preserve Pittsburgh’s Black history',
         publication: 'Pittsburgh City Paper',
         date: 'January 29, 2025',
