@@ -8,6 +8,12 @@ const press = {
     LINK_ALT: 'Link to',
     articles: [
       {
+        title: 'Pittsburgh event \'Owning Our Future\' explores roles of BIPOC-led cultural groups',
+        publication: '90.5 WESA (NPR)',
+        date: 'May 14, 2025',
+        url: 'https://www.wesa.fm/arts-culture/2025-05-14/pittsburgh-arts-owning-spaces-kelly-strayhorn',
+      },
+      {
         title: 'Using AR to Preserve Pittsburgh’s Black History: Interview with Adrian Jones',
         publication: 'Honest History',
         date: 'May 4, 2025',
