@@ -37,7 +37,7 @@ const ContactButton = () => {
         onClick={onButtonClick}
       >
         <Mail size={20} />
-        <Text>{footer.CONTACT}</Text>
+        <Text display={{ base: 'none', md: 'block' }}>{footer.CONTACT}</Text>
       </FooterButton>
     </Tooltip>
   );

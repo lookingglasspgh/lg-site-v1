@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex, Link, Text } from '@chakra-ui/react';
-import { Inbox, Youtube } from 'react-feather';
+import { Inbox, Instagram, Youtube } from 'react-feather';
 
 import ContactButton from '../ContactButton';
 import {
@@ -38,7 +38,19 @@ const Footer = () => (
             size="sm"
           >
             <Inbox size={20} />
-            <Text>{footer.NEWSLETTER}</Text>
+            <Text display={{ base: 'none', md: 'block' }}>{footer.NEWSLETTER}</Text>
+          </FooterButton>
+        </Link>
+        <Link
+          href={links.IG_LINK}
+          aria-label={accessibility.IG_ALT}
+        >
+          <FooterButton
+            variant="ghost"
+            size="sm"
+          >
+            <Instagram size={20} />
+            <Text display={{ base: 'none', md: 'block' }}>{footer.IG}</Text>
           </FooterButton>
         </Link>
         <Link
@@ -50,7 +62,7 @@ const Footer = () => (
             size="sm"
           >
             <Youtube size={20} />
-            <Text>{footer.YOUTUBE}</Text>
+            <Text display={{ base: 'none', md: 'block' }}>{footer.YOUTUBE}</Text>
           </FooterButton>
         </Link>
       </LinkContainer>
