@@ -1,9 +1,9 @@
 export const RouteList = {
   HOME: '/',
-  ARTIFACTS: '/artifacts',
   APP_SUPPORT: '/app-support',
-  CONTRIBUTORS: '/contributors',
   AR_SPOTLIGHT: '/ar-spotlight',
+  CONTRIBUTORS: '/contributors',
+  EVENTS: '/events',
   PRESS: '/press',
   PRIVACY: '/privacy',
   TERMS: '/terms',
@@ -19,6 +19,10 @@ export const NavBarRoutes = [
     path: RouteList.AR_SPOTLIGHT,
   },
   {
+    title: 'Events',
+    path: RouteList.EVENTS,
+  },
+  {
     title: 'Press',
     path: RouteList.PRESS,
   },
@@ -32,6 +36,10 @@ export const MobileMenuRoutes = [
   {
     title: 'AR Spotlight',
     path: RouteList.AR_SPOTLIGHT,
+  },
+  {
+    title: 'Events',
+    path: RouteList.EVENTS,
   },
   {
     title: 'Press',

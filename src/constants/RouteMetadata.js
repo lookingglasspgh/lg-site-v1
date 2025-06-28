@@ -18,6 +18,11 @@ const RouteMetadata = {
     description: 'The individuals and organizations that push Looking Glass forward.',
     title: 'Collaborators & Supporters | Looking Glass: AR Archive',
   },
+  events: {
+    canonicalUrl: `${baseUrl}${RouteList.EVENTS}`,
+    description: 'Community workshops, talks and tours.',
+    title: 'Events | Looking Glass: AR Archive',
+  },
   home: {
     canonicalUrl: baseUrl,
     description: 'Looking Glass is an app-based archive of Black life in Pittsburgh. We use augmented reality to connect the present to both the past and imagined futures.',
