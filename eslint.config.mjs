@@ -1,21 +1,21 @@
-import { FlatCompat } from '@eslint/eslintrc'
- 
+import { FlatCompat } from "@eslint/eslintrc";
+
 const compat = new FlatCompat({
   // import.meta.dirname is available after Node.js v20.11.0
   baseDirectory: import.meta.dirname,
-})
- 
+});
+
 const eslintConfig = [
   ...compat.config({
-    extends: ['next'],
+    extends: ["next", "next/typescript", "plugin:prettier/recommended"],
     rules: {
-      'import/extensions': 'off',
-      'import/no-unresolved': 'off',
-      'no-restricted-exports': 'off',
-      'react/function-component-definition': 'off',
-      'react/jsx-props-no-spreading': 'off'
+      "import/extensions": "off",
+      "import/no-unresolved": "off",
+      "no-restricted-exports": "off",
+      "react/function-component-definition": "off",
+      "react/jsx-props-no-spreading": "off",
     },
   }),
-]
- 
-export default eslintConfig
+];
+
+export default eslintConfig;
