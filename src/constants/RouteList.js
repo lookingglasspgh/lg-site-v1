@@ -11,16 +11,16 @@ export const RouteList = {
 
 export const NavBarRoutes = [
   {
-    title: 'Contributors',
-    path: RouteList.CONTRIBUTORS,
-  },
-  {
     title: 'AR Spotlight',
     path: RouteList.AR_SPOTLIGHT,
   },
   {
     title: 'Events',
     path: RouteList.EVENTS,
+  },
+  {
+    title: 'Contributors',
+    path: RouteList.CONTRIBUTORS,
   },
   {
     title: 'Press',
@@ -30,16 +30,16 @@ export const NavBarRoutes = [
 
 export const MobileMenuRoutes = [
   {
-    title: 'Contributors',
-    path: RouteList.CONTRIBUTORS,
-  },
-  {
     title: 'AR Spotlight',
     path: RouteList.AR_SPOTLIGHT,
   },
   {
     title: 'Events',
     path: RouteList.EVENTS,
+  },
+  {
+    title: 'Contributors',
+    path: RouteList.CONTRIBUTORS,
   },
   {
     title: 'Press',
