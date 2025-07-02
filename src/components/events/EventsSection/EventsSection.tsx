@@ -8,6 +8,8 @@ import EventCard from "./EventCard";
 
 const { commonWidths } = commonStyles;
 
+const responsiveGridColumns = [1, 1, 2, 2, 3];
+
 const EventsSection = () => {
   const { eventsList } = events;
 
@@ -53,7 +55,7 @@ const EventsSection = () => {
           md: "1.5rem",
           lg: "2rem",
         }}
-        columns={[1, 1, 2, 3]}
+        columns={responsiveGridColumns}
         mb="3rem"
       >
         {upcomingEvents.length > 0 ? (
@@ -75,7 +77,7 @@ const EventsSection = () => {
           md: "1.5rem",
           lg: "2rem",
         }}
-        columns={[1, 1, 2, 3]}
+        columns={responsiveGridColumns}
       >
         {pastEvents.map((event) => (
           <EventCard key={event.title} event={event} />

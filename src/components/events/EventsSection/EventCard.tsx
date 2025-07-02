@@ -1,6 +1,7 @@
 import React from "react";
 import { ExternalLink } from "react-feather";
-import { Badge, chakra, Flex, Link, Text } from "@chakra-ui/react";
+import { AspectRatio, Badge, chakra, Flex, Link, Text } from "@chakra-ui/react";
+import SiteImage from "@/components/common/SiteImage";
 
 import events, { Event } from "@/content/events";
 
@@ -26,6 +27,11 @@ type Props = {
   event: Event;
 };
 
+const CHAR_LIMIT = 79;
+
+const trimTitle = (text: string): string =>
+  text.length > CHAR_LIMIT ? `${text.substring(0, CHAR_LIMIT - 3)}...` : text;
+
 const EventCard = ({ event }: Props) => (
   <Link
     aria-label={`${events.LINK_ALT} ${event.title}`}
@@ -35,28 +41,38 @@ const EventCard = ({ event }: Props) => (
   >
     <Card>
       <Flex direction="column">
-        {event.type && (
-          <Badge
-            bg="ivory.800"
-            borderRadius="0.25rem"
-            w="fit-content"
-            mb="0.75rem"
-          >
-            {event.type}
-          </Badge>
-        )}
+        <AspectRatio
+          display={{ base: "none", md: "block" }}
+          ratio={16 / 9}
+          mb="1rem"
+        >
+          <SiteImage
+            alt="Image of event"
+            fill
+            src={event.image}
+            sizes="10rem"
+          />
+        </AspectRatio>
+        <Badge
+          bg="ivory.800"
+          borderRadius="0.25rem"
+          w="fit-content"
+          mb="0.75rem"
+        >
+          {event.type}
+        </Badge>
         <Text
           fontSize={{ base: "lg", xl: "xl" }}
           fontWeight="semibold"
+          mb={{ base: "1rem", md: "" }}
           minHeight={{
             base: "unset",
             md: "81px",
-            lg: "108px",
-            xl: "90px",
+            lg: "56px",
+            xl: "92px",
           }}
-          mb={{ base: "1rem", md: "" }}
         >
-          {event.title}
+          {trimTitle(event.title)}
         </Text>
         <Flex alignItems="flex-end" justifyContent="space-between">
           <Flex direction="column">
