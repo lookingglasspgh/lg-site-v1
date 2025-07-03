@@ -48,9 +48,10 @@ const EventCard = ({ event }: Props) => (
         >
           <SiteImage
             alt="Image of event"
-            fill
+            fill={{ base: "true" }}
             src={event.image}
             sizes="10rem"
+            borderRadius="0.25rem"
           />
         </AspectRatio>
         <Badge

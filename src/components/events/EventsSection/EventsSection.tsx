@@ -4,7 +4,9 @@ import { Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import commonStyles from "@/styles/commonStyles";
 import events from "@/content/events";
 
+import PartnerCard from "./PartnerCard";
 import EventCard from "./EventCard";
+import PartnerModal from "./PartnerModal";
 
 const { commonWidths } = commonStyles;
 
@@ -37,6 +39,8 @@ const EventsSection = () => {
     [eventsList],
   );
 
+  const hasUpcomingEvents = upcomingEvents.length > 0;
+
   return (
     <Flex
       id="section-container"
@@ -46,9 +50,10 @@ const EventsSection = () => {
       p={{ base: "3rem 1rem", md: "3rem", xl: "3rem 0rem" }}
       maxWidth={commonWidths.maxSectionWidth}
     >
-      <Heading as="h1" mb="3rem">
-        {events.HEADING}
-      </Heading>
+      <Flex justifyContent="space-between" mb="3rem">
+        <Heading as="h1">{events.HEADING}</Heading>
+        {hasUpcomingEvents && <PartnerModal />}
+      </Flex>
       <SimpleGrid
         gap={{
           base: "2rem",
@@ -58,14 +63,14 @@ const EventsSection = () => {
         columns={responsiveGridColumns}
         mb="3rem"
       >
-        {upcomingEvents.length > 0 ? (
+        {hasUpcomingEvents ? (
           <>
             {upcomingEvents.map((event) => (
               <EventCard key={event.title} event={event} />
             ))}
           </>
         ) : (
-          <div>No Events</div>
+          <PartnerCard />
         )}
       </SimpleGrid>
       <Heading as="h2" mb="3rem">
