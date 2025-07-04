@@ -16,8 +16,7 @@ const press = {
         url: 'https://autre.love/journal/2025/6/13/new-museum-demo-2025',
       },
       {
-        title:
-          "Pittsburgh event 'Owning Our Future' explores roles of BIPOC-led cultural groups",
+        title: 'Pittsburgh event \'Owning Our Future\' explores roles of BIPOC-led cultural groups',
         publication: '90.5 WESA (NPR)',
         date: 'May 14, 2025',
         url: 'https://www.wesa.fm/arts-culture/2025-05-14/pittsburgh-arts-owning-spaces-kelly-strayhorn',
