@@ -15,7 +15,7 @@ const Card = chakra(Flex, {
     boxShadow: 'xl',
     cursor: 'pointer',
     flexDirection: 'column',
-    padding: '1.5rem',
+    padding: '1.5rem 1.5rem 2.5rem',
     textDecoration: 'none',
     transition: 'all 300ms',
     _hover: {
@@ -37,7 +37,7 @@ const PartnerCard = ({ ...restProps }) => {
             {events.PARTNER}
           </Text>
         </Flex>
-        <Text fontSize={{ base: 'sm', xl: 'md' }}>{events.PARTNER_PITCH}</Text>
+        <Text fontSize="md">{events.PARTNER_PITCH}</Text>
       </Card>
     </CopyButton>
   );

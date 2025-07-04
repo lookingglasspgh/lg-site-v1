@@ -45,12 +45,15 @@ const EventCard = ({ event }: Props) => (
           display={{ base: 'none', md: 'block' }}
           ratio={16 / 9}
           mb="1rem"
+          border="1px solid"
+          borderRadius="0.35rem"
+          borderColor="ivory.900"
         >
           <SiteImage
             alt="Image of event"
             fill={{ base: 'true' }}
             src={event.image}
-            sizes="10rem"
+            sizes="266px, (min-width: 768px) 375px, (min-width: 992px) 407px, (min-width: 1280px) 328px"
             borderRadius="0.25rem"
           />
         </AspectRatio>
