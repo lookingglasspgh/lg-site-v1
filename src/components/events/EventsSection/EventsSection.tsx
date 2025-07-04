@@ -1,12 +1,12 @@
-import React, { useMemo } from "react";
-import { Flex, Heading, SimpleGrid } from "@chakra-ui/react";
+import React, { useMemo } from 'react';
+import { Flex, Heading, SimpleGrid } from '@chakra-ui/react';
 
-import commonStyles from "@/styles/commonStyles";
-import events from "@/content/events";
+import commonStyles from '@/styles/commonStyles';
+import events from '@/content/events';
 
-import PartnerCard from "./PartnerCard";
-import EventCard from "./EventCard";
-import PartnerModal from "./PartnerModal";
+import PartnerCard from './PartnerCard';
+import EventCard from './EventCard';
+import PartnerModal from './PartnerModal';
 
 const { commonWidths } = commonStyles;
 
@@ -47,7 +47,7 @@ const EventsSection = () => {
       direction="column"
       width="100%"
       m="0 auto"
-      p={{ base: "3rem 1rem", md: "3rem", xl: "3rem 0rem" }}
+      p={{ base: '3rem 1rem', md: '3rem', xl: '3rem 0rem' }}
       maxWidth={commonWidths.maxSectionWidth}
     >
       <Flex justifyContent="space-between" mb="3rem">
@@ -56,9 +56,9 @@ const EventsSection = () => {
       </Flex>
       <SimpleGrid
         gap={{
-          base: "2rem",
-          md: "1.5rem",
-          lg: "2rem",
+          base: '2rem',
+          md: '1.5rem',
+          lg: '2rem',
         }}
         columns={responsiveGridColumns}
         mb="3rem"
@@ -78,9 +78,9 @@ const EventsSection = () => {
       </Heading>
       <SimpleGrid
         gap={{
-          base: "2rem",
-          md: "1.5rem",
-          lg: "2rem",
+          base: '2rem',
+          md: '1.5rem',
+          lg: '2rem',
         }}
         columns={responsiveGridColumns}
       >

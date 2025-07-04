@@ -1,24 +1,24 @@
-import React from "react";
-import { ExternalLink } from "react-feather";
-import { AspectRatio, Badge, chakra, Flex, Link, Text } from "@chakra-ui/react";
-import SiteImage from "@/components/common/SiteImage";
+import React from 'react';
+import { ExternalLink } from 'react-feather';
+import { AspectRatio, Badge, chakra, Flex, Link, Text } from '@chakra-ui/react';
+import SiteImage from '@/components/common/SiteImage';
 
-import events, { Event } from "@/content/events";
+import events, { Event } from '@/content/events';
 
 const Card = chakra(Flex, {
   baseStyle: {
-    backgroundColor: "ivory.600",
-    border: "1px solid",
-    borderRadius: "lg",
-    borderColor: "ivory.900",
-    boxShadow: "xl",
-    cursor: "pointer",
-    flexDirection: "column",
-    padding: "1.5rem",
-    textDecoration: "none",
-    transition: "all 300ms",
+    backgroundColor: 'ivory.600',
+    border: '1px solid',
+    borderRadius: 'lg',
+    borderColor: 'ivory.900',
+    boxShadow: 'xl',
+    cursor: 'pointer',
+    flexDirection: 'column',
+    padding: '1.5rem',
+    textDecoration: 'none',
+    transition: 'all 300ms',
     _hover: {
-      backgroundColor: "ivory.500",
+      backgroundColor: 'ivory.500',
     },
   },
 });
@@ -37,18 +37,18 @@ const EventCard = ({ event }: Props) => (
     aria-label={`${events.LINK_ALT} ${event.title}`}
     href={event.url}
     isExternal
-    _hover={{ textDecoration: "none" }}
+    _hover={{ textDecoration: 'none' }}
   >
     <Card>
       <Flex direction="column">
         <AspectRatio
-          display={{ base: "none", md: "block" }}
+          display={{ base: 'none', md: 'block' }}
           ratio={16 / 9}
           mb="1rem"
         >
           <SiteImage
             alt="Image of event"
-            fill={{ base: "true" }}
+            fill={{ base: 'true' }}
             src={event.image}
             sizes="10rem"
             borderRadius="0.25rem"
@@ -63,21 +63,21 @@ const EventCard = ({ event }: Props) => (
           {event.type}
         </Badge>
         <Text
-          fontSize={{ base: "lg", xl: "xl" }}
+          fontSize={{ base: 'lg', xl: 'xl' }}
           fontWeight="semibold"
-          mb={{ base: "1rem", md: "" }}
+          mb={{ base: '1rem', md: '' }}
           minHeight={{
-            base: "unset",
-            md: "81px",
-            lg: "56px",
-            xl: "92px",
+            base: 'unset',
+            md: '81px',
+            lg: '56px',
+            xl: '92px',
           }}
         >
           {trimTitle(event.title)}
         </Text>
         <Flex alignItems="flex-end" justifyContent="space-between">
           <Flex direction="column">
-            <Text fontSize={{ base: "sm", xl: "md" }} mb=".25rem">
+            <Text fontSize={{ base: 'sm', xl: 'md' }} mb=".25rem">
               {event.startDate ? (
                 <>
                   {event.startDate} - {event.endDate}
@@ -86,10 +86,10 @@ const EventCard = ({ event }: Props) => (
                 <>{event.endDate}</>
               )}
             </Text>
-            <Text fontSize={{ base: "sm", xl: "md" }} mb=".25rem">
+            <Text fontSize={{ base: 'sm', xl: 'md' }} mb=".25rem">
               {event?.host}
             </Text>
-            <Text fontSize={{ base: "sm", xl: "md" }}>{event.location}</Text>
+            <Text fontSize={{ base: 'sm', xl: 'md' }}>{event.location}</Text>
           </Flex>
           <Flex color="black.300">
             <ExternalLink size={20} />

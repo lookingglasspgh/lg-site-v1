@@ -15,7 +15,8 @@ const RouteMetadata = {
   },
   contributors: {
     canonicalUrl: `${baseUrl}${RouteList.CONTRIBUTORS}`,
-    description: 'The individuals and organizations that push Looking Glass forward.',
+    description:
+      'The individuals and organizations that push Looking Glass forward.',
     title: 'Collaborators & Supporters | Looking Glass: AR Archive',
   },
   events: {
@@ -25,7 +26,8 @@ const RouteMetadata = {
   },
   home: {
     canonicalUrl: baseUrl,
-    description: 'Looking Glass is an app-based archive of Black life in Pittsburgh. We use augmented reality to connect the present to both the past and imagined futures.',
+    description:
+      'Looking Glass is an app-based archive of Black life in Pittsburgh. We use augmented reality to connect the present to both the past and imagined futures.',
     title: 'Looking Glass: AR Archive',
   },
   press: {
@@ -35,7 +37,8 @@ const RouteMetadata = {
   },
   privacy: {
     canonicalUrl: `${baseUrl}${RouteList.PRIVACY}`,
-    description: 'Looking Glass is designed to never store or share sensitive information, including location data. Read our Privacy Policy to learn more.',
+    description:
+      'Looking Glass is designed to never store or share sensitive information, including location data. Read our Privacy Policy to learn more.',
     title: 'Privacy Policy | Looking Glass: AR Archive',
   },
   terms: {

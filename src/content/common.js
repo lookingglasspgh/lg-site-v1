@@ -19,7 +19,8 @@ const common = {
   },
   links: {
     BOOKSHOP_LINK: 'https://bookshop.org/shop/looking-glass',
-    APP_STORE: 'https://apps.apple.com/app/looking-glass-ar-archive/id6504839729',
+    APP_STORE:
+      'https://apps.apple.com/app/looking-glass-ar-archive/id6504839729',
     SUBSCRIBE_LINK: 'https://lookingglasspgh.substack.com/',
     YOUTUBE_LINK: 'https://www.youtube.com/@lookingglasspgh',
     IG_LINK: 'https://www.instagram.com/lookingglass.ar/',

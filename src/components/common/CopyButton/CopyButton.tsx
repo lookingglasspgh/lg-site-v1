@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Tooltip } from "@chakra-ui/react";
+import React, { useState } from 'react';
+import { Tooltip } from '@chakra-ui/react';
 
 interface Props {
   children: JSX.Element;
@@ -22,7 +22,7 @@ const CopyButton = ({ children, copyValue, copyTooltip }: Props) => {
 
   return (
     <Tooltip label={copyTooltip} placement="top" hasArrow isOpen={isClicked}>
-      <div onClick={onButtonClick} style={{ width: "fit-content" }}>
+      <div onClick={onButtonClick} style={{ width: 'fit-content' }}>
         {children}
       </div>
     </Tooltip>

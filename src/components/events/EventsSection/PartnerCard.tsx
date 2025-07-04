@@ -1,25 +1,25 @@
-import React from "react";
-import { chakra, Flex, Text } from "@chakra-ui/react";
-import { Calendar } from "react-feather";
+import React from 'react';
+import { chakra, Flex, Text } from '@chakra-ui/react';
+import { Calendar } from 'react-feather';
 
-import CopyButton from "@/components/common/CopyButton";
-import events from "@/content/events";
-import { colors } from "@/styles/theme";
+import CopyButton from '@/components/common/CopyButton';
+import events from '@/content/events';
+import { colors } from '@/styles/theme';
 
 const Card = chakra(Flex, {
   baseStyle: {
-    backgroundColor: "ivory.600",
-    border: "1px solid",
-    borderRadius: "lg",
-    borderColor: "ivory.900",
-    boxShadow: "xl",
-    cursor: "pointer",
-    flexDirection: "column",
-    padding: "1.5rem",
-    textDecoration: "none",
-    transition: "all 300ms",
+    backgroundColor: 'ivory.600',
+    border: '1px solid',
+    borderRadius: 'lg',
+    borderColor: 'ivory.900',
+    boxShadow: 'xl',
+    cursor: 'pointer',
+    flexDirection: 'column',
+    padding: '1.5rem',
+    textDecoration: 'none',
+    transition: 'all 300ms',
     _hover: {
-      backgroundColor: "ivory.500",
+      backgroundColor: 'ivory.500',
     },
   },
 });
@@ -33,11 +33,11 @@ const PartnerCard = ({ ...restProps }) => {
       <Card {...restProps}>
         <Flex alignItems="center" gap="0.5rem" mb="1.5rem">
           <Calendar size={24} style={{ color: colors.pink[700] }} />
-          <Text fontSize={{ base: "lg", xl: "xl" }} fontWeight="semibold">
+          <Text fontSize={{ base: 'lg', xl: 'xl' }} fontWeight="semibold">
             {events.PARTNER}
           </Text>
         </Flex>
-        <Text fontSize={{ base: "sm", xl: "md" }}>{events.PARTNER_PITCH}</Text>
+        <Text fontSize={{ base: 'sm', xl: 'md' }}>{events.PARTNER_PITCH}</Text>
       </Card>
     </CopyButton>
   );
