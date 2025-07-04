@@ -90,7 +90,7 @@ const EventCard = ({ event }: Props) => (
               )}
             </Text>
             <Text fontSize={{ base: 'sm', xl: 'md' }} mb=".25rem">
-              {event?.host}
+              {event.host}
             </Text>
             <Text fontSize={{ base: 'sm', xl: 'md' }}>{event.location}</Text>
           </Flex>
