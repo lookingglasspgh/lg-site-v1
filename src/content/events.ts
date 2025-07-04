@@ -74,7 +74,7 @@ const events: EventsContent = {
       image: '/events/silverEye.webp',
       time: '6:30pm - 7:30pm',
       endDate: 'Apr 15, 2025',
-      url: 'eye.org/events/remembering-imagining-visualizing-the-past-present-and-future-with-archives',
+      url: 'https://silvereye.org/events/remembering-imagining-visualizing-the-past-present-and-future-with-archives',
     },
     {
       title: 'SONA Immersive Storytelling Festival',
@@ -96,6 +96,16 @@ const events: EventsContent = {
       time: '2pm - 3pm',
       endDate: 'Nov 1, 2024',
       url: 'https://www.aias.org/2024-northeast-quad-conference/',
+    },
+    {
+      title: 'Docu-Poetics and Creative (Flash) Non-Fiction Writing',
+      type: EVENT_TYPES.WORKSHOP,
+      host: 'KST Alloy Studios',
+      location: '5530 Penn Ave, PGH',
+      image: '/events/docupoetics.webp',
+      time: '3pm - 7pm',
+      endDate: 'Mar 11, 2023',
+      url: 'https://kelly-strayhorn.org/events/dorothy-r-santos-adrian-jones/',
     },
   ],
 };
