@@ -41,8 +41,8 @@ const ARSpotlightPage = () => {
 
   const onModelLoad = () => {
     setIsModelLoading(false);
-    modelViewerRef.current.style.setProperty('opacity', '1');
-    modelViewerRef.current.setAttribute('ar', true);
+    modelViewerRef?.current?.style.setProperty('opacity', '1');
+    modelViewerRef?.current?.setAttribute('ar', true);
   };
 
   useEffect(() => {

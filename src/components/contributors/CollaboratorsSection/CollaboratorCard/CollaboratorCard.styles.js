@@ -1,10 +1,4 @@
-import {
-  Box,
-  Button,
-  chakra,
-  Flex,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Button, chakra, Flex, Text } from '@chakra-ui/react';
 
 export const ButtonText = chakra(Text, {
   baseStyle: {
