@@ -8,10 +8,7 @@ import RouteMetadata from '@/constants/RouteMetadata';
 
 const PressPage = () => (
   <Layout pageMetadata={RouteMetadata.press}>
-    <Flex
-      id="page-container"
-      direction="column"
-    >
+    <Flex id="page-container" direction="column">
       <NewsSection />
       <InfoSection />
     </Flex>
