@@ -252,7 +252,7 @@ const contributors = {
     },
     {
       name: 'Reiley Freed',
-      role: 'Oral Historian',
+      role: 'Oral Historian & Research Assistant',
       headshotPath: '/collaborators/reiley.webp',
       website: 'https://bhph.my.canva.site',
       bio: (
@@ -347,6 +347,25 @@ const contributors = {
           Crowne Studio, as a traditional producer and audio engineer, to write
           a book on mixing and mastering as the official spearhead to the launch
           of The White Leaf Music Company, LLC sometime in 2023.
+        </span>
+      ),
+    },
+    {
+      name: 'Xevi Aqeel',
+      role: '3D Modeler & Animator',
+      headshotPath: '/collaborators/xevi.webp',
+      website: 'https://kinardist.media',
+      bio: (
+        <span>
+          Xevi Aqeel is a Creative Technologist, Writer and Animator made in New
+          York. When he's not dancing at the intersection of art and technology,
+          you might find him engrossed training martial arts, engrossed in a
+          mathematics/fantasy novel, playing an RPG or Magic the Gathering. He
+          attended Parson School of Design where he studied Game Design. There
+          he fell in love with generative art using Processing and P5.js. That
+          led him to 2D and 3D animation where he spent the bulk of his career.
+          Though much of his work has been in advertising and CPG, he jumps at
+          any chance to help make New Media projects come to life.
         </span>
       ),
     },
