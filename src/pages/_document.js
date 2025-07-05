@@ -1,11 +1,8 @@
 import React from 'react';
-import {
-  Html, Head, Main, NextScript,
-} from 'next/document';
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    // eslint-disable-next-line react/jsx-filename-extension
     <Html lang="en">
       <Head />
       <body>

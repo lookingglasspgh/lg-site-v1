@@ -14,13 +14,16 @@ const common = {
     LOGO_ALT: 'Looking Glass Logo',
     SUBSCRIBE_ALT: 'Looking Glass Newsletter Link',
     YOUTUBE_ALT: 'Looking Glass Youtube Channel Link',
+    IG_ALT: 'Looking Glass Instagram Page Link',
     APP_STORE_ALT: 'Looking Glass iOS Download Link',
   },
   links: {
     BOOKSHOP_LINK: 'https://bookshop.org/shop/looking-glass',
-    APP_STORE: 'https://apps.apple.com/app/looking-glass-ar-archive/id6504839729',
+    APP_STORE:
+      'https://apps.apple.com/app/looking-glass-ar-archive/id6504839729',
     SUBSCRIBE_LINK: 'https://lookingglasspgh.substack.com/',
     YOUTUBE_LINK: 'https://www.youtube.com/@lookingglasspgh',
+    IG_LINK: 'https://www.instagram.com/lookingglass.ar/',
   },
   footer: {
     TERMS: 'Terms',
@@ -28,6 +31,7 @@ const common = {
     CONTACT_CLICK: 'Copied Email!',
     CONTACT: 'Contact',
     NEWSLETTER: 'Newsletter',
+    IG: 'Instagram',
     YOUTUBE: 'Youtube',
   },
 };

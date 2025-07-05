@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-// eslint-disable-next-line import/no-extraneous-dependencies
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true' && process.env.NODE_ENV === 'production',
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled:
+    process.env.ANALYZE === "true" && process.env.NODE_ENV === "production",
 });
 
 module.exports = () => {
@@ -10,8 +11,8 @@ module.exports = () => {
 
   const redirects = async () => [
     {
-      source: '/statement-of-purpose.html',
-      destination: '/',
+      source: "/statement-of-purpose.html",
+      destination: "/",
       permanent: true,
     },
   ];
@@ -19,8 +20,12 @@ module.exports = () => {
   const images = {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'lg-site-assets.s3.us-east-2.amazonaws.com',
+        protocol: "https",
+        hostname: "lg-site-assets.s3.us-east-2.amazonaws.com",
+      },
+      {
+        protocol: "https",
+        hostname: "vignette.wikia.nocookie.net",
       },
     ],
   };

@@ -1,9 +1,4 @@
-import {
-  Box,
-  Button,
-  chakra,
-  Flex,
-} from '@chakra-ui/react';
+import { Box, Button, chakra, Flex } from '@chakra-ui/react';
 
 export const FooterButton = chakra(Button, {
   baseStyle: {

@@ -1,9 +1,9 @@
 export const RouteList = {
   HOME: '/',
-  ARTIFACTS: '/artifacts',
   APP_SUPPORT: '/app-support',
-  CONTRIBUTORS: '/contributors',
   AR_SPOTLIGHT: '/ar-spotlight',
+  CONTRIBUTORS: '/contributors',
+  EVENTS: '/events',
   PRESS: '/press',
   PRIVACY: '/privacy',
   TERMS: '/terms',
@@ -11,12 +11,16 @@ export const RouteList = {
 
 export const NavBarRoutes = [
   {
-    title: 'Contributors',
-    path: RouteList.CONTRIBUTORS,
-  },
-  {
     title: 'AR Spotlight',
     path: RouteList.AR_SPOTLIGHT,
+  },
+  {
+    title: 'Events',
+    path: RouteList.EVENTS,
+  },
+  {
+    title: 'Contributors',
+    path: RouteList.CONTRIBUTORS,
   },
   {
     title: 'Press',
@@ -26,12 +30,16 @@ export const NavBarRoutes = [
 
 export const MobileMenuRoutes = [
   {
-    title: 'Contributors',
-    path: RouteList.CONTRIBUTORS,
-  },
-  {
     title: 'AR Spotlight',
     path: RouteList.AR_SPOTLIGHT,
+  },
+  {
+    title: 'Events',
+    path: RouteList.EVENTS,
+  },
+  {
+    title: 'Contributors',
+    path: RouteList.CONTRIBUTORS,
   },
   {
     title: 'Press',

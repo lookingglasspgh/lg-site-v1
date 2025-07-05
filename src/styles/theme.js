@@ -1,13 +1,8 @@
 import { extendTheme } from '@chakra-ui/react';
-// eslint-disable-next-line camelcase
+
 import { Outfit, Spline_Sans } from 'next/font/google';
 
-import {
-  Button,
-  Divider,
-  Heading,
-  Text,
-} from './components';
+import { Button, Divider, Heading, Text } from './components';
 
 const outfit = Outfit({
   subsets: ['latin'],
