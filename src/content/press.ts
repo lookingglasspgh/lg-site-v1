@@ -1,3 +1,10 @@
+export type Article = {
+  title: string;
+  publication: string;
+  date: string;
+  url: string;
+};
+
 const press = {
   info: {
     HEADING: 'Info & Resources',
