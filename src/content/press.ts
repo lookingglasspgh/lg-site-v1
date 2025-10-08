@@ -16,6 +16,12 @@ const press = {
     LINK_ALT: 'Link to',
     articles: [
       {
+        title: 'Walking Through History with Artist Adrian Jones',
+        publication: 'CMU School of Art',
+        date: 'October 6, 2025',
+        url: 'https://art.cmu.edu/news/school/looking-glass-adrian-jones',
+      },
+      {
         title:
           'A Preview of the Creative Incubator Inside the New Museum’s Expansion',
         publication: 'Autre',
