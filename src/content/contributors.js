@@ -372,9 +372,9 @@ const contributors = {
   ],
   partnerDirectory: [
     {
-      name: 'Pittsburgh Center for Arts & Media',
+      name: 'The Field',
       role: 'Fiscal Sponsor',
-      website: 'https://pghartsmedia.org/',
+      website: 'https://www.thefield.org/',
     },
     {
       name: 'Awesome Pittsburgh',
