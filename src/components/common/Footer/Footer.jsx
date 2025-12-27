@@ -5,6 +5,7 @@ import { Inbox, Instagram, Youtube } from 'react-feather';
 import ContactButton from '../ContactButton';
 import {
   FooterButton,
+  FooterButtonText,
   FooterContainer,
   ImageContainer,
   LinkContainer,
@@ -38,7 +39,7 @@ const Footer = () => (
             size="sm"
           >
             <Inbox size={20} />
-            <Text display={{ base: 'none', md: 'block' }}>{footer.NEWSLETTER}</Text>
+            <FooterButtonText>{footer.NEWSLETTER}</FooterButtonText>
           </FooterButton>
         </Link>
         <Link
@@ -50,7 +51,6 @@ const Footer = () => (
             size="sm"
           >
             <Instagram size={20} />
-            <Text display={{ base: 'none', md: 'block' }}>{footer.IG}</Text>
           </FooterButton>
         </Link>
         <Link
@@ -62,7 +62,6 @@ const Footer = () => (
             size="sm"
           >
             <Youtube size={20} />
-            <Text display={{ base: 'none', md: 'block' }}>{footer.YOUTUBE}</Text>
           </FooterButton>
         </Link>
       </LinkContainer>
