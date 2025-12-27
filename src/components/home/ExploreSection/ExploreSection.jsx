@@ -6,7 +6,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { isSafari } from 'react-device-detect';
-import { useInView } from 'framer-motion';
+import { useInView } from 'motion/react';
 
 import commonStyles from '@/styles/commonStyles';
 import home from '@/content/home';
