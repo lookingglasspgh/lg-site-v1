@@ -34,5 +34,6 @@ module.exports = () => {
     images,
     reactStrictMode,
     redirects,
+    turbopack: { },
   });
 };
