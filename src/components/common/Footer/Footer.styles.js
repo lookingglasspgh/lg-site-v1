@@ -1,9 +1,17 @@
-import { Box, Button, chakra, Flex } from '@chakra-ui/react';
+import { Box, Button, chakra, Flex, Text } from '@chakra-ui/react';
 
 export const FooterButton = chakra(Button, {
   baseStyle: {
     padding: '0 0.25rem',
     gap: '0.5rem',
+    _hover: { color: 'black.200' },
+    transition: 'all 0.2s'
+  },
+});
+
+export const FooterButtonText = chakra(Text, {
+  baseStyle: {
+    display: { base: 'none', md: 'block' },
   },
 });
 
