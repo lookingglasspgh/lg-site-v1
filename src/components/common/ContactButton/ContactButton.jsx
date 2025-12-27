@@ -4,7 +4,7 @@ import { Mail } from 'react-feather';
 
 import common from '@/content/common';
 
-import { FooterButton } from '../Footer/Footer.styles';
+import { FooterButton, FooterButtonText } from '../Footer/Footer.styles';
 
 const email = 'info@looking-glass.space';
 
@@ -37,7 +37,7 @@ const ContactButton = () => {
         onClick={onButtonClick}
       >
         <Mail size={20} />
-        <Text display={{ base: 'none', md: 'block' }}>{footer.CONTACT}</Text>
+        <FooterButtonText>{footer.CONTACT}</FooterButtonText>
       </FooterButton>
     </Tooltip>
   );
