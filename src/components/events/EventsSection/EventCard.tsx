@@ -25,6 +25,7 @@ const Card = chakra(Flex, {
 
 type Props = {
   event: Event;
+  isUpcoming?: boolean;
 };
 
 const CHAR_LIMIT = 79;
@@ -32,7 +33,7 @@ const CHAR_LIMIT = 79;
 const trimTitle = (text: string): string =>
   text.length > CHAR_LIMIT ? `${text.substring(0, CHAR_LIMIT - 3)}...` : text;
 
-const EventCard = ({ event }: Props) => (
+const EventCard = ({ event, isUpcoming }: Props) => (
   <Link
     aria-label={`${events.LINK_ALT} ${event.title}`}
     href={event.url}
@@ -89,6 +90,11 @@ const EventCard = ({ event }: Props) => (
                 <>{event.endDate}</>
               )}
             </Text>
+            { isUpcoming && event.time && (  
+            <Text fontSize={{ base: 'sm', xl: 'md' }} mb=".25rem">
+              {event.time}
+            </Text>
+            )}
             <Text fontSize={{ base: 'sm', xl: 'md' }} mb=".25rem">
               {event.host}
             </Text>
