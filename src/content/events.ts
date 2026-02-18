@@ -44,6 +44,16 @@ const events: EventsContent = {
   LINK_ALT: 'Link to',
   eventsList: [
     {
+      title: 'Reclaiming East Liberty\'s Black Legacy',
+      type: EVENT_TYPES.TALK,
+      host: 'Winchester Thurston Upper School',
+      location: '445 Morewood Ave, Pittsburgh',
+      image: '/events/wt-web.webp',
+      time: '5pm - 7pm',
+      endDate: 'Feb 26, 2026',
+      url: 'https://docs.google.com/forms/d/e/1FAIpQLSeD-kjXEVnhR4sFPOwO1yQp3W5hjB0NBYwqZFx7AQYiaX8GNQ/viewform?usp=publish-editor',
+    },
+    {
       title: 'DEMO2025 Festival',
       type: EVENT_TYPES.EXHIBIT,
       host: 'Water Street Projects',

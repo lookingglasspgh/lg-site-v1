@@ -66,7 +66,7 @@ const EventsSection = () => {
         {hasUpcomingEvents ? (
           <>
             {upcomingEvents.map((event) => (
-              <EventCard key={event.title} event={event} />
+              <EventCard key={event.title} event={event} isUpcoming />
             ))}
           </>
         ) : (
