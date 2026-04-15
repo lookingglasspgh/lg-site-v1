@@ -23,14 +23,12 @@ const contributors = {
           digital spaces.
           <br />
           <br />
-          In 2021, Adrian began developing Looking Glass, an app-based archive
-          of Black life in Pittsburgh, which uses augmented reality to connect
-          the present to both the past and imagined futures. Looking Glass is
-          built on the belief that the practices of remembering and imagining
-          have the power to transform and open new pathways toward healing and
-          collective action. Adrian’s work has been recognized by Collective
-          Action School, NPR, the Technical.ly Awards and the New Museum of
-          Contemporary Art’s cultural incubator, NEW INC.
+          In 2021, Adrian began developing Looking Glass, a digital storytelling platform
+          dedicated to honoring the voices, memories and experiences that have shaped Black Pittsburgh.
+          Looking Glass is built on the belief that the practices of remembering and imagining have the
+          power to transform and open new pathways toward healing and collective action.
+          Adrian’s work has been recognized by Collective Action School, NPR, the Technical.ly Awards
+          and the New Museum of Contemporary Art’s cultural incubator, NEW INC.
         </span>
       ),
     },
