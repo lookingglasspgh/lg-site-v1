@@ -390,9 +390,19 @@ const contributors = {
       website: 'https://www.elsiehhillmanfoundation.org/',
     },
     {
+      name: 'Henry L. Hillman Foundation',
+      role: 'Grantor',
+      website: 'https://www.henrylhillmanfoundation.org/',
+    },
+    {
       name: 'Opportunity Fund',
       role: 'Grantor',
       website: 'https://theopportunityfund.org/',
+    },
+    {
+      name: 'The Pittsburgh Foundation',
+      role: 'Grantor',
+      website: 'https://pittsburghfoundation.org/',
     },
     {
       name: 'Processing Foundation',

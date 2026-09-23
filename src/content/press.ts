@@ -16,6 +16,18 @@ const press = {
     LINK_ALT: 'Link to',
     articles: [
       {
+        title: 'Storytelling, Technology & How Nonprofits Can Build Their Own Software',
+        publication: 'The Nonprofit Lab Podcast',
+        date: 'September 23, 2026',
+        url: 'https://www.thenonprofitlab.com/podcast/episode/4795193f/e98-seeing-service-through-history-storytelling-technology-how-nonprofits-can-build-their-own-software-with-adrian-jones-of-looking-glass',
+      },
+      {
+        title: 'Adrian Jones uses AR to bring Pittsburgh\'s erased Black history back to the streets',
+        publication: 'React Vision',
+        date: 'June 22, 2026',
+        url: 'https://www.reactvision.xyz/use-cases/looking-glass/',
+      },
+      {
         title: 'Walking Through History with Artist Adrian Jones',
         publication: 'CMU School of Art',
         date: 'October 6, 2025',

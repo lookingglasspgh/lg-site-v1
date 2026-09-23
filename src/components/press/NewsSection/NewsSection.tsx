@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Flex, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Button, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react';
 import { ArrowLeft, ArrowRight } from 'react-feather';
 
 import commonStyles from '@/styles/commonStyles';
@@ -15,11 +15,14 @@ const maxArticles = 6;
 const NewsSection = () => {
   const [currentArticles, setCurrentArticles] = useState<Article[]>([]);
   const [pageIndex, setPageIndex] = useState<number>(0);
+  const [currentPage, setCurrentPage] = useState<number>(0);
   const totalArticles = articles.length;
+  const totalPages = totalArticles % maxArticles;
 
   useEffect(() => {
     const endingIndex = pageIndex + maxArticles;
     setCurrentArticles(articles.slice(pageIndex, endingIndex));
+    setCurrentPage(endingIndex / maxArticles);
   }, [pageIndex, totalArticles]);
 
   const pageBack = () => setPageIndex(pageIndex - maxArticles);
@@ -69,6 +72,7 @@ const NewsSection = () => {
         >
           <ArrowLeft />
         </Button>
+        <Text>{currentPage} / {totalPages}</Text>
         <Button
           variant="ghost"
           isDisabled={isPageForwardDisabled()}
