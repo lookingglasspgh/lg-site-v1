@@ -8,6 +8,7 @@ import {
   ModalContent,
   ModalHeader,
   ModalOverlay,
+  Link,
 } from '@chakra-ui/react';
 import { Calendar } from 'react-feather';
 
@@ -45,20 +46,17 @@ const PartnerModal = () => {
             </Text>
             <Text fontSize={{ base: 'md', md: 'lg' }}>
               {events.PARTNER_OUTREACH}
-              <CopyButton
-                copyTooltip={events.CONTACT_TOOLTIP}
-                copyValue={events.CONTACT_EMAIL}
-              >
-                <Button
-                  variant="link"
-                  fontSize="lg"
-                  color="black.500"
-                  width="fit-content"
-                >
-                  {events.CONTACT_EMAIL}
-                </Button>
-              </CopyButton>
             </Text>
+            <Link
+              aria-label={events.FORM_ALT}
+              href={events.FORM_LINK}
+              isExternal
+              _hover={{ textDecoration: 'none' }}
+            >
+              <Button mt="1.5rem" width="100%">
+                Reach Out
+              </Button>
+            </Link>
           </ModalBody>
         </ModalContent>
       </Modal>
