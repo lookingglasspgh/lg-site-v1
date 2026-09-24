@@ -31,8 +31,8 @@ interface EventsContent {
 }
 
 const events: EventsContent = {
-  HEADING: 'Upcoming Public Events',
-  HEADING_PRIOR: 'Past Events',
+  HEADING: 'Upcoming Events',
+  HEADING_PRIOR: 'Past Public Events',
   PARTNER: 'Partner With Us',
   PARTNER_PITCH: `We hope to develop public events and programs that
               bring people together to reflect, celebrate, and engage with local
