@@ -24,24 +24,24 @@ interface EventsContent {
   PARTNER: string;
   PARTNER_PITCH: string;
   PARTNER_OUTREACH: string;
-  CONTACT_EMAIL: string;
-  CONTACT_TOOLTIP: string;
   LINK_ALT: string;
+  FORM_ALT: string;
+  FORM_LINK: string;
   eventsList: Event[];
 }
 
 const events: EventsContent = {
-  HEADING: 'Upcoming Public Events',
-  HEADING_PRIOR: 'Past Events',
+  HEADING: 'Upcoming Events',
+  HEADING_PRIOR: 'Past Public Events',
   PARTNER: 'Partner With Us',
-  PARTNER_PITCH: `We hope to co-create community events and public programs that
+  PARTNER_PITCH: `We hope to develop public events and programs that
               bring people together to reflect, celebrate, and engage with local
               Black history, art and culture.`,
   PARTNER_OUTREACH:
-    "If you're interested in a partnership to support our community-engaged mission, reach out to",
-  CONTACT_EMAIL: 'info@looking-glass.space',
-  CONTACT_TOOLTIP: 'Copied Contact Email',
+    "If you're interested in a partnership to support our community focused mission, fill out this brief form",
   LINK_ALT: 'Link to',
+  FORM_ALT: 'Programming Interest Form',
+  FORM_LINK: 'https://app.formbricks.com/s/cmrecj65ydgkn01xb6h6iyyom',
   eventsList: [
     {
       title: 'Reclaiming East Liberty\'s Black Legacy',

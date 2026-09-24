@@ -8,6 +8,7 @@ const common = {
   READ_MORE: 'Read More',
   DOWNLOAD_IOS: 'Download for iOS',
   DOWNLOAD_ANDROID: 'Coming Soon to Android',
+  ANDROID_INTEREST: 'Join Android Wait-List',
   accessibility: {
     CONTACT_ALT: 'Copy Contact Email',
     HOME_ALT: 'Link to Homepage',
@@ -16,6 +17,7 @@ const common = {
     YOUTUBE_ALT: 'Looking Glass Youtube Channel Link',
     IG_ALT: 'Looking Glass Instagram Page Link',
     APP_STORE_ALT: 'Looking Glass iOS Download Link',
+    WAITLIST_ALT: 'Looking Glass Android Waitlist Link'
   },
   links: {
     BOOKSHOP_LINK: 'https://bookshop.org/shop/looking-glass',
@@ -24,6 +26,7 @@ const common = {
     SUBSCRIBE_LINK: 'https://lookingglasspgh.substack.com/',
     YOUTUBE_LINK: 'https://www.youtube.com/@lookingglasspgh',
     IG_LINK: 'https://www.instagram.com/lookingglass.ar/',
+    WAITLIST: 'https://app.formbricks.com/s/cmueys560p18101v1pptfm97u'
   },
   footer: {
     TERMS: 'Terms',

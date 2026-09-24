@@ -2,6 +2,7 @@ import React from 'react';
 import {
   chakra,
   Box,
+  Button,
   Flex,
   Heading,
   Link,
@@ -19,19 +20,21 @@ import SiteImage from '../SiteImage';
 
 const AppStoreContainer = chakra(Box, {
   baseStyle: {
-    width: { base: '238px' },
-    height: { base: '80px' },
+    width: { base: '190px' },
+    height: { base: '64px' },
     position: 'relative',
   },
 });
 
-const PlayStoreContainer = chakra(Box, {
-  baseStyle: {
-    width: { base: '238px' },
-    height: { base: '70px' },
-    position: 'relative',
-  },
-});
+/** TODO - restore playstore image when available */
+
+// const PlayStoreContainer = chakra(Box, {
+//   baseStyle: {
+//     width: { base: '238px' },
+//     height: { base: '70px' },
+//     position: 'relative',
+//   },
+// });
 
 const DownloadModal = ({ isOpen, onClose }) => (
   <Modal
@@ -79,14 +82,11 @@ const DownloadModal = ({ isOpen, onClose }) => (
             <Heading as="h3" fontSize="xl" mb="1rem">
               {common.DOWNLOAD_ANDROID}
             </Heading>
-            <PlayStoreContainer opacity="0.5">
-              <SiteImage
-                src="/resources/play-store.png"
-                fill
-                sizes="270px"
-                alt={common.accessibility.APP_STORE_ALT}
-              />
-            </PlayStoreContainer>
+            <Link alt={common.accessibility.WAITLIST_ALT} href={common.links.WAITLIST} isExternal>
+              <Button width="100%">
+                {common.ANDROID_INTEREST}
+              </Button>
+            </Link>
           </Flex>
         </Flex>
       </ModalBody>
